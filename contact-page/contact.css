@@ -1,9 +1,29 @@
+:root {
+    --txtColor: #164505;
+}
+
+.mainContentContact {
+    display: inline-grid;
+    border: var(--txtColor);
+    grid-template-columns: 2fr 1fr;
+}
+
+.txtContact {
+    color:  var(--txtColor);
+}
+
+.contactTxtUnderline {
+    width: 100px;
+    height: 3px;
+    outline: none;
+    border-radius: 5px;
+    background-color: #4CCE8E;
+}
+
 .icon {
     width: 25px;
     height: 20px;
 }
-
-
 
 /* Map */
 
