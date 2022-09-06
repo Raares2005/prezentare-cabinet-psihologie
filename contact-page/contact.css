@@ -3,16 +3,26 @@
 }
 
 .mainContentContact {
-    display: inline-grid;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 5px;
+    grid-template-rows: repeat(12, 40px);
+    row-gap: 5px;
+    width: 75%;
+    margin: 0 auto;
     border: var(--txtColor);
-    grid-template-columns: 2fr 1fr;
 }
 
 .txtContact {
     color:  var(--txtColor);
 }
 
+.contactTxtTitle {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
 .contactTxtUnderline {
+    grid-area: 2 / 1 / 2 / 2;
     width: 100px;
     height: 3px;
     outline: none;
@@ -25,9 +35,39 @@
     height: 20px;
 }
 
+#cabinetName {
+    grid-area: 3 / 2 / 4 / 6;
+    place-self: start;
+    margin: 0;
+    font-size: 1rem;
+}
+
+#locationIcon {
+    grid-area: 4 / 1 / 4 / 1;
+    justify-self: center;
+}
+
+#locationAddress {
+    grid-area: 4 / 2 / 4 / 5;
+    margin: 0;
+}
+
+#phoneIcon {
+    grid-area: 6 / 1 / 6 / 1;
+    justify-self: center;
+}
+
+#phoneNumber {
+    grid-area: 6 / 2 / 2 / 4;
+    height: 40px;
+}
+
 /* Map */
 
+
+
 #location-on-map {
+    grid-column:  7 / 12;
     width: 300px;
     height: 300px;
 }
