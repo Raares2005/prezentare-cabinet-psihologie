@@ -1,0 +1,91 @@
+:root {
+    --txtColor: #164505;
+}
+
+.mainContentContact {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 5px;
+    grid-template-rows: repeat(12, 40px);
+    row-gap: 5px;
+    width: 75%;
+    margin: 0 auto;
+    border: var(--txtColor);
+}
+
+.txtContact {
+    color:  var(--txtColor);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.contactTxtTitle {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.contactTxtUnderline {
+    grid-area: 2 / 2 / 2 / 3;
+    width: 100px;
+    height: 3px;
+    outline: none;
+    border-radius: 5px;
+    background-color: #4CCE8E;
+}
+
+.icon {
+    height: 30px;
+    width: auto;
+}
+
+#cabinetName {
+    grid-area: 3 / 2 / 3 / 5;
+    place-self: start;
+    margin: 0;
+    font-size: 1rem;
+}
+
+#locationIcon {
+    grid-area: 5 / 1 / 5 / 1;
+    justify-self: center;
+}
+
+#locationAddress {
+    grid-area: 5 / 2 / 5 / 6;
+    margin: 0;
+}
+
+#phoneIcon {
+    grid-area: 7 / 1 / 7 / 1;
+    justify-self: center;
+}
+
+#phoneNumber {
+    grid-area: 7 / 2 / 7 / 6;
+    margin: 0;
+}
+
+#facebookIcon {
+    grid-area: 9 / 1 / 9 / 1;
+    justify-self: center;
+}
+
+#facebookLink {
+    grid-area: 9 / 2 / 9 / 6;
+}
+
+#emailIcon {
+    grid-area: 11 / 1 / 11 / 1;
+    justify-self: center;
+}
+
+#mailAddress {
+    grid-area: 11 / 2 / 11 / 6;
+}
+
+/* Map */
+
+#location-on-map {
+    grid-area: 2 / 8 / 11 / 12;
+    width: 100%;
+    height: 450px;
+}
