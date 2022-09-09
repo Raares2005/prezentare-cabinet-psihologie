@@ -10,21 +10,8 @@ body {
     flex-direction: column;
 }
 
-li.nav-item {
-    list-style: none;
-    margin: 20px 30px;
-    font-size: 18px;
-    color: #164505;
-    font-weight: bold;
-}
-
-button.nav-item {
+nav {
     background-color: #4CCE8E;
-    margin-left: 20px;
-    padding: 20px 50px;
-    border-radius: 20px;
-    border: solid #4CCE8E ;
-    font-size: 16px;
 }
 
 .container-nav {
@@ -40,37 +27,27 @@ button.nav-item {
     margin: 10px;
 }
 
-.titluri {
-    align-self: center; 
-}
-
-.telefon {
-    align-self: center;
-    margin-left: 10px;
-    color: #164505;
-    font-size: 16px;
-}
-
 .logo-icon {
     width: 10%;
     display: flex;
     flex-direction: row;
-    margin: 10px;
+    margin: 5px;
+}
+.titluri {
+    align-self: center;
+    padding-left: 10px;
 }
 
-.telefon-icon {
-    margin-left: 100px;
-    width: 2%;
+
+.text {
+    align-self: center;
+    margin-left: 10px;
+    color: #fff;
+    font-size: 19px;
 }
 
-.iteme {
-    display: flex;
-    flex-direction: row;
-    margin-right: 150px;
-}
 
-.navbar-nav {
-    display: flex;
-    flex-direction: row;
-}
+
+
+
 
