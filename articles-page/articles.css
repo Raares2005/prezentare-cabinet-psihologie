@@ -1,0 +1,27 @@
+:root {
+    --txtColor: #164505;
+}
+
+#mainArticles {
+    display: grid;
+    grid-template-columns: 2.2fr 1fr;
+    column-gap: 50px;
+    margin: 0 auto;
+    width: 70vw;
+    height: 900px;
+}
+
+#engeneerImg {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    grid-area: 1 1 1 1;
+}
+
+#workInProgressTxt {
+    grid-column: 1 2 1 2;
+    margin: auto auto;
+    height: 200px;
+    font-size: 5rem;
+    color: var(--txtColor);
+}
