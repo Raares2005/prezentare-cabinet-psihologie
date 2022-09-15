@@ -3,6 +3,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    --verdecolor: #164505;
+    --turcoazcolor: #4CCE8E;
 }
 
 body {
@@ -11,20 +13,24 @@ body {
 }
 
 li.nav-item {
+    
     list-style: none;
-    margin: 20px 30px;
-    font-size: 18px;
-    color: #164505;
+    margin: 20px 40px;
+    font-size: 14px;
+    color: var(--verdecolor);
     font-weight: bold;
+    
+    
 }
 
 button.nav-item {
-    background-color: #4CCE8E;
+    background-color: var(--turcoazcolor);
     margin-left: 20px;
-    padding: 20px 50px;
+    margin-bottom: 10px;
+    padding: 20px 40px;
     border-radius: 20px;
-    border: solid #4CCE8E ;
-    font-size: 16px;
+    border: solid var(--turcoazcolor) ;
+    font-size: 14px;
 }
 
 .container-nav {
@@ -44,6 +50,12 @@ button.nav-item {
     align-self: center; 
 }
 
+.logo-icon {
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
 .telefon {
     align-self: center;
     margin-left: 10px;
@@ -51,12 +63,6 @@ button.nav-item {
     font-size: 16px;
 }
 
-.logo-icon {
-    width: 10%;
-    display: flex;
-    flex-direction: row;
-    margin: 10px;
-}
 
 .telefon-icon {
     margin-left: 100px;
@@ -74,3 +80,78 @@ button.nav-item {
     flex-direction: row;
 }
 
+
+.text{
+    font-size: 80px;
+    margin-top: 50px;
+    margin-left: 120px;
+}
+
+main h5 {
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: 50px;
+    margin-left: 120px;
+}
+
+main span {
+    color: var(--turcoazcolor);
+}
+
+
+.info {
+    z-index: 0;
+    display: flex;
+    flex-direction: row;
+}
+.contact {
+    background-color: var(--turcoazcolor);
+    margin-left: 110px;
+    margin-top: 50px;
+    padding: 20px 100px;
+    border-radius: 20px;
+    border: solid var(--turcoazcolor) ;
+    font-size: 16px;
+}
+
+
+.info p {
+   align-self: center;
+   margin-top: 50px;
+   margin-left: 100px;
+}
+
+.imagini {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.poze {
+    position: absolute;
+    z-index: 10;
+    width: 29%;
+    margin-left: 1000px;
+    margin-top: 350px;
+    align-self: flex-end;
+}
+
+.poze-v2 {
+    position: absolute;
+    z-index: 9;
+    width: 23%;
+    margin-left: 1500px;
+    margin-top: 200px;
+    height: 800px;
+    align-self: flex-end;
+}
+
+
+
+.background {
+    position: absolute;
+    z-index: 1;
+    background-size: 20px 1px;
+    margin-top: 200px;
+    
+}
