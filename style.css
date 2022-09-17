@@ -127,12 +127,12 @@ main span {
     align-items: flex-start;
 }
 
-.poze {
+.poza-v1 {
     position: absolute;
     z-index: 10;
     width: 29%;
     margin-left: 1000px;
-    margin-top: 350px;
+    margin-top: 300px;
     align-self: flex-end;
 }
 
@@ -140,18 +140,110 @@ main span {
     position: absolute;
     z-index: 9;
     width: 23%;
-    margin-left: 1500px;
+    margin-left: 1460px;
     margin-top: 200px;
     height: 800px;
     align-self: flex-end;
 }
 
 
-
 .background {
     position: absolute;
     z-index: 1;
-    background-size: 20px 1px;
+    background-size: 20px 10px;
     margin-top: 200px;
     
 }
+
+.topics {
+    display: flex;
+    align-items: flex-start;
+}
+
+.topics h2 {
+    position: relative;
+    z-index: 2;
+    margin-top: 370px;
+    font-size: 50px;
+    margin-left: 200px;
+    color: #fff;
+    font-weight: 100;
+}
+
+.topics span {
+    color: var(--verdecolor);
+}
+
+.carousel{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+li.current{
+    display: none;
+}
+
+.content li {
+    list-style: none;
+    width: 20%;
+    position: relative;
+    text-align: center;
+    margin-left: 45px;
+}
+
+.active {
+    height: 400px;
+}
+
+.active li{
+    position: relative;
+    margin-top: 40px;
+}
+
+.active li.current {
+    top: 30px;
+}
+
+.buttons {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 10px;
+    margin-left: 200px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .buttons .prev{
+    font-size: 30px;
+  }
+
+
+.content h1 {
+    position: relative;
+    z-index: 2;
+    margin-left: 200px;
+    margin-top: 00px;
+    color: var(--verdecolor);
+}
+
+.content p {
+    position: relative;
+    z-index: 2;
+    margin-left: 200px;
+    margin-top: 20px;
+    width: 45%;
+    color: var(--verdecolor);
+}
+
+
