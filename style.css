@@ -177,12 +177,31 @@ main span {
 /* CAROUSEL */
 
 
+.slides-container h1 {
+    position: relative;
+    z-index: 2;
+    margin-left: 200px;
+    width: 130%;
+    color: var(--verdecolor);
+    text-align: center;
+}
+
+.slides-container p {
+    position: relative;
+    z-index: 2;
+    margin-left: 200px;
+    margin-top: 20px;
+    width: 120%;
+    color: var(--verdecolor);
+    font-size: 23px;
+}
+
 .slides-container{
     position: relative;
     z-index: 1;
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 94%;
     height: 100%;
     overflow: hidden;
     margin-top: 50px;
@@ -194,7 +213,7 @@ main span {
     width: 60%;
     position: relative;
     text-align: center;
-    margin-left: 80px;
+    margin-right: 252px;
 }
 
 
@@ -203,8 +222,8 @@ main span {
     align-items: flex-end;
     position: relative;
     z-index: 1;
-    margin-top: 10px;
-    margin-left: 200px;
+    margin-top: 50px;
+    justify-content: center;
 
   }
   
@@ -231,21 +250,5 @@ main span {
     
   }
 
-.slides-container h1 {
-    position: relative;
-    z-index: 2;
-    margin-left: 200px;
-    margin-top: 00px;
-    color: var(--verdecolor);
-}
-
-.slides-container p {
-    position: relative;
-    z-index: 2;
-    margin-left: 200px;
-    margin-top: 20px;
-    width: 55%;
-    color: var(--verdecolor);
-}
 
 /* END OF THE CAROUSEL */
