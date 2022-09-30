@@ -1,0 +1,28 @@
+#mainContentAboutMe {
+    /* position: relative; */
+    display: grid;
+    width: 85vw;
+    margin: 0 auto;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 5px;
+    grid-template-rows: repeat(12, 60px);
+    row-gap: 5px;
+}
+
+#about {
+    grid-area: 2 / 1 / 5 / 6;
+}
+
+#aboutPhoto {
+    grid-area: 1 / 9 / 4 / 12;
+    width: 100%;
+}
+
+#aboutPhoto #imgPhoto {
+    max-width: 320px;
+    height: auto;
+}
+
+#certificates {
+    grid-area: 7 / 1 / 12 / 5;
+}
