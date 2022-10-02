@@ -1,3 +1,11 @@
+body {
+    background-image:url( about-me-img/leafs-img.svg);
+    background-repeat: no-repeat;
+    background-size: 500px 500px;
+    background-position: 67vw 75%;
+    overflow: hidden;
+}
+
 #mainContentAboutMe {
     /* position: relative; */
     display: grid;
