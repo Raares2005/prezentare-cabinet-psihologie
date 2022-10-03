@@ -7,10 +7,11 @@ body {
 }
 
 .buttons {
-    width: 250px;
+    width: 49%;
     height: 50px;
-    border-radius: 10px;
-    
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 #mainContentAboutMe {
@@ -26,6 +27,42 @@ body {
 
 #about {
     grid-area: 2 / 1 / 5 / 6;
+}
+
+#about h1{
+    font-weight: bolder;
+    font-size: 3rem;
+    text-align: center;
+}
+
+#about h1 span{
+    color: #4CCE8E;
+}
+
+#about p{
+    font-size: 1.2rem;
+    text-indent: 40px;
+    margin: 20px 0
+}
+
+.buttons#buttonOffer {
+    background-color: #4CCE8E;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+.buttons#buttonOffer:hover {
+    background-color: #55eba0;
+}
+
+.buttons#buttonContact{
+    background: none;
+    text-decoration: underline;
+    transition: 0.2s ease-in-out;
+}
+
+.buttons#buttonContact:hover {
+    text-decoration: underline #4CCE8E 2px;
 }
 
 #aboutPhoto {
