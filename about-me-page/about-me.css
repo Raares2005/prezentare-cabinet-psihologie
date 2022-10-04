@@ -1,0 +1,97 @@
+body {
+    background-image:url( about-me-img/leafs-img.svg);
+    background-repeat: no-repeat;
+    background-size: 500px 500px;
+    background-position: 67vw 75%;
+    overflow: hidden;
+}
+
+.buttons {
+    width: 49%;
+    height: 50px;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#mainContentAboutMe {
+    /* position: relative; */
+    display: grid;
+    width: 85vw;
+    margin: 0 auto;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 5px;
+    grid-template-rows: repeat(12, 60px);
+    row-gap: 5px;
+}
+
+#about {
+    grid-area: 2 / 1 / 5 / 6;
+}
+
+#about h1{
+    font-weight: bolder;
+    font-size: 3rem;
+    text-align: center;
+}
+
+#about h1 span{
+    color: #4CCE8E;
+}
+
+#about p{
+    font-size: 1.2rem;
+    text-indent: 40px;
+    margin: 20px 0
+}
+
+.buttons#buttonOffer {
+    background-color: #4CCE8E;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+.buttons#buttonOffer:hover {
+    background-color: #55eba0;
+}
+
+.buttons#buttonContact{
+    background: none;
+    text-decoration: underline;
+    transition: 0.2s ease-in-out;
+}
+
+.buttons#buttonContact:hover {
+    text-decoration: underline #4CCE8E 2px;
+}
+
+#aboutPhoto {
+    grid-area: 1 / 9 / 4 / 12;
+    width: 100%;
+}
+
+#aboutPhoto #imgPhoto {
+    max-width: 320px;
+    height: auto;
+}
+
+#certificates {
+    grid-area: 7 / 1 / 12 / 5;
+}
+
+#certificates h2 {
+    font-size: 2rem;
+}
+
+#certificates ul li {
+    list-style: none;
+    color:  black;
+    font-size: 1.2rem;
+}
+
+#certificates ul li::before {
+    padding: 5px;
+    content: "Ｏ";
+    font-size: 1.2rem;
+    color: #4CCE8E;
+}
