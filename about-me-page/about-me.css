@@ -78,3 +78,20 @@ body {
 #certificates {
     grid-area: 7 / 1 / 12 / 5;
 }
+
+#certificates h2 {
+    font-size: 2rem;
+}
+
+#certificates ul li {
+    list-style: none;
+    color:  black;
+    font-size: 1.2rem;
+}
+
+#certificates ul li::before {
+    padding: 5px;
+    content: "Ｏ";
+    font-size: 1.2rem;
+    color: #4CCE8E;
+}
