@@ -184,40 +184,43 @@ main span {
 .slides-container h1 {
     position: relative;
     z-index: 2;
-    margin-left: 200px;
-    width: 130%;
+    width: 250%;
     color: var(--verdecolor);
     text-align: center;
+    font-size: 28px;
+    margin-bottom: 10%;
+    margin-right: 40%;
 }
 
 .slides-container p {
     position: relative;
     z-index: 2;
-    margin-left: 200px;
-    margin-top: 20px;
-    width: 120%;
+    width: 250%;
     color: var(--verdecolor);
     font-size: 23px;
+    text-align: center;
 }
 
-.slides-container {
+.slides-container{
     position: relative;
     z-index: 1;
     display: flex;
     flex-direction: row;
-    width: 94%;
+    width: 1879px;
     height: 100%;
     overflow: hidden;
     margin-top: 50px;
+    text-align: center;
 }
 
 
 .slides-container li {
     list-style: none;
-    width: 60%;
+    width: 140px;
     position: relative;
     text-align: center;
-    margin-right: 252px;
+    margin-right: 10.5%;
+    margin-left: 12%;
 }
 
 
@@ -228,36 +231,30 @@ main span {
     z-index: 1;
     margin-top: 50px;
     justify-content: center;
+    
 
-
-}
-
-.buttons .prev,
-.next {
+  }
+  
+  .buttons
+  .prev, 
+  .next {
     font-size: 40px;
     background-color: var(--turcoazcolor);
     border-radius: 15px;
-    padding-left: 20px;
-    padding-top: 10px;
+    padding: 5px 10px;
     border-color: var(--turcoazcolor);
-}
-
-  .offscreen {
-    text-align: center;
-    padding-right: 10px;
-    color: #42B07A;
-    position: relative;
   }
 
-.buttons .next {
+
+  .buttons .next {
     margin-left: 100px;
+    
+  }
 
-}
-
-.bi.bi-arrow-left-short,
-.bi.bi-arrow-right-short {
+  .bi.bi-arrow-left-short,
+  .bi.bi-arrow-right-short {
     color: #164505;
-}
+  }
 
 /* END OF THE CAROUSEL */
 
