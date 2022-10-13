@@ -206,11 +206,7 @@ main span {
     z-index: 1;
     display: flex;
     flex-direction: row;
-<<<<<<< Updated upstream
     width: 1879px;
-=======
-    width: 140%;
->>>>>>> Stashed changes
     height: 100%;
     overflow: hidden;
     margin-top: 50px;
@@ -220,18 +216,11 @@ main span {
 
 .slides-container li {
     list-style: none;
-<<<<<<< Updated upstream
     width: 140px;
     position: relative;
     text-align: center;
     margin-right: 10.5%;
     margin-left: 12%;
-=======
-    width: 140%;
-    position: relative;
-    text-align: center;
-    margin-right: 250px;
->>>>>>> Stashed changes
 }
 
 
@@ -266,7 +255,6 @@ main span {
   .bi.bi-arrow-right-short {
     color: #164505;
   }
-
 /* END OF THE CAROUSEL */
 
 
