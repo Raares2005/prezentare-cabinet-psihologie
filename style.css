@@ -154,15 +154,9 @@ main span {
 .background {
     position: absolute;
     z-index: 1;
-<<<<<<< Updated upstream
-    background-size: 20px 10px;
-    margin-top: 200px;
-    
-=======
     background-size: 30px 30px;
     margin-top: 400px;
 
->>>>>>> Stashed changes
 }
 
 .topics {
@@ -255,15 +249,6 @@ main span {
     position: relative;
   }
 
-<<<<<<< Updated upstream
-  .buttons .next {
-    margin-left: 200px;
-    
-  }
-
-
-/* END OF THE CAROUSEL */
-=======
 .buttons .next {
     margin-left: 100px;
 
@@ -386,4 +371,3 @@ main span {
     margin-left: 200px;
     margin-top: 5%;
 }
->>>>>>> Stashed changes
