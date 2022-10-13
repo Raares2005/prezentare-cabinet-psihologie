@@ -13,14 +13,14 @@ body {
 }
 
 li.nav-item {
-    
+
     list-style: none;
     margin: 20px 40px;
     font-size: 14px;
     color: var(--verdecolor);
     font-weight: bold;
-    
-    
+
+
 }
 
 button.nav-item {
@@ -29,9 +29,11 @@ button.nav-item {
     margin-bottom: 10px;
     padding: 20px 40px;
     border-radius: 20px;
-    border: solid var(--turcoazcolor) ;
+    border: solid var(--turcoazcolor);
     font-size: 14px;
 }
+
+
 
 .container-nav {
     display: flex;
@@ -47,7 +49,7 @@ button.nav-item {
 }
 
 .titluri {
-    align-self: center; 
+    align-self: center;
 }
 
 .logo-icon {
@@ -56,6 +58,7 @@ button.nav-item {
     flex-direction: row;
     margin: 10px;
 }
+
 .telefon {
     align-self: center;
     margin-left: 10px;
@@ -81,7 +84,7 @@ button.nav-item {
 }
 
 
-.text{
+.text {
     font-size: 80px;
     margin-top: 50px;
     margin-left: 120px;
@@ -104,6 +107,7 @@ main span {
     display: flex;
     flex-direction: row;
 }
+
 .contact {
     background-color: var(--turcoazcolor);
     margin-left: 110px;
@@ -116,9 +120,9 @@ main span {
 
 
 .info p {
-   align-self: center;
-   margin-top: 50px;
-   margin-left: 100px;
+    align-self: center;
+    margin-top: 50px;
+    margin-left: 100px;
 }
 
 .imagini {
@@ -150,9 +154,15 @@ main span {
 .background {
     position: absolute;
     z-index: 1;
+<<<<<<< Updated upstream
     background-size: 20px 10px;
     margin-top: 200px;
     
+=======
+    background-size: 30px 30px;
+    margin-top: 400px;
+
+>>>>>>> Stashed changes
 }
 
 .topics {
@@ -196,7 +206,7 @@ main span {
     font-size: 23px;
 }
 
-.slides-container{
+.slides-container {
     position: relative;
     z-index: 1;
     display: flex;
@@ -225,18 +235,18 @@ main span {
     margin-top: 50px;
     justify-content: center;
 
-  }
-  
-  .buttons
-  .prev, 
-  .next {
+
+}
+
+.buttons .prev,
+.next {
     font-size: 40px;
     background-color: var(--turcoazcolor);
     border-radius: 15px;
     padding-left: 20px;
     padding-top: 10px;
     border-color: var(--turcoazcolor);
-  }
+}
 
   .offscreen {
     text-align: center;
@@ -245,6 +255,7 @@ main span {
     position: relative;
   }
 
+<<<<<<< Updated upstream
   .buttons .next {
     margin-left: 200px;
     
@@ -252,3 +263,127 @@ main span {
 
 
 /* END OF THE CAROUSEL */
+=======
+.buttons .next {
+    margin-left: 100px;
+
+}
+
+.bi.bi-arrow-left-short,
+.bi.bi-arrow-right-short {
+    color: #164505;
+}
+
+/* END OF THE CAROUSEL */
+
+
+/* Servicii Home Page */
+
+.servicii {
+    background-color: #fff;
+}
+
+.serviciiText {
+    display: flex;
+    justify-content: center;
+}
+
+.listaServicii {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    text-align: center;
+    z-index: 1;
+}
+
+.varianta {
+    display: flex;
+    margin: 50px;
+    position: relative;
+    width: 950px;
+    margin-left: 45%;
+    margin-top: 20%;
+    list-style: none;
+}
+
+.servicii-1 {
+    position: absolute;
+    width: 5%;
+    margin-top: 21%;
+    margin-right: 100px;
+    
+}
+.primul {
+    position: absolute;
+    margin-top: 22%;
+    padding-left: 50px;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.serviciiText span {
+    color: var(--verdecolor);
+    padding-left: 10px;
+}
+
+.serviciiText h1 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    align-self: flex-start;
+    margin-top: 12%;
+    margin-left: 20%;
+    margin-bottom: 10%;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.serviciiText h3 {
+    position: absolute;
+    z-index: 1;
+    margin-top: 16%;
+    margin-left: 25%;
+    width: 30%;
+    font-weight: 100;
+    font-size: 22px;
+    color: var(--verdecolor);
+}
+
+.serviciiText span {
+    color: #000;
+}
+
+
+
+.listaServicii p {
+    position: absolute;
+    margin-top: 27%;
+    margin-left: 50px;
+    font-size: 20px;
+    width: 40%;
+    color: var(--verdecolor);
+}
+
+.servicii-imagine {
+    width: 50%;
+}
+
+.backgroundServicii {
+    width: 20%;
+    margin-top: 33%;
+    margin-left: 5%;
+    margin-bottom: 10%;
+    background-color: #fff;
+    position: absolute;
+    z-index: 1;
+}
+
+.pozaServicii {
+    width: 54%;
+    position: relative;
+    z-index: 2;
+    margin-left: 200px;
+    margin-top: 5%;
+}
+>>>>>>> Stashed changes
