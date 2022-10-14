@@ -136,7 +136,7 @@ main span {
     z-index: 10;
     width: 29%;
     margin-left: 1000px;
-    margin-top: 300px;
+    margin-top: 320px;
     align-self: flex-end;
 }
 
@@ -367,3 +367,6 @@ main span {
     margin-left: 200px;
     margin-top: 5%;
 }
+
+
+/* Footer */
