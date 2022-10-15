@@ -119,10 +119,16 @@ main span {
 }
 
 
-.info p {
+.learn-more {
+    font-size: 15px;
     align-self: center;
     margin-top: 50px;
     margin-left: 100px;
+    border: none;
+}
+
+.learn-more:hover {
+    color: #164505;
 }
 
 .imagini {
@@ -289,7 +295,7 @@ main span {
 
 .servicii-1 {
     position: absolute;
-    width: 5%;
+    width: 6%;
     margin-top: 21%;
     margin-right: 100px;
     
@@ -297,7 +303,7 @@ main span {
 .primul {
     position: absolute;
     margin-top: 22%;
-    padding-left: 50px;
+    padding-left: 70px;
     font-size: 25px;
     font-weight: 100;
 }
@@ -340,7 +346,7 @@ main span {
 .listaServicii p {
     position: absolute;
     margin-top: 27%;
-    margin-left: 50px;
+    margin-left: 70px;
     font-size: 20px;
     width: 40%;
     color: var(--verdecolor);
@@ -368,5 +374,17 @@ main span {
     margin-top: 5%;
 }
 
+
+.mai-multe {
+  position: relative;
+  z-index: 2;
+  margin-left: 980px;
+  margin-top: 400px;
+  padding: 20px 100px;
+  background-color: var(--turcoazcolor);
+  border-radius: 20px;
+    border: solid var(--turcoazcolor) ;
+    font-size: 16px;
+}
 
 /* Footer */
