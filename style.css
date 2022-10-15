@@ -389,14 +389,17 @@ main span {
 
 /* Footer */
 
-.footer {
+footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    background-color: var(--turcoazcolor);
+    margin-top: 5%;
 }
 
-.logo-footer {
+
+.logoFooter {
     display: flex;
     flex-direction: row;
     margin: 10px;
@@ -407,20 +410,19 @@ main span {
     display: flex;
     flex-direction: row;
     margin: 5px;
+    margin-left: 2%;
+    
 }
 .titluriFooter {
     align-self: center;
-    padding-left: 10px;
 }
 
 
 .textFooter {
+    position: relative;
     align-self: center;
-    margin-left: 10px;
+    margin-right: 100px;
     color: #fff;
     font-size: 19px;
 }
 
-.telefonFooter {
-    
-}
