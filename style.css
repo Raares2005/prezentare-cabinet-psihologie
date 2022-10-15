@@ -388,3 +388,39 @@ main span {
 }
 
 /* Footer */
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.logo-footer {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.logo-footer {
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+.titluriFooter {
+    align-self: center;
+    padding-left: 10px;
+}
+
+
+.textFooter {
+    align-self: center;
+    margin-left: 10px;
+    color: #fff;
+    font-size: 19px;
+}
+
+.telefonFooter {
+    
+}
