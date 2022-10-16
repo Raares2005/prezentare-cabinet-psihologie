@@ -25,7 +25,7 @@
 
 .contactTxtUnderline {
     grid-area: 2 / 2 / 2 / 3;
-    width: 100px;
+    width: 92px;
     height: 3px;
     outline: none;
     border-radius: 5px;
