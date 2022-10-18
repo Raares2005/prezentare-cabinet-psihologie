@@ -5,6 +5,7 @@
     padding: 0;
     --verdecolor: #164505;
     --turcoazcolor: #4CCE8E;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -17,6 +18,7 @@ a {
     color: #000;
     display: flex;
 }
+
 
 li.nav-item {
 
