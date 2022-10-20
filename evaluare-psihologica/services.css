@@ -99,20 +99,20 @@ button.nav-item {
     width: 50%;
 }
 .text{
-    width: 50%;
+    width: 70%;
 } 
 
 .pozaServicii {
     width: 50%;
     position: relative;
     z-index: 2;
-    margin-left: 10%;
+    margin-left: 20%;
 }
 
 .backgroundServicii {
     width: 14%;
-    margin-top: 29%;
-    margin-left: 2%;
+    margin-top: 24%;
+    margin-left: 6%;
     margin-bottom: 10%;
     background-color: #fff;
     position: absolute;
@@ -128,6 +128,7 @@ button.nav-item {
 #certificates h2 {
     align-self: flex-start;
     margin-bottom: 10%;
+    margin-left: 22%;
     font-size: 24px;
 }
 
@@ -137,7 +138,8 @@ button.nav-item {
     color:  black;
     font-size: 1.2rem;
     margin-right: 10%;
-    margin-top: 10%;
+    margin-top: 1%;
+    text-align: justify;
 }
 
 #certificates ul li::before {
@@ -145,4 +147,39 @@ button.nav-item {
     content: "Ｏ";
     font-size: 1.2rem;
     color: #4CCE8E;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    background-color: var(--turcoazcolor);
+    margin-top: 10%;
+}
+
+
+.logoFooter {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.logo-footer {
+    width: 4%;
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    margin-left: 2%;
+    
+}
+
+.textFooter {
+    position: relative;
+    align-self: center;
+    margin-left: 20%;
+    color: #fff;
+    font-size: 19px;
 }
