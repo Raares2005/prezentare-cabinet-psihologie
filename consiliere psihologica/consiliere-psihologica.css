@@ -107,6 +107,8 @@ button.nav-item {
     position: relative;
     z-index: 2;
     margin-left: 20%;
+    margin-bottom: 25%
+
 }
 
 .backgroundServicii {
@@ -132,6 +134,11 @@ button.nav-item {
     font-size: 24px;
 }
 
+#certificates .servicii p {
+    padding-left: 1%;
+    margin-top: 1%;
+}
+
 #certificates ul li {
     align-self: flex-end;
     list-style: none;
@@ -148,6 +155,8 @@ button.nav-item {
     font-size: 1.2rem;
     color: #4CCE8E;
 }
+
+
 
 /* FOOTER */
 
