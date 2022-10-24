@@ -312,14 +312,14 @@ main span {
 .servicii-1 {
     position: absolute;
     width: 6%;
-    margin-top: 21%;
+    margin-top: 11%;
     margin-right: 100px;
     color: var(--turcoazcolor);
 }
 
 .primul {
     position: absolute;
-    margin-top: 22%;
+    margin-top: 12%;
     padding-left: 70px;
     font-size: 25px;
     font-weight: 100;
@@ -336,7 +336,7 @@ main span {
     justify-content: center;
     z-index: 1;
     align-self: flex-start;
-    margin-top: 12%;
+    margin-top: 10%;
     margin-left: 32%;
     margin-bottom: 10%;
     font-size: 40px;
@@ -346,7 +346,7 @@ main span {
 .serviciiText h3 {
     position: absolute;
     z-index: 1;
-    margin-top: 16%;
+    margin-top: 14%;
     margin-left: 36%;
     width: 50%;
     font-weight: 100;
@@ -357,7 +357,7 @@ main span {
 
 .listaServicii p {
     position: absolute;
-    margin-top: 27%;
+    margin-top: 17%;
     margin-left: 70px;
     font-size: 20px;
     width: 50%;
