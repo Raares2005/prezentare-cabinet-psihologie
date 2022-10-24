@@ -178,20 +178,30 @@ button.nav-item {
 
 /* PARAGRAPHS */
 
-.img-wrapper > .content.slide-up > p {
+.img-wrapper > .content.slide-up > a > p {
     margin-left: 2%;
-    margin-bottom: 50%;
+    margin-bottom: 5%;
 }
 
-.img-wrapper > .content.slide-down > p {
+.img-wrapper > .content.slide-down > a >  p {
     margin-left: 2%;
 }
 
+.img-wrapper > .content.content.slide-up > a > p {
+    align-self: flex-start;
+    margin-top: 1%;
+    width: 90%;
+    margin-right: 10%;
+}
 
+.img-wrapper > .content.content.slide-down > a >  p {
+    width: 90%;
+    margin-right: 10%;
+}
 
 .img-wrapper > .content > p {
-    margin-top: 30%;
-    margin-left: 5%;
+    align-self: flex-end;
+    margin-bottom: 10%;
 }
 
 /* ROWS */
