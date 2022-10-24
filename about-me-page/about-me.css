@@ -76,7 +76,7 @@ body {
 }
 
 #certificates {
-    grid-area: 7 / 1 / 12 / 5;
+    grid-area: 9 / 1 / 12 / 8;
 }
 
 #certificates h2 {
