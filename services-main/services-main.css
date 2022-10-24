@@ -147,7 +147,7 @@ button.nav-item {
 .img-wrapper > .content {
     position: absolute;
     inset: 0;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     width: 100%;
     background: rgba(255, 255, 255, .4);
     display: flex;
@@ -230,6 +230,7 @@ button.nav-item {
 .img-wrapper > img,
 .img-wrapper > .content {
     transition: 500ms ease-in-out;
+    animation-delay: 500ms;
 }
 
 
