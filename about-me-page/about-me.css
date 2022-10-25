@@ -45,10 +45,15 @@ body {
     margin: 20px 0
 }
 
+.about {
+    display: flex;
+}
+
 .buttons#buttonOffer {
     background-color: #4CCE8E;
     border-radius: 10px;
     transition: 0.2s ease-in-out;
+    padding-bottom: 2%;
 }
 
 .buttons#buttonOffer:hover {
@@ -59,6 +64,10 @@ body {
     background: none;
     text-decoration: underline;
     transition: 0.2s ease-in-out;
+    display: flex;
+    margin-top: 5%;
+    align-items: flex-end;
+    
 }
 
 .buttons#buttonContact:hover {
