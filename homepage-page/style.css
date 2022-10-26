@@ -38,6 +38,7 @@ button.nav-item {
     border-radius: 20px;
     border: solid var(--turcoazcolor);
     font-size: 14px;
+    
 }
 
 
@@ -128,7 +129,13 @@ main span {
     border-radius: 20px;
     border: solid var(--turcoazcolor) ;
     font-size: 19px;
+    cursor:pointer;
 }
+
+.contact:hover {
+    cursor: pointer;
+}
+
 
 
 .learn-more {
@@ -260,6 +267,7 @@ main span {
     border-radius: 15px;
     padding: 5px 10px;
     border-color: var(--turcoazcolor);
+    cursor: pointer;
   }
 
 
@@ -398,6 +406,7 @@ main span {
   border-radius: 20px;
   border: solid var(--turcoazcolor) ;
   font-size: 16px;
+  cursor: pointer;
 }
 
 /* Footer */

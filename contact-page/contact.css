@@ -2,6 +2,10 @@
     --txtColor: #164505;
 }
 
+body {
+    overflow: hidden;
+}
+
 .mainContentContact {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -88,4 +92,9 @@
     grid-area: 2 / 8 / 11 / 12;
     width: 100%;
     height: 450px;
+}
+
+
+footer {
+    margin-top: 10%;
 }
