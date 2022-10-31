@@ -186,9 +186,9 @@ button.nav-item {
     #containerBurger {
         display: block;
         position: relative;
-        width: 100px;
-        height: 100px;
-        background-color: aqua;
+        width: 60px;
+        height: 50px;
+        border: 4px solid var(--verdecolor);
     }
 
     #burgerLine {
@@ -197,25 +197,26 @@ button.nav-item {
         left: 50%;
         top: 50%;
         transform: translate(-50%,-50%);
-        width: 50px;
+        width: 40px;
         height: 5px;
         border-radius: 10px;
     }
 
     #burgerLine::before, #burgerLine::after {
-        /* display: block;
-        width: 50px;
+        content: '';
+        position: absolute;
+        width: 40px;
         height: 5px;
         border-radius: 10px;
-        background: var(--verdecolor); */
+        background: var(--verdecolor);
     }
 
     #burgerLine::before {
-        width: 50px;
-        height: 5px;
-        border-radius: 10px;
         transform: translateY(-10px);
-        background-color: red;
+    }
+
+    #burgerLine::after {
+        transform: translateY(10px);
     }
 
 }
