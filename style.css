@@ -20,8 +20,9 @@ a {
 li.nav-item {
 
     list-style: none;
-    margin: 20px 40px;
+    margin: 20px 20px;
     font-size: 14px;
+    margin-right: 22px;
     color: var(--verdecolor);
     font-weight: bold;
 }
