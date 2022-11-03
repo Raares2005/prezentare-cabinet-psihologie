@@ -44,6 +44,7 @@ button.nav-item {
     flex-direction: row;
     z-index: 2;
     position: relative;
+    margin-right: 30px;
 }
 
 .logo {
@@ -72,19 +73,21 @@ button.nav-item {
 
 
 .telefon-icon {
-    margin-left: 100px;
+    margin-left: 6vw;
     width: 2%;
 }
 
 .iteme {
     display: flex;
     flex-direction: row;
-    margin-right: 150px;
+    justify-content: flex-end;
+    width: 100%;
 }
 
 .navbar-nav {
     display: flex;
     flex-direction: row;
+    
 }
 
 
@@ -110,46 +113,105 @@ main span {
     z-index: 0;
     display: flex;
     flex-direction: row;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    
 }
 
 .sub {
-    flex-direction: row;
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.imagini-proba {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    align-items: flex-start;
+}
+
+.imagini-proba > .poza-v1 {
+    position: absolute;
+    z-index: 1;
+    width: 55%;
+    height: 475px;
+    justify-content: flex-end;
+    top: 100px;
+    align-self: flex-start;
+}
+
+.imagini-proba > .poza-v2 {
+    position: absolute;
+    z-index: 1;
+    width: 55%;
+    height: 475px;
+    right: 10%;
+}
+
+
+.sub > a {
+    
+    height: 40px;
+    width: 50%;
+    justify-self: center;
 }
 
 .contact {
     background-color: var(--turcoazcolor);
-    margin-left: 110px;
-    margin-top: 30%;
-    padding: 15px 50px;
+    width: 80%;
+    height: 100%;
+    padding: 1px 50px;
     border-radius: 20px;
     border: solid var(--turcoazcolor) ;
     font-size: 19px;
+<<<<<<< Updated upstream:style.css
 }
 
+=======
+    cursor:pointer;
+
+    margin: 0 auto;
+}
+
+.contact:hover {
+    cursor: pointer;
+}
+
+.learn-more > a {
+    margin: 0 auto;
+    width: 35%;
+}
+>>>>>>> Stashed changes:homepage-page/style.css
 
 .learn-more {
     font-size: 15px;
-    align-self: center;
-    margin-bottom: 11%;
-    margin-left: 100px;
+    width: 45%;
+    height: 40px;
     border: none;
+    margin: 0 auto;
+    justify-items: center;
+    background: none;
 }
 
 .learn-more:hover {
     color: #164505;
 }
 
-.imagini {
+/* .imagini {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-}
+} */
 
-.poza-v1 {
+/* .poza-v1 {
     position: relative;
     z-index: 2;
     width: 29%;
-    margin-left: 25%;
+    
     margin-top: -10%;
     
 }
@@ -161,7 +223,7 @@ main span {
     margin-left: -10%;
     margin-top: -30%;
     
-}   
+}    */
 
 
 .background {
