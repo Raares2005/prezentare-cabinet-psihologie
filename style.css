@@ -169,10 +169,6 @@ main span {
     border-radius: 20px;
     border: solid var(--turcoazcolor) ;
     font-size: 19px;
-<<<<<<< Updated upstream:style.css
-}
-
-=======
     cursor:pointer;
 
     margin: 0 auto;
@@ -186,7 +182,6 @@ main span {
     margin: 0 auto;
     width: 35%;
 }
->>>>>>> Stashed changes:homepage-page/style.css
 
 .learn-more {
     font-size: 15px;
