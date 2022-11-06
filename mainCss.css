@@ -51,7 +51,7 @@ button.nav-item {
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    z-index: 2;
+    z-index: 1000;
     position: relative;
 }
 
@@ -165,9 +165,11 @@ button.nav-item {
 
 /* Burger */
 
-#containerBurger, #containerLogoBurger {
+#containerBurger, #containerLogoBurger, #burgerListContainer {
     display: none;
 }
+
+
 
 @media screen and (max-width: 768px) {
     .container-nav {
@@ -181,6 +183,14 @@ button.nav-item {
     }
 
     .iteme {
+        display: none;
+    }
+
+    .telefon-icon {
+        display: none;
+    }
+
+    .telefon {
         display: none;
     }
 
@@ -208,7 +218,6 @@ button.nav-item {
         border: 4px solid var(--turcoazcolor);
         background-color: white;
         transition: all .5s ease-in-out ;
-        z-index: 100;
     }
 
     #burgerLine {
@@ -221,7 +230,6 @@ button.nav-item {
         height: 5px;
         border-radius: 10px;
         transition: all .5s ease-in-out ;
-        z-index: 100;
     }
 
     #burgerLine::before, #burgerLine::after {
@@ -258,12 +266,17 @@ button.nav-item {
     }
 
     #burgerListContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         position: absolute;
+        top: 0;
+        padding-top: 100px;
         right: -400px;
         width: 300px;
         height: 100vh;
         background-color: white;
-        z-index: 10000;
+        z-index: 100;
         transition: all .5s ease-in-out ;
     }
 
@@ -271,7 +284,7 @@ button.nav-item {
         right: 0;
     }
 
-    li.burger-item {
+    li.burgerItem {
         list-style: none;
         margin: 20px 30px;
         font-size: 18px;
@@ -279,12 +292,60 @@ button.nav-item {
         font-weight: bold;
     }
 
-    button.burger-item {
+    #burgerBtn-Phone {
+        display: flex;
+        justify-content: space-between;
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    #burgerContactBtn {
+        width: 45%;
+    }
+
+    button.burgerItem {
         background-color: #4CCE8E;
-        margin-left: 20px;
-        padding: 10px 40px;
+        padding: 10px 30px;
         border-radius: 15px;
         border: solid #4CCE8E ;
-        font-size: 16px;
+        font-size: 1rem;
+    }
+
+    #phoneNumber {
+        display: flex;
+        justify-content: space-between;
+        width: 45%;
+    }
+
+    #phoneNumber > img {
+        width: 20px;
+        height: auto;
+    }
+
+    #phoneNumber > a {
+        padding: 10px 0;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    #burgerLogo {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #logoIconBurger {
+        width: 25%;
+        height: auto;
+    }
+
+    #burgerLogoText {
+        width: 75%;
+    }
+
+    #burgerLogoText > h1 {
+        font-size: 1.2rem;
+    }
+    #burgerLogoText > h4 {
+        font-size: 0.9rem;
     }
 }
