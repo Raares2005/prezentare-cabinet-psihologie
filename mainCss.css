@@ -15,6 +15,7 @@
 body {
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 a {
@@ -258,9 +259,32 @@ button.nav-item {
 
     #burgerListContainer {
         position: absolute;
+        right: -400px;
         width: 300px;
         height: 100vh;
         background-color: white;
+        z-index: 10000;
+        transition: all .5s ease-in-out ;
     }
 
+    #burgerListContainer.bContainerOpen {
+        right: 0;
+    }
+
+    li.burger-item {
+        list-style: none;
+        margin: 20px 30px;
+        font-size: 18px;
+        color: #164505;
+        font-weight: bold;
+    }
+
+    button.burger-item {
+        background-color: #4CCE8E;
+        margin-left: 20px;
+        padding: 10px 40px;
+        border-radius: 15px;
+        border: solid #4CCE8E ;
+        font-size: 16px;
+    }
 }
