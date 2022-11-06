@@ -1,5 +1,7 @@
 :root {
     --txtColor: #164505;
+    --verdecolor: #164505;
+    --turcoazcolor: #4CCE8E;
 }
 
 * {
@@ -7,11 +9,91 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+}
+
+
+li.nav-item {
+
+    list-style: none;
+    margin: 20px 20px;
+    margin-right: 23px;
+    font-size: 14px;
+    color: var(--verdecolor);
+    font-weight: bold;
+}
+
+button.nav-item {
+    background-color: var(--turcoazcolor);
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding: 20px 40px;
+    border-radius: 20px;
+    border: solid var(--turcoazcolor);
+    font-size: 14px;
+}
+
+
+.container-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    z-index: 1000;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.titluri {
+    align-self: center;
+}
+
+.logo-icon {
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.telefon {
+    align-self: center;
+    margin-left: 10px;
+    color: #164505;
+    font-size: 16px;
+}
+
+
+.telefon-icon {
+    margin-left: 100px;
+    width: 2%;
+}
+
+.iteme {
+    display: flex;
+    flex-direction: row;
+    margin-right: 150px;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
 }
 
 a, a:visited{
@@ -56,12 +138,7 @@ button.nav-item {
     align-self: center; 
 }
 
-.telefon {
-    align-self: center;
-    margin-left: 10px;
-    color: #164505;
-    font-size: 16px;
-}
+
 
 .logo-icon {
     width: 10%;
@@ -86,3 +163,189 @@ button.nav-item {
     flex-direction: row;
 }
 
+/* Burger */
+
+#containerBurger, #containerLogoBurger, #burgerListContainer {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .container-nav {
+        display: flex;
+        justify-content: space-around;
+        
+    }
+
+    .logo {
+        width: 75%;
+    }
+
+    .iteme {
+        display: none;
+    }
+
+    .telefon-icon {
+        display: none;
+    }
+
+    .telefon {
+        display: none;
+    }
+
+    #backdrop {
+        display: none;
+        position: absolute;
+        width: 1000vw;
+        height: 1000vh;
+        z-index: 52;
+        background: rgba(0, 0, 0, 0.4);
+        overflow: hidden;
+    }
+
+    
+    #containerBurger {
+        display: flex;
+        
+    }
+
+    #containerLogoBurger {
+        display: flex;
+        position: relative;
+        width: 60px;
+        height: 50px;
+        border: 4px solid var(--turcoazcolor);
+        background-color: white;
+        transition: all .5s ease-in-out ;
+    }
+
+    #burgerLine {
+        background: var(--turcoazcolor);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: 40px;
+        height: 5px;
+        border-radius: 10px;
+        transition: all .5s ease-in-out ;
+    }
+
+    #burgerLine::before, #burgerLine::after {
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 5px;
+        border-radius: 10px;
+        background: var(--turcoazcolor);
+        transition: all .5s ease-in-out ;
+    }
+
+    #burgerLine::before {
+        transform: translateY(-10px);
+    }
+
+    #burgerLine::after {
+        transform: translateY(10px);
+    }
+
+    #containerLogoBurger.open {
+        border: none;
+    }
+
+    #containerLogoBurger.open #burgerLine {
+        background: transparent;
+    }
+
+    #containerLogoBurger.open #burgerLine::before {
+        transform: rotate(-45deg);
+    }
+    #containerLogoBurger.open #burgerLine::after {
+        transform: rotate(45deg);
+    }
+
+    #burgerListContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: absolute;
+        top: 0;
+        padding-top: 100px;
+        right: -400px;
+        width: 300px;
+        height: 100vh;
+        background-color: white;
+        z-index: 100;
+        transition: all .5s ease-in-out ;
+    }
+
+    #burgerListContainer.bContainerOpen {
+        right: 0;
+    }
+
+    li.burgerItem {
+        list-style: none;
+        margin: 20px 30px;
+        font-size: 18px;
+        color: #164505;
+        font-weight: bold;
+    }
+
+    #burgerBtn-Phone {
+        display: flex;
+        justify-content: space-between;
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    #burgerContactBtn {
+        width: 45%;
+    }
+
+    button.burgerItem {
+        background-color: #4CCE8E;
+        padding: 10px 30px;
+        border-radius: 15px;
+        border: solid #4CCE8E ;
+        font-size: 1rem;
+    }
+
+    #phoneNumber {
+        display: flex;
+        justify-content: space-between;
+        width: 45%;
+    }
+
+    #phoneNumber > img {
+        width: 20px;
+        height: auto;
+    }
+
+    #phoneNumber > a {
+        padding: 10px 0;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    #burgerLogo {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #logoIconBurger {
+        width: 25%;
+        height: auto;
+    }
+
+    #burgerLogoText {
+        width: 75%;
+    }
+
+    #burgerLogoText > h1 {
+        font-size: 1.2rem;
+    }
+    #burgerLogoText > h4 {
+        font-size: 0.9rem;
+    }
+}
