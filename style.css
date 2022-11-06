@@ -111,6 +111,7 @@ main span {
 
 .container-introducere {
     display: flex;
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream:style.css
     flex-direction: row;
     width: 90%;
@@ -159,6 +160,8 @@ main span {
     width: 50%;
     justify-self: center;
 =======
+=======
+>>>>>>> Stashed changes
     margin-bottom: 9%;
 }
 
@@ -173,11 +176,15 @@ main span {
 .buttonsHeader {
    display: flex;
 
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes:homepage-page/style.css
+=======
+>>>>>>> Stashed changes
 }
 
 .contact {
     background-color: var(--turcoazcolor);
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream:style.css
     width: 80%;
     height: 100%;
@@ -187,16 +194,25 @@ main span {
     margin-top: 5%;
     padding: 15px 50px;
 >>>>>>> Stashed changes:homepage-page/style.css
+=======
+    margin-left: 120px;
+    margin-top: 5%;
+    padding: 15px 50px;
+>>>>>>> Stashed changes
     border-radius: 20px;
     border: solid var(--turcoazcolor) ;
     font-size: 19px;
     cursor:pointer;
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream:style.css
 
     margin: 0 auto;
 =======
     
 >>>>>>> Stashed changes:homepage-page/style.css
+=======
+    
+>>>>>>> Stashed changes
 }
 
 .contact:hover {
@@ -210,6 +226,7 @@ main span {
 
 .learn-more {
     font-size: 15px;
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream:style.css
     width: 45%;
     height: 40px;
@@ -221,6 +238,11 @@ main span {
     margin-left: 10%;
     border: none;
 >>>>>>> Stashed changes:homepage-page/style.css
+=======
+    margin-top: 10px;
+    margin-left: 10%;
+    border: none;
+>>>>>>> Stashed changes
     background: none;
 }
 
@@ -234,6 +256,7 @@ main span {
     align-items: flex-start;
 } */
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream:style.css
 /* .poza-v1 {
     position: relative;
@@ -242,12 +265,17 @@ main span {
     
     margin-top: -10%;
 =======
+=======
+>>>>>>> Stashed changes
 .poza-v1 {
     position: absolute;
     z-index: 1;
     width: 20%;
     margin-left: 20%;
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes:homepage-page/style.css
+=======
+>>>>>>> Stashed changes
     
 }
 
@@ -363,11 +391,16 @@ main span {
     border-radius: 15px;
     padding: 5px 10px;
     border-color: var(--turcoazcolor);
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream:style.css
 =======
     cursor: pointer;
     margin-bottom: 30px;
 >>>>>>> Stashed changes:homepage-page/style.css
+=======
+    cursor: pointer;
+    margin-bottom: 30px;
+>>>>>>> Stashed changes
   }
 
 
@@ -387,6 +420,7 @@ main span {
 
 .img-titlu {
     display: flex;
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream:style.css
     justify-content: center;
 }
@@ -475,6 +509,9 @@ main span {
 =======
     fle
 >>>>>>> Stashed changes:homepage-page/style.css
+=======
+    flex-direction: row;
+>>>>>>> Stashed changes
 }
 
 .backgroundServicii {
@@ -493,13 +530,19 @@ main span {
     margin-left: 10%;
     margin-top: 5%;
     align-self: center;
+<<<<<<< Updated upstream
     
     
+=======
+>>>>>>> Stashed changes
 }
 
 
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 .mai-multe {
   position: relative;
   z-index: 2;
