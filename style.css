@@ -109,10 +109,9 @@ main span {
     color: var(--turcoazcolor);
 }
 
-
-.info {
-    z-index: 0;
+.container-introducere {
     display: flex;
+<<<<<<< Updated upstream:style.css
     flex-direction: row;
     width: 90%;
     margin: 0 auto;
@@ -159,19 +158,45 @@ main span {
     height: 40px;
     width: 50%;
     justify-self: center;
+=======
+    margin-bottom: 9%;
+}
+
+.textIntroducere {
+    width: 60%;
+}
+
+.img-intro {
+    width: 40%;
+}
+
+.buttonsHeader {
+   display: flex;
+
+>>>>>>> Stashed changes:homepage-page/style.css
 }
 
 .contact {
     background-color: var(--turcoazcolor);
+<<<<<<< Updated upstream:style.css
     width: 80%;
     height: 100%;
     padding: 1px 50px;
+=======
+    margin-left: 120px;
+    margin-top: 5%;
+    padding: 15px 50px;
+>>>>>>> Stashed changes:homepage-page/style.css
     border-radius: 20px;
     border: solid var(--turcoazcolor) ;
     font-size: 19px;
     cursor:pointer;
+<<<<<<< Updated upstream:style.css
 
     margin: 0 auto;
+=======
+    
+>>>>>>> Stashed changes:homepage-page/style.css
 }
 
 .contact:hover {
@@ -185,11 +210,17 @@ main span {
 
 .learn-more {
     font-size: 15px;
+<<<<<<< Updated upstream:style.css
     width: 45%;
     height: 40px;
     border: none;
     margin: 0 auto;
     justify-items: center;
+=======
+    margin-top: 10px;
+    margin-left: 10%;
+    border: none;
+>>>>>>> Stashed changes:homepage-page/style.css
     background: none;
 }
 
@@ -203,21 +234,28 @@ main span {
     align-items: flex-start;
 } */
 
+<<<<<<< Updated upstream:style.css
 /* .poza-v1 {
     position: relative;
     z-index: 2;
     width: 29%;
     
     margin-top: -10%;
+=======
+.poza-v1 {
+    position: absolute;
+    z-index: 1;
+    width: 20%;
+    margin-left: 20%;
+>>>>>>> Stashed changes:homepage-page/style.css
     
 }
 
 .poze-v2 {
-    position: relative;
-    z-index: 1;
+    position: absolute;
+    z-index: 2;
     width: 25%;
-    margin-left: -10%;
-    margin-top: -30%;
+    margin-top: 3%;
     
 }    */
 
@@ -232,17 +270,20 @@ main span {
 
 .topics {
     display: flex;
-    align-items: flex-start;
 }
 
 .topics h2 {
     position: relative;
     z-index: 2;
-    margin-top: 50px;
-    font-size: 49px;
-    margin-left: 200px;
+    margin-top: 10px;
+    align-self: center;
+    text-align: center;
     color: #fff;
-    font-weight: 100;
+    font-size: 35px;
+    font-weight: 1;
+    width: 100%;
+    
+    
 }
 
 .topics span {
@@ -250,6 +291,14 @@ main span {
 }
 
 /* CAROUSEL */
+
+
+.carouselImage {
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+}
+
 
 
 .slides-container h1 {
@@ -266,7 +315,7 @@ main span {
 .slides-container p {
     position: relative;
     z-index: 2;
-    width: 250%;
+    width: 260%;
     color: var(--verdecolor);
     font-size: 23px;
     text-align: justify;
@@ -274,11 +323,10 @@ main span {
 
 .slides-container{
     position: relative;
-    z-index: 1;
+    z-index: 2;
     display: flex;
     flex-direction: row;
-    width: 1879px;
-    height: 100%;
+    width: 100%;
     overflow: hidden;
     margin-top: 50px;
     text-align: center;
@@ -295,16 +343,17 @@ main span {
 }
 
 
-.buttons {
+.buttons  {
     display: flex;
     align-items: flex-end;
     position: relative;
-    z-index: 1;
-    margin-top: 50px;
+    z-index: 2;
+    margin-top: 10px;
     justify-content: center;
-    
+}
 
-  }
+
+
   
   .buttons
   .prev, 
@@ -314,6 +363,11 @@ main span {
     border-radius: 15px;
     padding: 5px 10px;
     border-color: var(--turcoazcolor);
+<<<<<<< Updated upstream:style.css
+=======
+    cursor: pointer;
+    margin-bottom: 30px;
+>>>>>>> Stashed changes:homepage-page/style.css
   }
 
 
@@ -331,12 +385,9 @@ main span {
 
 /* Servicii Home Page */
 
-.servicii {
-    background-color: #fff;
-}
-
-.serviciiText {
+.img-titlu {
     display: flex;
+<<<<<<< Updated upstream:style.css
     justify-content: center;
 }
 
@@ -421,37 +472,49 @@ main span {
 
 .servicii-imagine {
     width: 50%;
+=======
+    fle
+>>>>>>> Stashed changes:homepage-page/style.css
 }
 
 .backgroundServicii {
     width: 20%;
-    margin-top: 33%;
-    margin-left: 5%;
-    margin-bottom: 10%;
+    margin-top: 30%;
+    margin-left: 6%;
     background-color: #fff;
     position: absolute;
     z-index: 1;
 }
 
 .pozaServicii {
-    width: 54%;
+    width: 24%;
     position: relative;
     z-index: 2;
-    margin-left: 200px;
+    margin-left: 10%;
     margin-top: 5%;
+    align-self: center;
+    
+    
 }
+
+
 
 
 .mai-multe {
   position: relative;
   z-index: 2;
-  margin-left: 980px;
-  margin-top: 30%;
-  padding: 20px 100px;
+  align-self: center;
+  padding: 15px 10px;
   background-color: var(--turcoazcolor);
   border-radius: 20px;
   border: solid var(--turcoazcolor) ;
   font-size: 16px;
+}
+
+
+
+.buton {
+    height: 60px;
 }
 
 /* Footer */
@@ -462,7 +525,8 @@ footer {
     align-items: center;
     flex-direction: row;
     background-color: var(--turcoazcolor);
-    margin-top: 4%;
+    position: relative;
+    bottom: 0;
 }
 
 
@@ -477,7 +541,6 @@ footer {
     display: flex;
     flex-direction: row;
     margin: 5px;
-    margin-left: 2%;
     
 }
 
