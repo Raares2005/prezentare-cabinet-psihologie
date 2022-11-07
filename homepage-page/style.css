@@ -192,92 +192,20 @@ main span {
 
 /* Servicii Home Page */
 
+.servicii {
+    display: flex;
+    flex-direction: column;
+}
+
 .img-titlu {
     display: flex;
-    justify-content: center;
-}
-
-.listaServicii {
-    display: flex;
-    position: absolute;
     flex-direction: column;
-    text-align: center;
-    z-index: 1;
+    justify-content: flex-start;
+    
 }
 
-
-.varianta {
-    display: flex;
-    margin: 50px;
-    position: relative;
-    width: 950px;
-    margin-left: 45%;
-    margin-top: 30%;
-    list-style: none;
-}
-
-#ultimul {
-    margin-top: 20%;
-}
-
-.servicii-1 {
-    position: absolute;
-    width: 6%;
-    margin-top: 21%;
-    margin-right: 100px;
-    color: var(--turcoazcolor);
-}
-
-.primul {
-    position: absolute;
-    margin-top: 22%;
-    padding-left: 70px;
-    font-size: 25px;
-    font-weight: 100;
-}
-
-.serviciiText span {
-    color: var(--verdecolor);
-    padding-left: 10px;
-}
-
-.serviciiText h1 {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    z-index: 1;
-    align-self: flex-start;
-    margin-top: 12%;
-    margin-left: 32%;
-    margin-bottom: 10%;
-    font-size: 40px;
-    font-weight: 100;
-}
-
-.serviciiText h3 {
-    position: absolute;
-    z-index: 1;
-    margin-top: 16%;
-    margin-left: 36%;
-    width: 50%;
-    font-weight: 100;
-    font-size: 22px;
-    color: var(--verdecolor);
-}
-
-
-.listaServicii p {
-    position: absolute;
-    margin-top: 27%;
-    margin-left: 70px;
-    font-size: 20px;
-    width: 50%;
-    color: var(--verdecolor);
-    text-align: justify;
-}
-
-.servicii-imagine {
-    width: 50%;
+.imaginiTitlu {
+    width: 70%;
 }
 
 .backgroundServicii {
@@ -291,28 +219,101 @@ main span {
 
 .pozaServicii {
     width: 24%;
-    position: relative;
+    position: absolute;
     z-index: 2;
     margin-left: 10%;
     margin-top: 5%;
     align-self: center;
 }
 
+.TitluDescriere {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 10%;
+    margin-left: 10px;
+    width: 80%;
+
+}
+
+.img-titlu span {
+    color: var(--verdecolor);
+    
+}
+
+.TitluDescriere h1 {
+    position: absolute;
+    z-index: 2;
+    align-self: flex-start;
+    justify-content: flex-start;
+    width: 40%;
+    font-weight: 100;
+    font-size: 52px;
+}
+
+.TitluDescriere h3 {
+    position: relative;
+    justify-content: flex-start;
+    z-index: 2;
+    margin-top: 8%;
+    align-items: flex-end;
+    width: 50%;
+    font-weight: 100;
+    font-size: 22px;
+    color: var(--verdecolor);
+}
+
+
+
+
+.listaServicii {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    z-index: 1;
+}
+
+.exemple {
+    
+}
+
+.listaServicii h1 {
+    font-size: 30px;
+
+}
+
+
+.listaServicii p {
+    position: relative;
+    margin-top: 27%;
+    margin-left: 70px;
+    font-size: 20px;
+    width: 50%;
+    color: var(--verdecolor);
+    text-align: justify;
+}
+
+
 .mai-multe {
-  position: relative;
-  z-index: 2;
-  align-self: center;
-  padding: 15px 10px;
-  background-color: var(--turcoazcolor);
-  border-radius: 20px;
-  border: solid var(--turcoazcolor) ;
+    position: absolute;
+    z-index: 2;
+    
+    padding: 15px 10px;
+    background-color: var(--turcoazcolor);
+    border-radius: 20px;
+    border: solid var(--turcoazcolor) ;
   font-size: 16px;
 }
 
 
-/* Footer */
+
+
 
 footer {
+
+/* Footer */
+
     display: flex;
     justify-content: flex-start;
     align-items: center;
