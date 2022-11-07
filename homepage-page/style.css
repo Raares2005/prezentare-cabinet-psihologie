@@ -192,11 +192,7 @@ main span {
 
 /* Servicii Home Page */
 
-.servicii {
-    background-color: #fff;
-}
-
-.serviciiText {
+.img-titlu {
     display: flex;
     justify-content: center;
 }
@@ -227,14 +223,14 @@ main span {
 .servicii-1 {
     position: absolute;
     width: 6%;
-    margin-top: 11%;
+    margin-top: 21%;
     margin-right: 100px;
     color: var(--turcoazcolor);
 }
 
 .primul {
     position: absolute;
-    margin-top: 12%;
+    margin-top: 22%;
     padding-left: 70px;
     font-size: 25px;
     font-weight: 100;
@@ -251,7 +247,7 @@ main span {
     justify-content: center;
     z-index: 1;
     align-self: flex-start;
-    margin-top: 10%;
+    margin-top: 12%;
     margin-left: 32%;
     margin-bottom: 10%;
     font-size: 40px;
@@ -261,7 +257,7 @@ main span {
 .serviciiText h3 {
     position: absolute;
     z-index: 1;
-    margin-top: 14%;
+    margin-top: 16%;
     margin-left: 36%;
     width: 50%;
     font-weight: 100;
@@ -272,7 +268,7 @@ main span {
 
 .listaServicii p {
     position: absolute;
-    margin-top: 17%;
+    margin-top: 27%;
     margin-left: 70px;
     font-size: 20px;
     width: 50%;
@@ -282,38 +278,31 @@ main span {
 
 .servicii-imagine {
     width: 50%;
+    flex-direction: row;
 }
 
 .backgroundServicii {
     width: 20%;
-    margin-top: 33%;
-    margin-left: 5%;
-    margin-bottom: 10%;
+    margin-top: 30%;
+    margin-left: 6%;
     background-color: #fff;
     position: absolute;
     z-index: 1;
 }
 
 .pozaServicii {
-    width: 54%;
+    width: 24%;
     position: relative;
     z-index: 2;
-    margin-left: 200px;
+    margin-left: 10%;
     margin-top: 5%;
+    align-self: center;
 }
 
 
-.mai-multe {
-  position: relative;
-  z-index: 2;
-  margin-left: 980px;
-  margin-top: 30%;
-  padding: 20px 100px;
-  background-color: var(--turcoazcolor);
-  border-radius: 20px;
-  border: solid var(--turcoazcolor) ;
-  font-size: 16px;
-  cursor: pointer;
+
+.buton {
+    height: 60px;
 }
 
 /* Footer */
