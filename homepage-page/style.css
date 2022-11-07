@@ -278,7 +278,6 @@ main span {
 
 .servicii-imagine {
     width: 50%;
-    flex-direction: row;
 }
 
 .backgroundServicii {
@@ -299,11 +298,17 @@ main span {
     align-self: center;
 }
 
-
-
-.buton {
-    height: 60px;
+.mai-multe {
+  position: relative;
+  z-index: 2;
+  align-self: center;
+  padding: 15px 10px;
+  background-color: var(--turcoazcolor);
+  border-radius: 20px;
+  border: solid var(--turcoazcolor) ;
+  font-size: 16px;
 }
+
 
 /* Footer */
 
