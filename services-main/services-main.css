@@ -264,9 +264,9 @@ button.nav-item {
 
 
 .background {
-    padding-top: 1%;
+   position: absolute;
     width: 100%;
-    margin-top: 1%;
+    bottom: 90px;
     opacity: 80%;
 
 }
@@ -276,18 +276,19 @@ button.nav-item {
 
 
 
-
-
 /* FOOTER */
-
 footer {
+    position: absolute;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
     background-color: var(--turcoazcolor);
-    
+    bottom: 1px;
+    width: 100%;
+
 }
+
 
 
 .logoFooter {

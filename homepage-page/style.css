@@ -1,92 +1,109 @@
 
+/* INTRO OF THE PAGE */
 
-.text {
-    font-size: 80px;
+
+.intro {
+    display: flex;
+}
+
+.descriere {
+    width: 100%;
+}
+
+.info {
+    display: flex;
+    width: 100%;
+    
+}
+
+
+.descriere h1 {
+    width: 100%;
+    font-weight: 100;
+    font-size: 60px;
     margin-top: 50px;
-    margin-left: 120px;
+    margin-left: 20%;
 }
 
 main h5 {
+    width: 70%;
     font-size: 20px;
     font-weight: 100;
     margin-top: 50px;
-    margin-left: 120px;
+    margin-left: 20%;
 }
 
 main span {
     color: var(--turcoazcolor);
 }
 
-
-.info {
-    z-index: 0;
+.sub {
     display: flex;
     flex-direction: row;
-}
+    align-items: flex-end;
+    margin-top: 100px;
+    width: 70%;
+    margin-left: 20%;
 
-.sub {
-    flex-direction: row;
 }
 
 .contact {
     background-color: var(--turcoazcolor);
-    margin-left: 110px;
-    margin-top: 30%;
-    padding: 15px 50px;
+    margin-top: 4%;
+    position: relative;
+    padding: 10px 50px;
     border-radius: 20px;
     border: solid var(--turcoazcolor) ;
-    font-size: 19px;
+    font-size: 20px;
     cursor:pointer;
-}
-
-.contact:hover {
-    cursor: pointer;
+    width: 100%;
 }
 
 
 
 .learn-more {
     font-size: 15px;
-    align-self: center;
-    margin-bottom: 11%;
-    margin-left: 100px;
+    
     border: none;
+    position: absolute;
+    margin-bottom: 1%;
+    margin-left: 300px;
+    
+
 }
 
 .learn-more:hover {
     color: #164505;
 }
 
-.imagini {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
 
 .poza-v1 {
-    position: relative;
+    position: absolute;
     z-index: 2;
-    width: 29%;
-    margin-left: 25%;
-    margin-top: -10%;
+    width: 25%;
+    margin-top: 22%;
     
 }
 
 .poze-v2 {
-    position: relative;
+    position: absolute;
     z-index: 1;
     width: 25%;
-    margin-left: -10%;
-    margin-top: -30%;
+    margin-left: 15%;
+   
+    
     
 }   
+
+
+/* MIDDLE OF THE PAGE */
 
 
 .background {
     position: absolute;
     z-index: 1;
     background-size: 30px 30px;
-    margin-top: 400px;
+    margin-top: 300px;
 
 }
 
@@ -98,7 +115,7 @@ main span {
 .topics h2 {
     position: relative;
     z-index: 2;
-    margin-top: 50px;
+    margin-top: 500px;
     font-size: 49px;
     margin-left: 200px;
     color: #fff;
