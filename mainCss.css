@@ -25,14 +25,16 @@ a {
 }
 
 
-li.nav-item {
 
+
+li.nav-item {
     list-style: none;
-    margin: 20px 20px;
-    margin-right: 23px;
+    margin: 20px 3px;
+    margin-right: 100px;
     font-size: 14px;
     color: var(--verdecolor);
     font-weight: bold;
+    width: 100px;
 }
 
 button.nav-item {
@@ -45,13 +47,12 @@ button.nav-item {
     font-size: 14px;
 }
 
-
 .container-nav {
+    width: 100%;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    z-index: 1000;
+    z-index: 2;
     position: relative;
 }
 
@@ -59,108 +60,54 @@ button.nav-item {
     display: flex;
     flex-direction: row;
     margin: 10px;
+    width: 100%;
 }
 
-.titluri {
-    align-self: center;
+.titluri h1 {
+    display: flex;
+    font-size: 20px;
+    align-self: flex-end;
+    margin-top: 20px;
 }
 
 .logo-icon {
-    width: 10%;
+    width: 100px;
     display: flex;
     flex-direction: row;
-    margin: 10px;
 }
+
 
 .telefon {
     align-self: center;
-    margin-left: 10px;
+    margin-left: 0px;
     color: #164505;
     font-size: 16px;
+    flex-direction: row;
+    display: flex;
 }
 
-
 .telefon-icon {
-    margin-left: 100px;
-    width: 2%;
+    margin-left: 15px;
+    width: 25px;
 }
 
 .iteme {
     display: flex;
     flex-direction: row;
-    margin-right: 150px;
+    width: 50%;
+    margin-right: 5%;
 }
 
 .navbar-nav {
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
-a, a:visited{
-    color: var(--txtColor);
-}
+
 
 a:hover{
     color: #2f8b0d;
-}
-
-li.nav-item {
-    list-style: none;
-    margin: 20px 30px;
-    font-size: 18px;
-    color: #164505;
-    font-weight: bold;
-}
-
-button.nav-item {
-    background-color: #4CCE8E;
-    margin-left: 20px;
-    padding: 20px 50px;
-    border-radius: 20px;
-    border: solid #4CCE8E ;
-    font-size: 16px;
-}
-
-.container-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-}
-
-.logo {
-    display: flex;
-    flex-direction: row;
-    margin: 10px;
-}
-
-.titluri {
-    align-self: center; 
-}
-
-
-
-.logo-icon {
-    width: 10%;
-    display: flex;
-    flex-direction: row;
-    margin: 10px;
-}
-
-.telefon-icon {
-    margin-left: 100px;
-    width: 2%;
-}
-
-.iteme {
-    display: flex;
-    flex-direction: row;
-    margin-right: 150px;
-}
-
-.navbar-nav {
-    display: flex;
-    flex-direction: row;
 }
 
 /* Burger */

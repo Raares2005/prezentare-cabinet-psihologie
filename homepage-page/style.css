@@ -25,12 +25,13 @@
     margin-left: 20%;
 }
 
-main h5 {
+.descriere h5 {
     width: 70%;
-    font-size: 20px;
+    font-size: 1.5rem;
     font-weight: 100;
     margin-top: 50px;
     margin-left: 20%;
+    text-align: justify;
 }
 
 main span {
@@ -63,7 +64,7 @@ main span {
 
 .learn-more {
     font-size: 15px;
-    
+    background: #fff;
     border: none;
     position: absolute;
     margin-bottom: 1%;
@@ -240,7 +241,7 @@ main span {
     z-index: 2;
     margin-left: 10%;
     margin-top: 5%;
-    align-self: center;
+    
 }
 
 .TitluDescriere {
