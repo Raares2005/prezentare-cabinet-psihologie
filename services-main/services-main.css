@@ -13,7 +13,7 @@ body {
     flex-direction: column;
 }
 
-a {
+a:hover {
     text-decoration: none;
     color: #000;
     display: flex;

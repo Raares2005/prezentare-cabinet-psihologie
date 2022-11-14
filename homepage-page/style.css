@@ -1,6 +1,10 @@
 
 /* INTRO OF THE PAGE */
 
+button:hover {
+    color: #164505;
+}
+
 
 .intro {
     display: flex;
@@ -26,12 +30,12 @@
 }
 
 .descriere h5 {
-    width: 70%;
+    width: 68%;
     font-size: 1.5rem;
     font-weight: 100;
     margin-top: 50px;
     margin-left: 20%;
-    text-align: justify;
+    text-align: start;
 }
 
 main span {
@@ -73,7 +77,7 @@ main span {
 
 }
 
-.learn-more:hover {
+.learn-more a:hover {
     color: #164505;
 }
 
