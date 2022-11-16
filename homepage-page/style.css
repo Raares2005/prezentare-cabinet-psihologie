@@ -104,27 +104,34 @@ main span {
 /* MIDDLE OF THE PAGE */
 
 
+.mid {
+    margin-top: 16%;
+}
+
 .background {
     position: absolute;
     z-index: 1;
-    background-size: 30px 30px;
-    margin-top: 300px;
-
+    width: 100%;
+    
 }
 
+
+
 .topics {
+    width: 100%;
     display: flex;
-    align-items: flex-start;
+    flex-direction: row;
 }
 
 .topics h2 {
     position: relative;
     z-index: 2;
-    margin-top: 500px;
-    font-size: 49px;
-    margin-left: 200px;
+    margin-top: 5%;
+    font-size: 2rem;
+    margin-left: 10%;
     color: #fff;
     font-weight: 100;
+    width: 120%;
 }
 
 .topics span {
@@ -133,14 +140,36 @@ main span {
 
 /* CAROUSEL */
 
+.carousel {
+    display: flex;
+    width: 100%;
+}
 
+.slides-container{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    
+    margin-top: 10px;
+    text-align: center;
+}
+
+.slides-container li {
+    list-style: none;
+    width: 10%;
+    position: relative;
+    text-align: center;
+    margin-right: 10.5%;
+    margin-left: 10%;
+}
 .slides-container h1 {
     position: relative;
     z-index: 2;
     width: 250%;
     color: var(--verdecolor);
     text-align: center;
-    font-size: 28px;
+    font-size: 1.4rem;
     margin-bottom: 10%;
     margin-right: 40%;
 }
@@ -150,42 +179,18 @@ main span {
     z-index: 2;
     width: 250%;
     color: var(--verdecolor);
-    font-size: 23px;
-    text-align: justify;
-}
-
-.slides-container{
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-direction: row;
-    width: 1879px;
-    height: 100%;
-    overflow: hidden;
-    margin-top: 50px;
+    font-size: 1.2rem;
     text-align: center;
-}
-
-
-.slides-container li {
-    list-style: none;
-    width: 140px;
-    position: relative;
-    text-align: center;
-    margin-right: 10.5%;
-    margin-left: 12%;
 }
 
 
 .buttons {
     display: flex;
     align-items: flex-end;
-    position: relative;
+    position: absolute;
     z-index: 1;
-    margin-top: 50px;
-    justify-content: center;
-    
-
+    margin-top: 409px;
+    margin-left: 45%;
   }
   
   .buttons
