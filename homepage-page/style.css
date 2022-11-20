@@ -222,6 +222,7 @@ main span {
 .servicii {
     display: flex;
     flex-direction: column;
+    margin-top: 10%;
 }
 
 .img-titlu {
@@ -356,10 +357,10 @@ main span {
     margin-left: 2%;
 }
 
-footer {
 
 /* Footer */
 
+footer {
     display: flex;
     justify-content: flex-start;
     align-items: center;

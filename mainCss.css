@@ -78,6 +78,14 @@ nav {
     width: 50%;
 }
 
+button.nav-item {
+    cursor: pointer;
+}
+
+a button.nav-item {
+   margin: 0;
+}
+
 .navbar-nav {
     display: flex;
     flex-direction: row;
@@ -298,3 +306,48 @@ button.nav-item {
         font-size: 0.9rem;
     }
 }
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    background-color: var(--turcoazcolor);
+    margin-top: 4%;
+
+}
+
+
+.logoFooter {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    width: 100%;
+}
+
+.titluriFooter {
+    width: 100%;
+}
+
+.logo-footer {
+    width: 4%;
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    margin-left: 2%;
+    
+}
+
+.textFooter {
+    display: flex;
+    position: relative;
+    align-self: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 19px;
+    width: 200%;
+}
+
