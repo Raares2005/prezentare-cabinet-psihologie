@@ -110,6 +110,22 @@ li.nav-item {
     font-size: 18px;
     color: #164505;
     font-weight: bold;
+    text-align: center;
+}
+
+#dropdown {
+    height: 300px;
+    width: 150px;
+    background-color: aqua;
+    
+}
+
+#dropdown > ul {
+    list-style: none;
+}
+
+#dropdown > ul > li {
+    text-align: center;
 }
 
 button.nav-item {
@@ -175,7 +191,6 @@ button.nav-item {
     .container-nav {
         display: flex;
         justify-content: space-around;
-        
     }
 
     .logo {
