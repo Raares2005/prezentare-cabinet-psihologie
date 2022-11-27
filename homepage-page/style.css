@@ -1,4 +1,3 @@
-
 /* INTRO OF THE PAGE */
 
 button:hover {
@@ -17,7 +16,7 @@ button:hover {
 .info {
     display: flex;
     width: 100%;
-    
+
 }
 
 
@@ -58,9 +57,9 @@ main span {
     position: relative;
     padding: 10px 50px;
     border-radius: 20px;
-    border: solid var(--turcoazcolor) ;
+    border: solid var(--turcoazcolor);
     font-size: 20px;
-    cursor:pointer;
+    cursor: pointer;
     width: 100%;
 }
 
@@ -73,7 +72,7 @@ main span {
     position: absolute;
     margin-bottom: 1%;
     margin-left: 300px;
-    
+
 
 }
 
@@ -87,7 +86,7 @@ main span {
     z-index: 2;
     width: 25%;
     margin-top: 22%;
-    
+
 }
 
 .poze-v2 {
@@ -95,10 +94,10 @@ main span {
     z-index: 1;
     width: 25%;
     margin-left: 15%;
-   
-    
-    
-}   
+
+
+
+}
 
 
 /* MIDDLE OF THE PAGE */
@@ -110,11 +109,8 @@ main span {
 
 .background {
     position: absolute;
-    z-index: 1;
     width: 100%;
-    
 }
-
 
 
 .topics {
@@ -134,55 +130,86 @@ main span {
     width: 120%;
 }
 
-.topics span {
+icii .topics span {
     color: var(--verdecolor);
 }
 
 /* CAROUSEL */
 
-.carousel {
-    display: flex;
+#prev,
+#next {
+    cursor: pointer;
+    z-index: 100;
+    background: #333;
+    top: 300px;
+    height: 50px;
+    width: 50px;
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+}
+
+#slides-carousel {
     width: 100%;
-}
-
-.slides-container{
-    position: relative;
-    z-index: 1;
+    height: 100%;
     display: flex;
-    flex-direction: row;
+    z-index: 0;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 30%;
     
-    margin-top: 10px;
-    text-align: center;
 }
 
-.slides-container li {
-    list-style: none;
-    width: 10%;
-    position: relative;
-    text-align: center;
-    margin-right: 10.5%;
-    margin-left: 10%;
-}
-.slides-container h1 {
-    position: relative;
-    z-index: 2;
-    width: 250%;
-    color: var(--verdecolor);
-    text-align: center;
-    font-size: 1.4rem;
+#slides-carousel >  .slide {
+    position: absolute;
+    width: 90%;
+    height: 100%;
     margin-bottom: 10%;
-    margin-right: 40%;
+    z-index: 1;
+
 }
 
-.slides-container p {
+#slides-carusel > .slide > .content-slide {
     position: relative;
-    z-index: 2;
-    width: 250%;
-    color: var(--verdecolor);
-    font-size: 1.2rem;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    
+    margin-top: 2%;
+    width: 100%;
+    height: 100px;
+
 }
 
+#slides-carousel > .slide> .content-slide >p {
+    position: absolute;
+    font-size: 20px;
+    align-self: flex-end;
+    margin-top: 3%;
+    margin-left: 10%;
+    
+}
+
+#slides-carousel > .slide >.content-slide > button {
+    position: absolute;
+    padding: 10px 25px;
+    align-self: flex-end;
+    color: #fff;
+    background: #000;
+    border: 3px solid #000;
+    font-size: 1em;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 12%;
+    margin-left: 10%;
+    
+}
+
+.slide>.content-slide>img {
+    width: 30%
+}
 
 .buttons {
     display: flex;
@@ -191,29 +218,29 @@ main span {
     z-index: 1;
     margin-top: 409px;
     margin-left: 45%;
-  }
-  
-  .buttons
-  .prev, 
-  .next {
+}
+
+.buttons .prev,
+.next {
     font-size: 40px;
     background-color: var(--turcoazcolor);
     border-radius: 15px;
     padding: 5px 10px;
     border-color: var(--turcoazcolor);
     cursor: pointer;
-  }
+}
 
 
-  .buttons .next {
+.buttons .next {
     margin-left: 100px;
-    
-  }
 
-  .bi.bi-arrow-left-short,
-  .bi.bi-arrow-right-short {
+}
+
+.bi.bi-arrow-left-short,
+.bi.bi-arrow-right-short {
     color: #164505;
-  }
+}
+
 /* END OF THE CAROUSEL */
 
 
@@ -229,7 +256,7 @@ main span {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    
+
 }
 
 .imaginiTitlu {
@@ -251,7 +278,7 @@ main span {
     z-index: 2;
     margin-left: 10%;
     margin-top: 5%;
-    
+
 }
 
 .TitluDescriere {
@@ -266,7 +293,7 @@ main span {
 
 .img-titlu span {
     color: var(--verdecolor);
-    
+
 }
 
 .TitluDescriere h1 {
@@ -306,7 +333,7 @@ main span {
     width: 100%;
     margin-top: 5%;
     margin-left: 70px;
-    
+
 }
 
 .exemple {
@@ -328,7 +355,7 @@ main span {
 
 .listaServicii h1 {
     font-size: 30px;
-   
+
 
 }
 
@@ -347,7 +374,7 @@ main span {
     padding: 25px 50px;
     background-color: var(--turcoazcolor);
     border-radius: 20px;
-    border: solid var(--turcoazcolor) ;
+    border: solid var(--turcoazcolor);
     font-size: 20px;
     color: #000;
     cursor: pointer;
@@ -382,7 +409,7 @@ footer {
     flex-direction: row;
     margin: 5px;
     margin-left: 2%;
-    
+
 }
 
 .textFooter {
@@ -392,4 +419,3 @@ footer {
     color: #fff;
     font-size: 19px;
 }
-
