@@ -114,18 +114,37 @@ li.nav-item {
 }
 
 #dropdown {
+    position: absolute;
+    top: 95px;
+    left: 1100px;
     height: 300px;
-    width: 150px;
-    background-color: aqua;
-    
+    width: 300px;
+    /* background-color: rgb(243, 244, 244); */
+    background-color: #4CCE8E;
+    border-radius: 20px;
 }
 
 #dropdown > ul {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px;
+
 }
 
 #dropdown > ul > li {
     text-align: center;
+    padding: 5px 0;
+    
+}
+
+#dropdown > ul > li > a, #dropdown > ul > li > a:visited {
+    color: black;
+    text-decoration: underline;
+}
+
+#dropdown > ul > li > a:hover{
+    color: #2f8b0d;
 }
 
 button.nav-item {
