@@ -3,8 +3,6 @@ const bLogo = document.getElementById("containerLogoBurger");
 const bContainer = document.getElementById("burgerListContainer");
 const backdrop = document.getElementById("backdrop");
 const btnServicii = document.getElementById("btnServicii");
-const dropdown = document.getElementById("dropdown");
-const dropDownLinks = document.getElementsByClassName("dropDownLinks");
 
 let open = false;
 if (btn && backdrop) {
@@ -29,12 +27,25 @@ if (btn && backdrop) {
   });
 }
 
-if(btnServicii) {
-  dropdown.addEventListener("mouseover", function() {
-    for(let i = 0; i < dropDownLinks.length; i++) {
-      link = dropDownLinks[i].addEventListener("mouseleave", function(){
-        link.classList.remove("show");
-      });
-    }
+if (btnServicii) {
+  let hoverTimeout;
+  const dropdown = document.getElementById("dropdown");
+  btnServicii.addEventListener("mouseover", function() {
+    dropdown.style.display = "block";
+    clearTimeout(hoverTimeout);
   });
+  btnServicii.addEventListener("mouseleave", function(){
+    hoverTimeout = setTimeout(() => {
+      dropdown.style.display = "none";
+    }, 1000);
+  });
+  dropdown.addEventListener("mouseover", function() {
+    clearTimeout(hoverTimeout);
+  });
+  dropdown.addEventListener("mouseleave", function () {
+    dropdown.style.display = "none";
+  });
+  //  function invisible() {
+  //   dropdown.style.display = "none";
+  //  }
 }

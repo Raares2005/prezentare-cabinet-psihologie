@@ -113,38 +113,32 @@ li.nav-item {
     text-align: center;
 }
 
-#dropdown {
+.dropdown {
     position: absolute;
     display: none;
-    height: 250px;
+    height: 240px;
     width: 265px;
+    justify-content: center;
     margin-top: 30px;
-    /* height: 300px; */
-    /* width: 300px; */
-    /* background-color: rgb(243, 244, 244); */
     background-color: #4CCE8E;
     border-radius: 20px;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
 }
 
-
-#dropdown a {
+.dropdown > a {
     display: block;
     font-size: 1.12rem;
     text-align: center;
-    margin: 10px 0;
+    margin: 12px 0;
     color: black;
 }
 
-#dropdown a:visited {
-    color: black;
-}
-
-#dropdown a:hover {
+.dropdown > a:hover{
     color: #2f8b0d;
 }
 
-#dropdown.show {
-    display: block;
+a:visited {
+    color: black;
 }
 
 button.nav-item {
