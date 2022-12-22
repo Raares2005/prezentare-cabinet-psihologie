@@ -96,49 +96,41 @@ button.nav-item {
 /* CONTENT */
 
 .servicii-imagine {
-    display: flex;
-    width: 55%;
-    justify-content: center;
-    align-items: center;
-    position: re;
-    
+    width: 50%;
 }
 .text{
     width: 70%;
 } 
 
 .pozaServicii {
-    align-self: center;
-    width: 26%;
-    position: absolute;
+    width: 50%;
+    position: relative;
     z-index: 2;
-    margin-top: 5%;
+    margin-left: 20%;
+    margin-bottom: 25%
+
 }
 
 .backgroundServicii {
-    width: 30%;
+    width: 14%;
+    margin-top: 24%;
+    margin-left: 6%;
+    margin-bottom: 10%;
     background-color: #fff;
     position: absolute;
     z-index: 1;
-    align-self: flex-start;
-    margin-top: 15%;
-    padding-right: 10%;
 }
 
 #certificates {
    display: flex;
-   align-items: center;
-}
-
-.li {
-    font-size: 3rem;
+   justify-content: flex-end;
+   align-items: flex-end;
 }
 
 #certificates h2 {
     align-self: flex-start;
-    margin-top: 10%;
-    margin-bottom: 30px;
-    margin-left: 12%;
+    margin-bottom: 10%;
+    margin-left: 22%;
     font-size: 24px;
 }
 
@@ -147,17 +139,11 @@ button.nav-item {
     margin-top: 1%;
 }
 
-#certificates .servicii-1 p {
-    padding-left: 1%;
-    margin-top: 1%;
-}
-
-
 #certificates ul li {
     align-self: flex-end;
     list-style: none;
     color:  black;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-right: 10%;
     margin-top: 1%;
     text-align: justify;
@@ -169,6 +155,8 @@ button.nav-item {
     font-size: 1.2rem;
     color: #4CCE8E;
 }
+
+
 
 /* FOOTER */
 
