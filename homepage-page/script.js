@@ -1,73 +1,73 @@
 // Select all slides
 
-window.onload = function () {
-    const slides = document.querySelectorAll(".slide");
+// window.onload = function () {
+//     const slides = document.querySelectorAll(".slide");
 
-    // loop through slides and set each slides translateX property to index * 100% 
-    slides.forEach((slide, indx) => {
-        slide.style.transform = `translateX(${indx * 100}%)`;
-    });
-    let curSlide = 1;
+//     // loop through slides and set each slides translateX property to index * 100% 
+//     slides.forEach((slide, indx) => {
+//         slide.style.transform = `translateX(${indx * 100}%)`;
+//     });
+//     let curSlide = 1;
 
-    // select next slide button
-    const nextSlide = document.querySelector(".btn-next");
-
-
-    // add event listener and next slide functionality
-    if (nextSlide) {
-        nextSlide.addEventListener("click", function () {
-            curSlide++;
-
-            slides.forEach((slide, indx) => {
-                slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
-            });
-        });
-    }
-
-    let maxSlide = slides.length - 1;
+//     // select next slide button
+//     const nextSlide = document.querySelector(".btn-next");
 
 
-    // add event listener and navigation functionality
-    if (nextSlide) {
-        nextSlide.addEventListener("click", swapper, false)
-    }
-    nextSlide.addEventListener("click", function () {
-        // check if current slide is the last and reset current slide
-        if (curSlide === maxSlide) {
-            curSlide = 0;
-        } else {
-            curSlide--;
-        }
+//     // add event listener and next slide functionality
+//     if (nextSlide) {
+//         nextSlide.addEventListener("click", function () {
+//             curSlide++;
 
-        //   move slide by -100%
-        slides.forEach((slide, indx) => {
-            slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
-        });
-    });
+//             slides.forEach((slide, indx) => {
+//                 slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+//             });
+//         });
+//     }
+
+//     let maxSlide = slides.length - 1;
 
 
+//     // add event listener and navigation functionality
+//     if (nextSlide) {
+//         nextSlide.addEventListener("click", swapper, false)
+//     }
+//     nextSlide.addEventListener("click", function () {
+//         // check if current slide is the last and reset current slide
+//         if (curSlide === maxSlide) {
+//             curSlide = 0;
+//         } else {
+//             curSlide--;
+//         }
+
+//         //   move slide by -100%
+//         slides.forEach((slide, indx) => {
+//             slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+//         });
+//     });
 
 
 
 
-    // select prev slide button
-    const prevSlide = document.querySelector(".btn-prev");
 
-    // add event listener and navigation functionality
-    prevSlide.addEventListener("click", function () {
-        // check if current slide is the first and reset current slide to last
-        if (curSlide === 0) {
-            curSlide = maxSlide;
-        } else {
-            curSlide--;
-        }
 
-        //   move slide by 100%
-        slides.forEach((slide, indx) => {
-            slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
-        });
-    });
-}
+//     // select prev slide button
+//     const prevSlide = document.querySelector(".btn-prev");
+
+//     // add event listener and navigation functionality
+//     prevSlide.addEventListener("click", function () {
+//         // check if current slide is the first and reset current slide to last
+//         if (curSlide === 0) {
+//             curSlide = maxSlide;
+//         } else {
+//             curSlide--;
+//         }
+
+//         //   move slide by 100%
+//         slides.forEach((slide, indx) => {
+//             slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+//         });
+//     });
+// }
 
 
 
@@ -155,3 +155,51 @@ window.onload = function () {
 //     showImage(currentImage);
 //   });
 // } 
+
+jQuery(document).ready(function ($) {
+
+
+      setInterval(function () {
+          moveRight();
+      }, 3000);
+  
+    
+      var slideCount = $('#slider ul li').length;
+      var slideWidth = $('#slider ul li').width();
+      var slideHeight = $('#slider ul li').height();
+      var sliderUlWidth = slideCount * slideWidth;
+      
+      $('#slider').css({ width: slideWidth, height: slideHeight });
+      
+      $('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+      
+      $('#slider ul li:last-child').prependTo('#slider ul');
+  
+      function moveLeft() {
+          $('#slider ul').animate({
+              left: + slideWidth
+          }, 200, function () {
+              $('#slider ul li:last-child').prependTo('#slider ul');
+              $('#slider ul').css('left', '');
+          });
+      };
+  
+      function moveRight() {
+          $('#slider ul').animate({
+              left: - slideWidth
+          }, 200, function () {
+              $('#slider ul li:first-child').appendTo('#slider ul');
+              $('#slider ul').css('left', '');
+          });
+      };
+  
+      $('a.control_prev').click(function () {
+          moveLeft();
+      });
+  
+      $('a.control_next').click(function () {
+          moveRight();
+      });
+  
+  });    
+  
