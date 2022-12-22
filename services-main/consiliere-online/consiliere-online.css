@@ -129,9 +129,8 @@ button.nav-item {
 
 #certificates h2 {
     align-self: flex-start;
-    margin-top: 10%;
-    margin-bottom: 30px;
-    margin-left: 12%;
+    margin-bottom: 10%;
+    margin-left: 22%;
     font-size: 24px;
 }
 
@@ -146,7 +145,7 @@ button.nav-item {
     align-self: flex-end;
     list-style: none;
     color:  black;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-right: 10%;
     margin-top: 1%;
     text-align: justify;
