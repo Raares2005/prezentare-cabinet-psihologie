@@ -116,9 +116,8 @@ li.nav-item {
 .dropdown {
     position: absolute;
     display: none;
-    height: 240px;
+    /* height: 240px; */
     width: 265px;
-    justify-content: center;
     margin-top: 30px;
     background-color: #4CCE8E;
     border-radius: 20px;
@@ -128,13 +127,14 @@ li.nav-item {
 .dropdown > a {
     display: block;
     font-size: 1.12rem;
-    text-align: center;
     margin: 12px 0;
     color: black;
+    text-align: left;
+    padding: 0 12px;
 }
 
 .dropdown > a:hover{
-    color: #2f8b0d;
+    color: #ffffff;
 }
 
 a:visited {
