@@ -1,5 +1,7 @@
 /* INTRO OF THE PAGE */
 
+
+
 button:hover {
     color: #164505;
 }
@@ -26,6 +28,7 @@ button:hover {
     font-size: 60px;
     margin-top: 50px;
     margin-left: 20%;
+    color: rgb(14, 14, 14)
 }
 
 .descriere h5 {
@@ -35,6 +38,7 @@ button:hover {
     margin-top: 50px;
     margin-left: 20%;
     text-align: start;
+    color: rgb(14, 14, 14);
 }
 
 main span {
@@ -61,6 +65,7 @@ main span {
     font-size: 20px;
     cursor: pointer;
     width: 100%;
+    color: rgb(14, 14, 14)
 }
 
 
@@ -136,64 +141,71 @@ main span {
 
 /* CAROUSEL */
 
+.imaginiSlider {
+    width:700px;
+}
 
-.slider {
-    width: 100%;
-    max-width: 800px;
-    height: 350px;
+ #slider {
     position: relative;
-    overflow: hidden;  
-    border-radius: 15px;
-    margin-left: 20%;
+    overflow: hidden;
+    margin-left: 190px;
+    margin-top: 20px;
+    border-radius: 4px;
+    width: 600px;
   }
-    /* overflow: hidden; */
   
+  #slider ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    list-style: none;
+  }
   
-  .slide {
-    width: 100%;
-    max-width: 800px;
-    height: 350px;
+  #slider ul li {
+    position: relative;
+    display: block;
+    float: right;
+    margin: 0;
+    padding: 0;
+    width: 700px;
+    height: 300px;
+    background: #ccc;
+    text-align: center;
+    line-height: 300px;
+  }
+  
+  a.control_prev, a.control_next {
     position: absolute;
-    transition: all 0.5s;
-    display: flex;
-  }
-  
-  .slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .btn {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    padding: 10px;
-    border: none;
-    border-radius: 50%;
-    z-index: 10px;
-    cursor: pointer;
-    background-color: #fff;
+    top: 40%;
+    z-index: 999;
+    display: block;
+    padding: 4% 3%;
+    width: auto;
+    height: auto;
+    background: #2a2a2a;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
     font-size: 18px;
+    opacity: 0.8;
+    cursor: pointer;
   }
   
-  .btn:active {
-    transform: scale(1.1);
+  a.control_prev:hover, a.control_next:hover {
+    opacity: 1;
+    -webkit-transition: all 0.2s ease;
   }
   
-  .btn-prev {
-    top: 15%;
-    left: 10%;
+  a.control_prev {
+    border-radius: 0 2px 2px 0;
   }
   
-  .btn-next {
-    top: 15%;
-    right: 70%;
+  a.control_next {
+    right: 0;
+    border-radius: 2px 0 0 2px;
   }
-  
 
-
-  
 
 /* END OF THE CAROUSEL */
 
