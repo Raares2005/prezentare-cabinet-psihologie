@@ -1,4 +1,5 @@
 body {
+    background-image:url( about-me-img/leafs-img.svg);
     background-repeat: no-repeat;
     background-size: 500px 500px;
     background-position: 67vw 60%;
@@ -24,54 +25,36 @@ body {
 }
 
 #about {
-    grid-area: 2 / 1 / 5 / 8;
+    grid-area: 2 / 1 / 8 / 6;
 }
 
 #about h1{
-    margin-right: 0%;
     font-weight: bolder;
     font-size: 3rem;
     text-align: center;
-    width: 100%;
 }
 
-h1 span{
-    align-self: center;
-    font-size: 2.2rem;
-    color: #000;
-    margin-right: 10px;
-}
-
-
-#about h1 {
-    display: flex;
-    justify-content: flex-start;
+#about h1 span{
     color: #4CCE8E;
 }
-
 
 #about p{
     font-size: 1.2rem;
     text-indent: 40px;
-    margin: 20px 0;
-    width: 80%;
+    margin: 20px 0
 }
 
-a #buttonOffer {
-    width: 100%;
-}
-
-a #buttonContact {
-    width: 0%;
+.about {
+    display: flex;
 }
 
 .buttons#buttonOffer {
-    position: absolute;
     background-color: #4CCE8E;
     border-radius: 10px;
     transition: 0.2s ease-in-out;
+    padding: 10px 20px;
+    width: 100%;
     cursor: pointer;
-    width: 20%;
 }
 
 .buttons#buttonOffer:hover {
@@ -79,18 +62,18 @@ a #buttonContact {
 }
 
 .buttons#buttonContact{
-    position: absolute;
     background: none;
+    text-decoration: underline;
     transition: 0.2s ease-in-out;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    margin-left: 30%;
+    justify-content: flex-start;
+    margin-left: 150px;
     cursor: pointer;
 }
 
 .buttons#buttonContact:hover {
-    text-decoration: underline #4CCE8E 3px;
+    text-decoration: underline #4CCE8E 2px;
 }
 
 #aboutPhoto {
@@ -104,21 +87,12 @@ a #buttonContact {
 }
 
 #certificates {
-    display: flex;
-    flex-direction: column;
-    grid-area: 10 / 4 / 18 / 10;
-    width: 100%;
+    grid-area: 9 / 1 / 16 / 8;
 }
 
 #certificates h2 {
     font-size: 2.2rem;
-    margin-bottom: 35px;
-    margin: 0 auto;
-}
-
-#certificates ul {
-    margin: 0 auto;
-    flex-grow: 0;
+    margin-bottom: 25px;
 }
 
 #certificates ul li {
@@ -126,7 +100,6 @@ a #buttonContact {
     color:  black;
     font-size: 1.2rem;
     margin-bottom: 20px;
-    width: 100%;
 }
 
 #certificates ul li::before {
