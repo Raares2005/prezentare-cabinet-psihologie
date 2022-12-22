@@ -96,40 +96,44 @@ button.nav-item {
 /* CONTENT */
 
 .servicii-imagine {
-    width: 50%;
+    display: flex;
+    width: 55%;
+    justify-content: center;
+    position: relative;
+    
 }
 .text{
     width: 70%;
 } 
 
 .pozaServicii {
-    width: 50%;
-    position: relative;
+    align-self: center;
+    width: 60%;
+    position: absolute;
     z-index: 2;
-    margin-left: 20%;
-    margin-bottom: 5%
+    margin-top: 4%;
 }
 
 .backgroundServicii {
-    width: 14%;
-    margin-top: 24%;
-    margin-left: 6%;
-    margin-bottom: 10%;
+    width: 45%;
     background-color: #fff;
     position: absolute;
     z-index: 1;
+    align-self: flex-start;
+    margin-top: 26%;
+    margin-right: 30%;
 }
 
 #certificates {
    display: flex;
-   justify-content: flex-end;
-   align-items: flex-end;
+   align-items: center;
 }
 
 #certificates h2 {
     align-self: flex-start;
-    margin-bottom: 10%;
-    margin-left: 22%;
+    margin-top: 10%;
+    margin-bottom: 30px;
+    margin-left: 12%;
     font-size: 24px;
 }
 
@@ -148,8 +152,8 @@ button.nav-item {
     align-self: flex-end;
     list-style: none;
     color:  black;
-    font-size: 1.2rem;
-    margin-right: 10%;
+    font-size: 1.5rem;
+    margin-right: 8%;
     margin-top: 1%;
     text-align: justify;
 }
@@ -169,7 +173,7 @@ footer {
     align-items: center;
     flex-direction: row;
     background-color: var(--turcoazcolor);
-    margin-top: 10%;
+    margin-top: 12%;
 }
 
 
