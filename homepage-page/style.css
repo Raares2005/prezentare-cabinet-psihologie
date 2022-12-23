@@ -82,7 +82,7 @@ main span {
 }
 
 .learn-more a:hover {
-    color: #164505;
+    color: #227404;
 }
 
 
@@ -127,7 +127,7 @@ main span {
 .topics h2 {
     position: relative;
     z-index: 2;
-    margin-top: 5%;
+    margin-top: 8%;
     font-size: 2rem;
     margin-left: 10%;
     color: #fff;
@@ -141,69 +141,45 @@ main span {
 
 /* CAROUSEL */
 
-.imaginiSlider {
-    width:700px;
+.sliderImagini {
+    width: 100%;
+    position: relative;
 }
 
- #slider {
-    position: relative;
+.sliderContainer {
+    width: 70%;
+    display: flex;
+    align-items: center;
+  }
+  .slidesWindow {
     overflow: hidden;
-    margin-left: 190px;
-    margin-top: 20px;
-    border-radius: 4px;
-    width: 600px;
+    margin: 0 auto;
+    width: 70%;
+    height: 400px;
+    background-color: lightgreen;
+    border-radius: 15px;
   }
-  
-  #slider ul {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    height: 100px;
-    list-style: none;
+  .glider {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transition: 0.5s ease;
   }
-  
-  #slider ul li {
-    position: relative;
-    display: block;
-    float: right;
-    margin: 0;
-    padding: 0;
-    width: 700px;
-    height: 300px;
-    background: #ccc;
+  .slider {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
     text-align: center;
-    line-height: 300px;
   }
-  
-  a.control_prev, a.control_next {
-    position: absolute;
-    top: 40%;
-    z-index: 999;
-    display: block;
-    padding: 4% 3%;
-    width: auto;
-    height: auto;
-    background: #2a2a2a;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 18px;
-    opacity: 0.8;
+  .slider p {
+    padding: 30px;
+  }
+  .slideControl {
+    font-size: 30px;
+    font-weight: bold;
     cursor: pointer;
-  }
-  
-  a.control_prev:hover, a.control_next:hover {
-    opacity: 1;
-    -webkit-transition: all 0.2s ease;
-  }
-  
-  a.control_prev {
-    border-radius: 0 2px 2px 0;
-  }
-  
-  a.control_next {
-    right: 0;
-    border-radius: 2px 0 0 2px;
+    z-index: 9999999;
   }
 
 
@@ -215,7 +191,7 @@ main span {
 .servicii {
     display: flex;
     flex-direction: column;
-    margin-top: 10%;
+    margin-top: 8%;
 }
 
 .img-titlu {
@@ -231,7 +207,7 @@ main span {
 
 .backgroundServicii {
     width: 20%;
-    margin-top: 30%;
+    margin-top: 29%;
     margin-left: 6%;
     background-color: #fff;
     position: absolute;

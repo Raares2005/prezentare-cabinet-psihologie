@@ -156,50 +156,23 @@
 //   });
 // } 
 
-jQuery(document).ready(function ($) {
+const slideLeftControler = document.querySelector("#scLeft");
+const slideRightControler = document.querySelector("#scRight");
+const glider = document.querySelector(".glider");
+const sliders = document.querySelectorAll(".slider");
 
-
-      setInterval(function () {
-          moveRight();
-      }, 3000);
-  
-    
-      var slideCount = $('#slider ul li').length;
-      var slideWidth = $('#slider ul li').width();
-      var slideHeight = $('#slider ul li').height();
-      var sliderUlWidth = slideCount * slideWidth;
-      
-      $('#slider').css({ width: slideWidth, height: slideHeight });
-      
-      $('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
-      
-      $('#slider ul li:last-child').prependTo('#slider ul');
-  
-      function moveLeft() {
-          $('#slider ul').animate({
-              left: + slideWidth
-          }, 200, function () {
-              $('#slider ul li:last-child').prependTo('#slider ul');
-              $('#slider ul').css('left', '');
-          });
-      };
-  
-      function moveRight() {
-          $('#slider ul').animate({
-              left: - slideWidth
-          }, 200, function () {
-              $('#slider ul li:first-child').appendTo('#slider ul');
-              $('#slider ul').css('left', '');
-          });
-      };
-  
-      $('a.control_prev').click(function () {
-          moveLeft();
-      });
-  
-      $('a.control_next').click(function () {
-          moveRight();
-      });
-  
-  });    
-  
+glideOffset = 0;
+slideLeftControler.addEventListener("click", () => {
+  glideOffset -= 100;
+  if (glideOffset < -100 * (sliders.length - 1)) {
+    glideOffset = 0;
+  }
+  glider.style.transform = `translateX(${glideOffset}%)`;
+});
+slideRightControler.addEventListener("click", () => {
+  glideOffset += 100;
+  if (glideOffset > 0) {
+    glideOffset = -100 * (sliders.length - 1);
+  }
+  glider.style.transform = `translateX(${glideOffset}%)`;
+});
