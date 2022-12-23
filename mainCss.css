@@ -7,7 +7,7 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
-    margin: 0;
+    margin: 0; 
     padding: 0;
     scroll-behavior: smooth;
 }
@@ -24,34 +24,17 @@ a {
     display: flex;
 }
 
-
-li.nav-item {
-
-    list-style: none;
-    margin: 20px 20px;
-    margin-right: 23px;
-    font-size: 14px;
-    color: var(--verdecolor);
-    font-weight: bold;
-}
-
-button.nav-item {
-    background-color: var(--turcoazcolor);
-    margin-left: 20px;
-    margin-bottom: 10px;
-    padding: 20px 40px;
-    border-radius: 20px;
-    border: solid var(--turcoazcolor);
-    font-size: 14px;
+nav {
+    width: 100%;
 }
 
 
 .container-nav {
+    width: 100%;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    z-index: 1000;
+    z-index: 2;
     position: relative;
 }
 
@@ -59,138 +42,84 @@ button.nav-item {
     display: flex;
     flex-direction: row;
     margin: 10px;
-}
-
-.titluri {
-    align-self: center;
+    width: 50%;
 }
 
 .logo-icon {
-    width: 10%;
+    width: 100px;
     display: flex;
     flex-direction: row;
-    margin: 10px;
+}
+
+.titluri h1 {
+    display: flex;
+    font-size: 20px;
+    align-self: flex-end;
+    margin-top: 20px;
+    color: rgb(12, 12, 12)
+}
+
+.telefon-icon {
+    margin-left: 15px;
+    width: 25px;
 }
 
 .telefon {
     align-self: center;
-    margin-left: 10px;
+    margin-left: 0px;
     color: #164505;
     font-size: 16px;
-}
-
-
-.telefon-icon {
-    margin-left: 100px;
-    width: 2%;
+    flex-direction: row;
+    display: flex;
 }
 
 .iteme {
     display: flex;
     flex-direction: row;
-    margin-right: 150px;
+    width: 50%;
+}
+
+button.nav-item {
+    cursor: pointer;
+}
+
+a button.nav-item {
+   margin: 0;
 }
 
 .navbar-nav {
     display: flex;
     flex-direction: row;
-}
-
-a, a:visited{
-    color: var(--txtColor);
-}
-
-a:hover{
-    color: #2f8b0d;
+    justify-content: flex-end;
+    align-items: center;
+    width: 60%;
+    
 }
 
 li.nav-item {
     list-style: none;
-    margin: 20px 30px;
-    font-size: 18px;
-    color: #164505;
+    margin: 10px;
+    font-size: 14px;
+
     font-weight: bold;
-    text-align: center;
-}
-
-.dropdown {
-    position: absolute;
-    display: none;
-    height: 240px;
-    width: 265px;
-    justify-content: center;
-    margin-top: 30px;
-    background-color: #4CCE8E;
-    border-radius: 20px;
-    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
-}
-
-.dropdown > a {
-    display: block;
-    font-size: 1.12rem;
-    text-align: center;
-    margin: 12px 0;
-    color: black;
-}
-
-.dropdown > a:hover{
-    color: #2f8b0d;
-}
-
-a:visited {
-    color: black;
+    
 }
 
 button.nav-item {
-    background-color: #4CCE8E;
+    background-color: var(--turcoazcolor);
     margin-left: 20px;
-    padding: 20px 50px;
+    margin-bottom: 10px;
+    padding: 15px 40px;
     border-radius: 20px;
-    border: solid #4CCE8E ;
-    font-size: 16px;
+    border: solid var(--turcoazcolor);
+    font-size: 14px;
 }
 
-.container-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-}
-
-.logo {
-    display: flex;
-    flex-direction: row;
-    margin: 10px;
-}
-
-.titluri {
-    align-self: center; 
+.iteme a:hover{
+    color: #2f8b0d;
 }
 
 
-
-.logo-icon {
-    width: 10%;
-    display: flex;
-    flex-direction: row;
-    margin: 10px;
-}
-
-.telefon-icon {
-    margin-left: 100px;
-    width: 2%;
-}
-
-.iteme {
-    display: flex;
-    flex-direction: row;
-    margin-right: 150px;
-}
-
-.navbar-nav {
-    display: flex;
-    flex-direction: row;
-}
 
 /* Burger */
 
@@ -204,6 +133,7 @@ button.nav-item {
     .container-nav {
         display: flex;
         justify-content: space-around;
+        
     }
 
     .logo {
@@ -377,3 +307,49 @@ button.nav-item {
         font-size: 0.9rem;
     }
 }
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    background-color: var(--turcoazcolor);
+    margin-top: 4%;
+
+}
+
+
+.logoFooter {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    width: 100%;
+}
+
+.titluriFooter {
+    width: 100%;
+    color: rgb(14, 14, 14)
+}
+
+.logo-footer {
+    width: 4%;
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    margin-left: 2%;
+    
+}
+
+.textFooter {
+    display: flex;
+    position: relative;
+    align-self: center;
+    justify-content: center;
+    color: rgb(14, 14, 14);
+    font-size: 19px;
+    width: 200%;
+}
+
