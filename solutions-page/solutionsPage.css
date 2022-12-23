@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     column-gap: 5px;
-    grid-template-rows: repeat(15, 60px);
+    grid-template-rows: repeat(12, 60px);
     row-gap: 5px;
     max-width: 80vw;
     margin: 0 auto;
@@ -18,14 +18,14 @@
 }
 
 #questionAnsware {
-    grid-area: 6 / 1 / 6 / 6;
+    grid-area: 5 / 1 / 7 / 6;
     margin-left: 5px;
     font-size: 1.3rem;
 }
 
 #imgSection1 {
-    grid-area: 2 / 8 / 6 / 13;
-    width: 90%;
+    grid-area: 1 / 7 / 6 / 12;
+    width: 80%;
     height: auto;
     justify-self: center;
 }
@@ -33,15 +33,15 @@
 
 
 #step1 {
-    grid-area: 11 / 1 / 11 / 4;
+    grid-area: 9 / 1 / 11 / 4;
 }
 
 #step2 {
-    grid-area: 11 / 4 / 11 / 8;
+    grid-area: 9 / 4 / 11 / 8;
 }
 
 #step3 {
-    grid-area: 11 / 8 / 11 / 13;
+    grid-area: 9 / 8 / 11 / 12;
 }
 
 .imgSolutionIcons {
@@ -57,12 +57,13 @@
 }
 
 .stepsTitle > h2 {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     font-weight: bold;
+    
 }
 
 #solutionsBtnLink {
-    grid-area: 14 / 1 / 14 / 4;
+    grid-area: 12 / 1 / 12 / 4;
     width: 100%;
 }
 

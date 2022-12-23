@@ -6,13 +6,11 @@ body {
     overflow: hidden;
 }
 
-
-
 .mainContentContact {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     column-gap: 5px;
-    grid-template-rows: repeat(12, 55px);
+    grid-template-rows: repeat(12, 40px);
     row-gap: 5px;
     width: 75%;
     margin: 0 auto;
@@ -26,11 +24,11 @@ body {
 }
 
 .contactTxtTitle {
-    grid-area: 3 / 2 / 2 / 3;
+    grid-area: 1 / 2 / 2 / 3;
 }
 
 .contactTxtUnderline {
-    grid-area: 3 / 2 / 3 / 3;
+    grid-area: 2 / 2 / 2 / 3;
     width: 92px;
     height: 3px;
     outline: none;
@@ -44,7 +42,7 @@ body {
 }
 
 #cabinetName {
-    grid-area: 5 / 2 / 4 / 5;
+    grid-area: 3 / 2 / 3 / 5;
     place-self: start;
     margin: 0;
     font-size: 1rem;
@@ -85,7 +83,7 @@ body {
 }
 
 #mailAddress {
-    grid-area: 14 / 2 / 11 / 6;
+    grid-area: 11 / 2 / 11 / 6;
 }
 
 /* Map */
@@ -98,38 +96,5 @@ body {
 
 
 footer {
-    position: absolute;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    background-color: var(--turcoazcolor);
-    bottom: 1px;
-    width: 100%;
-
-}
-
-
-
-.logoFooter {
-    display: flex;
-    flex-direction: row;
-    margin: 10px;
-}
-
-.logo-footer {
-    width: 4%;
-    display: flex;
-    flex-direction: row;
-    margin: 5px;
-    margin-left: 2%;
-    
-}
-
-.textFooter {
-    position: relative;
-    align-self: center;
-    margin-left: 20%;
-    color: #fff;
-    font-size: 19px;
+    margin-top: 10%;
 }
