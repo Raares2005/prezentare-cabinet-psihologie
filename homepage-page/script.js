@@ -1,4 +1,4 @@
-// Select all slides
+
 
 // window.onload = function () {
 //     const slides = document.querySelectorAll(".slide");
@@ -160,7 +160,6 @@ const slideLeftControler = document.querySelector("#scLeft");
 const slideRightControler = document.querySelector("#scRight");
 const glider = document.querySelector(".glider");
 const sliders = document.querySelectorAll(".slider");
-
 glideOffset = 0;
 slideLeftControler.addEventListener("click", () => {
   glideOffset -= 100;

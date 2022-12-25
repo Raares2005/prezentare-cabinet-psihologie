@@ -96,68 +96,54 @@ button.nav-item {
 /* CONTENT */
 
 .servicii-imagine {
-    display: flex;
-    width: 55%;
-    justify-content: center;
-    position: relative;
-    
+    width: 50%;
 }
 .text{
     width: 70%;
 } 
 
 .pozaServicii {
-    align-self: center;
-    width: 60%;
-    position: absolute;
+    width: 50%;
+    position: relative;
     z-index: 2;
-    margin-top: 4%;
+    margin-left: 20%;
+    margin-bottom: 25%;
 }
 
 .backgroundServicii {
-    width: 45%;
+    width: 14%;
+    margin-top: 24%;
+    margin-left: 6%;
+    margin-bottom: 10%;
     background-color: #fff;
     position: absolute;
     z-index: 1;
-    align-self: flex-start;
-    margin-top: 26%;
-    margin-right: 30%;
 }
 
 #certificates {
    display: flex;
-   align-items: center;
-}
-
-#certificates h3 {
-    font-weight: 100;
-    margin-left: 3%;
-    font-size: 1.5rem;
+   justify-content: flex-end;
+   align-items: flex-end;
 }
 
 #certificates h2 {
     align-self: flex-start;
-    margin-top: 10%;
-    margin-bottom: 30px;
-    margin-left: 12%;
+    margin-bottom: 10%;
+    margin-left: 22%;
     font-size: 24px;
 }
 
 #certificates .servicii p {
-    padding-left: 1%;
+   margin-left: 1%;
+   margin-top: 1%;
 }
-
-#certificates .servicii-1 p {
-    padding-left: 1%;
-}
-
 
 #certificates ul li {
     align-self: flex-end;
     list-style: none;
     color:  black;
-    font-size: 1.5rem;
-    margin-right: 8%;
+    font-size: 1.2rem;
+    margin-right: 10%;
     margin-top: 1%;
     text-align: justify;
 }
