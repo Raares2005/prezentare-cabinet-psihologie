@@ -50,11 +50,10 @@ if(btnServiciiBurger) {
   btnServiciiBurger.addEventListener("click", function() {
     if(!btnServiciiBurger.classList.contains("pressed")) {
       btnServiciiBurger.classList.add("pressed");
-      linkServiciiBurger.classList.add("pressed");
-      con
+      linkServiciiBurger.style.maxHeight = "400px";
     }else {
       btnServiciiBurger.classList.remove("pressed");
-      linkServiciiBurger.classList.remove("pressed");
+      linkServiciiBurger.style.maxHeight = "0";
     }
   });
 }
