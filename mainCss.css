@@ -206,7 +206,7 @@ button.nav-item {
         align-items: center;
         flex-direction: row;
         background-color: var(--turcoazcolor);
-        margin-top: 4%;
+        margin-top: 8%;
     }
     
     .logoFooter {

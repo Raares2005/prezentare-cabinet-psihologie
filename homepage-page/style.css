@@ -257,7 +257,7 @@ main span {
 	height: 0; 
 	border-top: 15px solid transparent;
 	border-bottom: 15px solid transparent;	
-	border-left: 15px solid rgb(24, 23, 23);
+	border-left: 15px solid rgb(65, 62, 62);
 	position:relative;
 	top:20%;
 	right:40%;
@@ -268,7 +268,7 @@ main span {
 	height: 0; 
 	border-top: 15px solid transparent;
 	border-bottom: 15px solid transparent;	
-	border-right:15px solid rgb(24, 23, 23); 
+	border-right:15px solid rgb(65, 62, 62); 
 	position:relative;
 	top:20%;
 	left:30%;
