@@ -175,3 +175,4 @@ slideRightControler.addEventListener("click", () => {
   }
   glider.style.transform = `translateX(${glideOffset}%)`;
 });
+

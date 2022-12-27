@@ -129,7 +129,7 @@ main span {
     z-index: 2;
     margin-top: 5%;
     font-size: 2rem;
-    margin-left: 10%;
+    margin-left: 9%;
     color: #fff;
     font-weight: 100;
     width: 120%;
@@ -152,16 +152,17 @@ display: flex;
 align-items: center;
 padding-left: 50px;
 overflow: hidden;
+justify-content: center;
 }
 
 
 .slidesWindow {
 overflow: hidden;
-margin: 0 auto;
 width: 70%;
 height: 400px;
-background-color: lightgreen;
 border-radius: 15px;
+margin-top: 20px;
+margin-left: 110px;
 }
 
 
@@ -175,26 +176,59 @@ transition: 0.5s ease;
 
 
 .slider {
+display: flex;
+justify-content: center;
 flex-shrink: 0;
 width: 100%;
 height: 100%;
 position: relative;
 }
 
-.slider p {
-  padding: 30px;
-  position: relative;
+.slider h3 {
+    width: 50%;
+    position: relative;
+    margin: 300px 0 0 0;
+    height: 110px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 40;
+    color: #181717;
+    background-color: #fff;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-
 .slideControl {
+    display: flex;
+  position: absolute;  
+ margin-top: 20%;
   font-size: 30px;
   font-weight: bold;
   cursor: pointer;
   z-index: 9999999;
+  text-align: center;
+  
+  
 }
 
+#scLeft {
+    display: flex;
+    align-self: center;
+    position: absolute;
+   
+   margin-left: 10%;
+   
+    font-size: 40px;
+    
+}
 
+#scRight {
+    position: absolute;
+    display: flex;
+    align-self: center;
+    font-size: 40px;
+    
+    
+}
 /* END OF THE CAROUSEL */
 
 
