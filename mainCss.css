@@ -2,6 +2,7 @@
     --txtColor: #164505;
     --verdecolor: #164505;
     --turcoazcolor: #4CCE8E;
+    --hoverColor: #4CCE8E;
 }
 
 * {
@@ -23,6 +24,7 @@ a {
     color: #000;
     display: flex;
 }
+
 
 
 li.nav-item {
@@ -367,7 +369,7 @@ button.nav-item {
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: all 0.5s ease-in;
+        transition: all 0.3s ease-in;
     }
 
     li.burgerItem > #serviciiHeaderBurger > #btnBurgerDropdownContainer > #btnBurgerDropdown {
@@ -405,19 +407,20 @@ button.nav-item {
     }
 
     li.burgerItem > #serviciiLinksBurger {
-        display: none;
         position: relative;
-        opacity: 0;
-        transform: translateY(-300px);
-        transition: all 0.5s ease-in;
         overflow: hidden;
+        max-height: 0;
+        transition: 0.3s ease-in;
+        padding-left: 10px;
+        font-size: smaller;
     }
 
-    li.burgerItem > #serviciiLinksBurger.pressed {
-        display: block;
-        position: relative;
-        opacity: 1;
-        transform: translateY(0);
+    li.burgerItem > #serviciiLinksBurger > a {
+        padding: 5px 0;
+    }
+
+    li.burgerItem > #serviciiLinksBurger > a:hover {
+        color: --hoverColor;
     }
 
     #burgerBtn-Phone {
