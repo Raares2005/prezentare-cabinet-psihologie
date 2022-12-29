@@ -128,9 +128,59 @@ footer {
 }
 
 @media  (max-width: 450px) {
+    .mainContentContact {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
     .txtContact {
         color:  var(--txtColor);
         font-size: 0.9rem;
         font-weight: 600;
+    }
+
+    #locationIcon {
+        grid-area: 5 / 1 / 5 / 2;
+        justify-self: center;
+    }
+    
+    #locationAddress {
+        grid-area: 5 / 2 / 5 / 7;
+        text-align: center;
+        justify-self: center;
+        margin: 0;
+    }
+    
+    #phoneIcon {
+        grid-area: 7 / 1 / 7 / 1;
+        justify-self: center;
+    }
+    
+    #phoneNumber {
+        grid-area: 7 / 2 / 7 / 7;
+        text-align: center;
+        justify-self: center;
+        margin: 0;
+    }
+    
+    #facebookIcon {
+        grid-area: 9 / 1 / 9 / 1;
+        justify-self: center;
+    }
+    
+    #facebookLink {
+        grid-area: 9 / 2 / 10 / 7;
+        text-align: center;
+        justify-self: center;
+    }
+    
+    #emailIcon {
+        grid-area: 11 / 1 / 11 / 1;
+        justify-self: center;
+    }
+    
+    #mailAddress {
+        grid-area: 11 / 2 / 11 / 7;
+        text-align: center;
+        justify-self: center;
     }
 }
