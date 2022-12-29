@@ -2,17 +2,15 @@
     --txtColor: #164505;
 }
 
-body {
-    overflow: hidden;
-}
+
 
 .mainContentContact {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     column-gap: 5px;
-    grid-template-rows: repeat(12, 40px);
+    grid-template-rows: repeat(14, 40px);
     row-gap: 5px;
-    width: 75%;
+    width: 85%;
     margin: 0 auto;
     border: var(--txtColor);
 }
@@ -74,7 +72,7 @@ body {
 }
 
 #facebookLink {
-    grid-area: 9 / 2 / 9 / 6;
+    grid-area: 9 / 2 / 10 / 6;
 }
 
 #emailIcon {
@@ -89,12 +87,50 @@ body {
 /* Map */
 
 #location-on-map {
-    grid-area: 2 / 8 / 11 / 12;
+    grid-area: 2 / 8 / 11 / 13;
     width: 100%;
-    height: 450px;
+    height: auto;
 }
 
 
 footer {
     margin-top: 10%;
+}
+
+@media screen and  (max-width: 1200px){
+    .mainContentContact {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .mainContentContact {
+        grid-template-rows: repeat(17, 40px);
+    }
+
+    #location-on-map {
+        grid-area: 12 / 1 / 18 / 13;
+        width: 100%;
+        height: auto;
+    }
+
+    #locationAddress {
+        grid-area: 5 / 2 / 5 / 13;
+        margin: 0;
+    }
+
+    #cabinetName {
+        grid-area: 3 / 2 / 3 / 8;
+        place-self: start;
+        margin: 0;
+        font-size: 1rem;
+    }
+}
+
+@media  (max-width: 450px) {
+    .txtContact {
+        color:  var(--txtColor);
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
 }
