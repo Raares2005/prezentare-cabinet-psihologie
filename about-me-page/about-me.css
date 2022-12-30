@@ -12,7 +12,7 @@
     margin: 0 auto;
     grid-template-columns: repeat(12, 1fr);
     column-gap: 5px;
-    grid-template-rows: repeat(20, 50px);
+    grid-template-rows: repeat(20, auto);
     row-gap: 5px;
 }
 
@@ -83,7 +83,7 @@
 }
 
 #certificates {
-    grid-area: 11 / 1 / 18 / 13;
+    grid-area: 16 / 1 / 18 / 13;
 }
 
 #certificates h2 {
@@ -109,11 +109,11 @@
 @media screen and (max-width: 999px) {
 
     #mainContentAboutMe {
-        grid-template-rows: repeat(26, 50px);
+        grid-template-rows: repeat(26, auto);
     }
 
     #about {
-        grid-area: 2 / 1 / 10 / 13;
+        grid-area:10 / 1 / 17 / 13;
     }
 
     #about h1{
@@ -121,18 +121,20 @@
         text-align: center;
     }
 
-    
+    .buttons {
+        font-size: 1rem;
+    }
+
     .about {
         justify-content: space-around;
     }
     
-    .buttons#buttonContact {
-        margin-left: 0;
-    }
+
 
     #aboutPhoto {
-        grid-area: 9 / 4 / 17 / 10;
+        grid-area:  2 / 1 / 10 / 13;
         justify-self: center;
+        margin: 20px 0;
     }
 
     #certificates {
@@ -141,9 +143,29 @@
 
     #certificates h2 {
         font-size: 2rem;
+        text-align: center;
     }
 
     #certificates ul li {
         font-size: 1rem;
+        margin-bottom: 10px;
+    }
+}
+
+@media  screen and (max-width: 525px) {
+    .about {
+        flex-direction: column;
+        width: 218px;
+        margin: 0 auto;
+    }
+    #aboutPhoto {
+        grid-area: 2 / 1 / 10 / 13;
+        justify-self: center;
+        margin: 20px 0;
+    }
+    #aboutPhoto #imgPhoto {
+        max-width: 480px;
+        width: auto;
+        height: auto;
     }
 }
