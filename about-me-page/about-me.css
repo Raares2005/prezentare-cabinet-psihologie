@@ -1,15 +1,7 @@
-body {
-    background-image:url( about-me-img/leafs-img.svg);
-    background-repeat: no-repeat;
-    background-size: 500px 500px;
-    background-position: 67vw 60%;
-}
-
 .buttons {
-    width: 49%;
     height: 50px;
     border: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
@@ -20,18 +12,17 @@ body {
     margin: 0 auto;
     grid-template-columns: repeat(12, 1fr);
     column-gap: 5px;
-    grid-template-rows: repeat(16, 60px);
+    grid-template-rows: repeat(20, auto);
     row-gap: 5px;
 }
 
 #about {
-    grid-area: 2 / 1 / 8 / 6;
+    grid-area: 2 / 1 / 10 / 8;
 }
 
 #about h1{
     font-weight: bolder;
-    font-size: 3rem;
-    text-align: center;
+    font-size: 2.7rem;
 }
 
 #about h1 span{
@@ -46,6 +37,11 @@ body {
 
 .about {
     display: flex;
+    justify-content: space-around;
+}
+
+.about > a {
+    width: 218px;
 }
 
 .buttons#buttonOffer {
@@ -63,12 +59,12 @@ body {
 
 .buttons#buttonContact{
     background: none;
-    text-decoration: underline;
+    width: auto;
     transition: 0.2s ease-in-out;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    margin-left: 150px;
+    margin: 0 auto;
+    text-align: center;
     cursor: pointer;
 }
 
@@ -77,8 +73,8 @@ body {
 }
 
 #aboutPhoto {
-    grid-area: 1 / 9 / 4 / 12;
-    width: 100%;
+    grid-area: 1 / 9 / 5 / 12;
+    justify-self: center;
 }
 
 #aboutPhoto #imgPhoto {
@@ -87,7 +83,7 @@ body {
 }
 
 #certificates {
-    grid-area: 9 / 1 / 16 / 8;
+    grid-area: 16 / 1 / 18 / 13;
 }
 
 #certificates h2 {
@@ -107,4 +103,69 @@ body {
     content: "Ｏ";
     font-size: 1.2rem;
     color: #4CCE8E;
+}
+
+
+@media screen and (max-width: 999px) {
+
+    #mainContentAboutMe {
+        grid-template-rows: repeat(26, auto);
+    }
+
+    #about {
+        grid-area:10 / 1 / 17 / 13;
+    }
+
+    #about h1{
+        font-size: 2.3rem;
+        text-align: center;
+    }
+
+    .buttons {
+        font-size: 1rem;
+    }
+
+    .about {
+        justify-content: space-around;
+    }
+    
+
+
+    #aboutPhoto {
+        grid-area:  2 / 1 / 10 / 13;
+        justify-self: center;
+        margin: 20px 0;
+    }
+
+    #certificates {
+        grid-area: 18 / 1 / 26 / 13;
+    }
+
+    #certificates h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #certificates ul li {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+}
+
+@media  screen and (max-width: 525px) {
+    .about {
+        flex-direction: column;
+        width: 218px;
+        margin: 0 auto;
+    }
+    #aboutPhoto {
+        grid-area: 2 / 1 / 10 / 13;
+        justify-self: center;
+        margin: 20px 0;
+    }
+    #aboutPhoto #imgPhoto {
+        max-width: 480px;
+        width: auto;
+        height: auto;
+    }
 }
