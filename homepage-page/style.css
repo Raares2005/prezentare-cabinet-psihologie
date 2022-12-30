@@ -20,11 +20,13 @@ button:hover {
     width: 50%;
 }
 
+
+
 .poza-v1 {
     position: absolute;
     z-index: 2;
     width: 25%;
-    margin-top: 10%;
+    margin-top: 7%;
 }
 
 .poze-v2 {
@@ -107,6 +109,7 @@ main span {
 .background {
     position: absolute;
     width: 100%;
+    height: auto;
 }
 
 
@@ -136,8 +139,8 @@ main span {
 
 #slider{
     width:100%;
-    height:350px;
-    margin-top: 15%;
+    height:400px;
+    margin-top: 2%;
     position:absolute;
     overflow:hidden;
     float:left;
@@ -153,7 +156,7 @@ main span {
 }
 
 #container{
-    width: 40%;
+    width: 49%;
 	margin-left: 10%;
     height: 200px;
     position: relative;
@@ -226,7 +229,7 @@ main span {
     top: 100%;
     width: auto;
     padding: 16px;
-    margin-top: -22px;
+    margin-top: -10%;
     color: white;
     font-weight: bold;
     font-size: 18px;
@@ -247,9 +250,9 @@ main span {
     float: left;
 	width: 0; 
 	height: 0; 
-	border-top: 15px solid transparent;
-	border-bottom: 15px solid transparent;	
-	border-left: 15px solid rgb(65, 62, 62);
+	border-top: 30px solid transparent;
+	border-bottom: 30px solid transparent;	
+	border-left: 30px solid #fff;
 	position:relative;
 	top:20%;
 	right:40%;
@@ -258,9 +261,9 @@ main span {
 .arrow-left {
 	width: 0; 
 	height: 0; 
-	border-top: 15px solid transparent;
-	border-bottom: 15px solid transparent;	
-	border-right:15px solid rgb(65, 62, 62); 
+	border-top: 30px solid transparent;
+	border-bottom: 30px solid transparent;	
+	border-right:30px solid #fff; 
 	position:relative;
 	top:20%;
 	left:30%;
@@ -274,21 +277,16 @@ main span {
 /* Servicii Home Page */
 
 .servicii {
+    width: 100%;
     display: flex;
     flex-direction: column;
     margin-top: 20%;
     position: relative;
 }
 
-.img-titlu {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
 
-}
-
-.imaginiTitlu {
-    width: 70%;
+.listaServicii {
+    display: none;
 }
 
 .backgroundServicii {
@@ -309,43 +307,6 @@ main span {
 
 }
 
-.TitluDescriere {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10%;
-    margin-left: 46%;
-    width: 100%;
-    color: #181717;
-}
-
-.img-titlu span {
-    color: var(--verdecolor);
-
-}
-
-.TitluDescriere h1 {
-    position: relative;
-    z-index: 2;
-    align-self: flex-start;
-    justify-content: center;
-    width: 90%;
-    font-weight: 100;
-    font-size: 1.5rem;
-}
-
-.TitluDescriere h3 {
-    position: relative;
-    justify-content: flex-start;
-    z-index: 2;
-    margin-top: 2%;
-    align-items: flex-end;
-    width: 40%;
-    font-weight: 100;
-    font-size: 1.2rem;
-    color: var(--verdecolor);
-}
-
 
 .listaServicii {
     display: flex;
@@ -355,17 +316,16 @@ main span {
     z-index: 1;
     list-style: none;
     align-items: center;
-    justify-content: flex-start;
+    
     width: 100%;
     margin-top: 5%;
-    margin-left: 70px;
-
+    
 }
+
 
 .exemple > p {
-    font-size: 2rem;
+    font-size: 2.4rem;
 }
-
 
 
 .exemple {
@@ -373,13 +333,15 @@ main span {
     margin-left: 35%;
     margin-top: 1%;
     color: #181717;
+
 }
 
 .ico {
     display: flex;
     align-items: flex-start;
     width: 50%;
-    margin-left: 25%;
+    justify-content: flex-start;
+    margin-left: 26%;
 }
 
 .iconite {
@@ -390,13 +352,11 @@ main span {
     margin-top: 1%;
 }
 
-.listaServicii h1 {
-    font-size: 30px;
-}
+
 
 .listaServicii h3 {
-    color: var(--verdecolor);
     margin-top: 2%;
+    font-weight: lighter;
 }
 
 
@@ -421,14 +381,55 @@ main span {
 @media screen and (max-width: 1535px) {
     
 
-    #container {
-        width: 50%;
+    .topics h2 {
+        margin-top: 2%;
+        font-size: 1.5rem;
+        margin-left: 10%;
     }
 
-    
+    #container {
+        width: 50%;
+        height: 10%;
+    }
+
+    #slider {
+        height: 150%;
+    }
+
+    #slider img{
+        width: 100%;
+    }
+
+    #next {
+        height: auto;
+    }
 
     .background {
-        height: 720px;
+        height: auto;
+    }
+
+
+    .arrow-right {
+        float: left;
+        width: 0; 
+        height: 0; 
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;	
+        border-left: 20px solid #fff;
+        position:relative;
+        top:20%;
+        right:40%;
+    }
+    
+    .arrow-left {
+        width: 0; 
+        height: 0; 
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;	
+        border-right:20px solid #fff; 
+        position:relative;
+        top:20%;
+        left:30%;
     }
 
 }
@@ -441,7 +442,6 @@ main span {
 
 
     .exemple > p {
-        font-size: 1.5rem;
         margin-top: 10%;
     }
 
@@ -474,14 +474,41 @@ main span {
     }
 
     .background {
-        height: 650px;
-        width: 120%;
+        height: auto;
+        
     }
 
-    #slider img{
-        width: 600px;
+    #container {
+        height: 8.5%;
     }
 
+    .slide-copy {
+        font-size: 0.8rem;
+    }
+
+
+    .arrow-right {
+        float: left;
+        width: 0; 
+        height: 0; 
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;	
+        border-left: 20px solid #fff;
+        position:relative;
+        top:20%;
+        right:40%;
+    }
+    
+    .arrow-left {
+        width: 0; 
+        height: 0; 
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;	
+        border-right:20px solid #fff; 
+        position:relative;
+        top:20%;
+        left:30%;
+    }
 
 }
 
@@ -507,36 +534,68 @@ main span {
     margin-left: 4%;
    }
 
+   .topics h2 {
+    font-size: 1.2rem;
+   }
 
    .background {
-    height: 700px;
-    width: 130%;
+    height: auto;
    }
 
    #container {
-    width: 500px;
+        height: 7.5%;
    }
 
-   #slider img {
-    width: 540px;
+   .slide-copy {
+    font-size: 0.7rem;
    }
+
+   #next,
+   #prev {
+    margin-top: -10%;
+   }
+   
+   .arrow-right {
+    float: left;
+    width: 0; 
+    height: 0; 
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;	
+    border-left: 15px solid #fff;
+    position:relative;
+    top:20%;
+    right:40%;
+}
+
+.arrow-left {
+    width: 0; 
+    height: 0; 
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;	
+    border-right:15px solid #fff; 
+    position:relative;
+    top:20%;
+    left:30%;
+}
+   
 
    .servicii {
-    margin-top: 40%;
+    margin-top: 15%;
    }
 
+
    .iconite {
-    width: 35px;
-    padding-right: 1%;
+    width: 5%;
+    padding-right: 1.5%;
    }
 
    .servicii p {
-    width: 90%;
-    font-size: 1rem;
+    width: 100%;
+    font-size: 1.8rem;
    }
    
    .servicii h1 {
-    font-size: 1.2rem;
+    font-size: 1.2em;
    }
 
    .servicii h3 {
@@ -546,6 +605,8 @@ main span {
 
    .mai-multe {
     font-size: 0.8rem;
+    padding: 10px;
+    border-radius: 10px;
    }
 
 }
@@ -553,4 +614,216 @@ main span {
 
 @media screen and (max-width: 768px) {
     
+    .topics h2 {
+        font-size: 1rem;
+    }
+    
+    
+    .listaServicii p {
+        font-size: 1rem;
+    }
+
+
+    .exemple h1 {
+        font-size: 1rem;
+    }
+
+    .servicii h3 {
+        font-size: 0.9rem;
+    }
+
+
+    .servicii p {
+        font-size: 1.29rem;
+        width: 90%;
+        
+       }
+
+
+       #container {
+        height: 7.4%;
+       }
+
+       .slide-copy {
+        font-size: 0.5rem;
+        width: 100%;
+       }
+
+       #next,
+       #prev {
+        display: flex;
+        align-items: center;
+        margin-top: -15%;
+       }
+
+
+       .arrow-right {
+        float: left;
+        width: 0; 
+        height: 0; 
+        border-top: 12px solid transparent;
+        border-bottom: 12px solid transparent;	
+        border-left: 12px solid #fff;
+        position:relative;
+        top:20%;
+        right:40%;
+    }
+    
+    .arrow-left {
+        width: 0; 
+        height: 0; 
+        border-top: 12px solid transparent;
+        border-bottom: 12px solid transparent;	
+        border-right:12px solid #fff; 
+        position:relative;
+        top:20%;
+        left:30%;
+    }
+}
+
+
+
+
+@media screen and (max-width: 608px) {
+
+
+
+.descriere h5 {
+    font-size: 1rem;
+}
+
+.topics h2 {
+    font-size: 0.9rem;
+}
+
+.imaginiTitlu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.sub {
+    width: 100%;
+    margin-top: 20%;
+}
+
+
+.topics h2 {
+    font-size: 0.8rem;
+}
+
+#container {
+    height: 5.6%;
+   }
+
+.slide-copy {
+    font-size: 0.41rem;
+}
+
+
+#next,
+#prev {
+display: flex;
+align-items: center;
+margin-top: -20%;
+}
+
+.arrow-right {
+    float: left;
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;	
+    border-left: 10px solid #fff;
+    position:relative;
+    top:20%;
+    right:40%;
+}
+
+.arrow-left {
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;	
+    border-right:10px solid #fff; 
+    position:relative;
+    top:20%;
+    left:30%;
+}
+
+
+.arrow-left,
+.arrow-right {
+    font-size: 0.3rem;
+}
+
+
+
+.pozaServicii {
+    width: 500px;
+    height: 300px;
+    display: flex;
+    margin: 0 auto;
+    background: grey;
+}
+
+.backgroundServicii {
+    display: none;
+}
+
+
+.listaServicii {
+    margin-top: 50%;
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: flex-start;
+    
+} 
+
+
+.servicii p {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
+}
+
+.listaServicii {
+    margin-left: 0;
+}
+
+.exemple h1 {
+    margin-left: 5%;
+}
+
+.exemple h3 {
+    margin: 0 auto;
+}
+
+.ico  {
+    margin-left: 4%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.ico > img {
+    margin-top: 6%;
+}
+
+
+.exemple  {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 6%;
+}
+ 
+.proba{
+    margin: 0 auto;
+}
+
 }
