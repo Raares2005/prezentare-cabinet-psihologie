@@ -5,6 +5,7 @@
 #mainArticles {
     display: grid;
     grid-template-columns: 2.2fr 1fr;
+    grid-template-rows: repeat(2, auto);
     column-gap: 50px;
     margin: 0 auto;
     width: 70vw;
@@ -15,13 +16,23 @@
     width: 100%;
     height: auto;
     margin: auto;
-    grid-area: 1 1 1 1;
+    grid-area: 1 / 1 / 1 / 1;
 }
 
 #workInProgressTxt {
-    grid-column: 1 2 1 2;
+    grid-area: 1 / 2 / 1 / 2;
     margin: auto auto;
     height: 200px;
-    font-size: 5rem;
+    font-size: 3.5rem;
     color: var(--txtColor);
+}
+
+@media screen and (max-width: 999px) {
+    #engeneerImg {
+        grid-area: 1 / 1 / 1 / 3;
+    }
+
+    #workInProgressTxt {
+        grid-area: 2 / 1 / 3 / 3;
+    }
 }
