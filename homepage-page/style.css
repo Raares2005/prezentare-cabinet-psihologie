@@ -35,7 +35,7 @@ button:hover {
     width: 25%;
     margin-left: 15%;
     margin-top: 3.7%;
-    height: 60%;
+    height: 40%;
 }
 
 
@@ -614,6 +614,12 @@ main span {
 
 @media screen and (max-width: 768px) {
     
+
+    .poze-v2 {
+        margin-top: 1%;
+    }
+
+
     .topics h2 {
         font-size: 1rem;
     }
@@ -641,7 +647,7 @@ main span {
 
 
        #container {
-        height: 7.4%;
+        height: 7.1%;
        }
 
        .slide-copy {
@@ -715,7 +721,7 @@ main span {
 }
 
 #container {
-    height: 5.6%;
+    height: 5.1%;
    }
 
 .slide-copy {
@@ -762,11 +768,12 @@ margin-top: -20%;
 
 
 .pozaServicii {
-    width: 500px;
-    height: 300px;
+    width: 250px;
+    height: 150px;
     display: flex;
     margin: 0 auto;
     background: grey;
+    margin-top: 10%;
 }
 
 .backgroundServicii {
@@ -775,14 +782,12 @@ margin-top: -20%;
 
 
 .listaServicii {
-    margin-top: 50%;
-    
+    margin-top: 35%;
     width: 100%;
     display: flex;
     justify-content: center;
     position: relative;
     align-items: flex-start;
-    
 } 
 
 
@@ -825,5 +830,13 @@ margin-top: -20%;
 .proba{
     margin: 0 auto;
 }
+
+}
+
+
+@media screen and (max-width: 458px) {
+    
+    
+    
 
 }
