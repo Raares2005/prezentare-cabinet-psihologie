@@ -1,33 +1,30 @@
 const btn = document.getElementById("containerLogoBurger");
-const bLogo = document.getElementById("containerLogoBurger");
-const bContainer = document.getElementById("burgerListContainer");
 const backdrop = document.getElementById("backdrop");
 const btnServicii = document.getElementById("btnServicii");
+const btnServiciiBurger = document.getElementById("btnBurgerDropdownContainer");
 
-let open = false;
 if (btn && backdrop) {
+  const bLogo = document.getElementById("containerLogoBurger");
+  const bContainer = document.getElementById("burgerListContainer");
   btn.addEventListener("click", function () {
     if (!bLogo.classList.contains("open")) {
       bLogo.classList.add("open");
       backdrop.style.display = "block";
       bContainer.classList.add("bContainerOpen");
-      open = true;
     } else {
       bLogo.classList.remove("open");
       backdrop.style.display = "none";
       bContainer.classList.remove("bContainerOpen");
-      open = false;
     }
   });
   backdrop.addEventListener("click", function () {
     bLogo.classList.remove("open");
     backdrop.style.display = "none";
     bContainer.classList.remove("bContainerOpen");
-    open = false;
   });
 }
 
-if (btnServicii) {
+if(btnServicii) {
   let hoverTimeout;
   const dropdown = document.getElementById("dropdown");
   btnServicii.addEventListener("mouseover", function() {
@@ -45,7 +42,18 @@ if (btnServicii) {
   dropdown.addEventListener("mouseleave", function () {
     dropdown.style.display = "none";
   });
-  //  function invisible() {
-  //   dropdown.style.display = "none";
-  //  }
+}
+
+
+if(btnServiciiBurger) {
+  const linkServiciiBurger = document.getElementById("serviciiLinksBurger");
+  btnServiciiBurger.addEventListener("click", function() {
+    if(!btnServiciiBurger.classList.contains("pressed")) {
+      btnServiciiBurger.classList.add("pressed");
+      linkServiciiBurger.style.maxHeight = "400px";
+    }else {
+      btnServiciiBurger.classList.remove("pressed");
+      linkServiciiBurger.style.maxHeight = "0";
+    }
+  });
 }

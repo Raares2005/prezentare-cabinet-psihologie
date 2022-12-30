@@ -156,22 +156,55 @@
 //   });
 // } 
 
-const slideLeftControler = document.querySelector("#scLeft");
-const slideRightControler = document.querySelector("#scRight");
-const glider = document.querySelector(".glider");
-const sliders = document.querySelectorAll(".slider");
-glideOffset = 0;
-slideLeftControler.addEventListener("click", () => {
-  glideOffset -= 100;
-  if (glideOffset < -100 * (sliders.length - 1)) {
-    glideOffset = 0;
-  }
-  glider.style.transform = `translateX(${glideOffset}%)`;
-});
-slideRightControler.addEventListener("click", () => {
-  glideOffset += 100;
-  if (glideOffset > 0) {
-    glideOffset = -100 * (sliders.length - 1);
-  }
-  glider.style.transform = `translateX(${glideOffset}%)`;
+$(document).ready(function(){
+	// options
+	var speed = 1000; //transition speed - fade
+	var autoswitch = true; //auto slider options
+	var autoswitch_speed = 15000; //auto slider speed
+	
+	// add first initial active class
+	$(".slide").first().addClass("active");
+	
+	// hide all slides
+	$(".slide").hide;
+	
+	// show only active class slide
+	$(".active").show();
+	
+	// Next Event Handler
+	$('#next').on('click', nextSlide);// call function nextSlide
+	
+	// Prev Event Handler
+	$('#prev').on('click', prevSlide);// call function prevSlide
+	
+	// Auto Slider Handler
+	if(autoswitch == true){
+		setInterval(nextSlide,autoswitch_speed);// call function and value 4000
+	}
+	
+	// Switch to next slide
+	function nextSlide(){
+		$('.active').removeClass('active').addClass('oldActive');
+		if($('.oldActive').is(':last-child')){
+			$('.slide').first().addClass('active');
+		} else {
+			$('.oldActive').next().addClass('active');
+		}
+		$('.oldActive').removeClass('oldActive');
+		$('.slide').fadeOut(speed);
+		$('.active').fadeIn(speed);
+	}
+	
+	// Switch to prev slide
+	function prevSlide(){
+		$('.active').removeClass('active').addClass('oldActive');
+		if($('.oldActive').is(':first-child')){
+			$('.slide').last().addClass('active');
+		} else {
+			$('.oldActive').prev().addClass('active');
+		}
+		$('.oldActive').removeClass('oldActive');
+		$('.slide').fadeOut(speed);
+		$('.active').fadeIn(speed);
+	}
 });
