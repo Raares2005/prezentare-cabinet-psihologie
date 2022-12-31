@@ -44,7 +44,7 @@ button:hover {
     width: 79%;
     font-size: 1.5rem;
     font-weight: 100;
-    margin-top: 90px;
+    margin-top: 140px;
     margin-left: 20%;
     text-align: start;
     color: rgb(14, 14, 14);
@@ -60,10 +60,9 @@ main span {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    margin-top: 100px;
     width: 70%;
-    margin-left: 20%;
-
+    justify-content: space-around;
+    margin: 120px auto;
 }
 
 .contact {
@@ -82,12 +81,15 @@ main span {
 
 
 .learn-more {
+    width: 100%;
     font-size: 15px;
+    padding: 10px;
     background: #fff;
     border: none;
-    position: absolute;
+    position: relative;
     margin-bottom: 1%;
-    margin-left: 300px;
+    justify-content: space-around;
+    display: flex;
 
 
 }
@@ -137,73 +139,79 @@ main span {
 /* CAROUSEL */
 
 
-#slider{
-    width:100%;
-    height:400px;
+#slider {
+    width: 100%;
+    height: 400px;
     margin-top: 2%;
-    position:absolute;
-    overflow:hidden;
-    float:left;
-    padding:0;
-    border:#666 solid 2px;
-    border-radius:5px;
+    position: absolute;
+    overflow: hidden;
+    float: left;
+    padding: 0;
+    border: #666 solid 2px;
+    border-radius: 5px;
     min-width: 200px;
 }
 
-#slider > h1{
-	text-align:center;
-	margin-bottom:20px;
+#slider>h1 {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-#container{
+#container {
     width: 49%;
-	margin-left: 10%;
+    margin-left: 10%;
     height: 200px;
     position: relative;
-    
+
 }
 
-#slider > p{
-	margin:0;
-	padding:0 35px 0 0;
+#slider>p {
+    margin: 0;
+    padding: 0 35px 0 0;
 }
 
 
-#slider img{
-	width:100%;
-	height:auto;
+#slider img {
+    width: 100%;
+    height: auto;
 }
 
-#slider >.img1, .img2, .img3, .img4, .img5, .img6{
-	width:100%;
-	margin:0;
-	padding:0;
-} 
-
-
-.slide{
-	position:absolute;
-	width:100%;
-	height:100%;
-}
-.slide:nth-child(1){
-	background:#ce6868;
+#slider>.img1,
+.img2,
+.img3,
+.img4,
+.img5,
+.img6 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-.slide:nth-child(2){
-	background:#9ab6b6;
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
-.slide:nth-child(3){
-	background:#98cc98;
+.slide:nth-child(1) {
+    background: #ce6868;
 }
 
-.slide:nth-child(4){
-	background:#e7b892;
+.slide:nth-child(2) {
+    background: #9ab6b6;
 }
 
-.slide:nth-child(5){
-	background:#c4ad43;
+.slide:nth-child(3) {
+    background: #98cc98;
+}
+
+.slide:nth-child(4) {
+    background: #e7b892;
+}
+
+.slide:nth-child(5) {
+    background: #c4ad43;
 }
 
 
@@ -211,19 +219,20 @@ main span {
     color: #fff;
 }
 
-.slide-copy{
-	position:absolute;
-	bottom:0;
-	left:0;
-	padding:10px 20px 20px 20px;
-	background:7f7f7f;
-	background: rgba(14, 13, 13, 0.5);
-	width:100%;
-	max-height:32%;
+.slide-copy {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px 20px 20px 20px;
+    background: 7f7f7f;
+    background: rgba(14, 13, 13, 0.5);
+    width: 100%;
+    max-height: 32%;
 }
 
 
-#prev, #next {
+#prev,
+#next {
     cursor: pointer;
     position: absolute;
     top: 100%;
@@ -237,36 +246,36 @@ main span {
     border-radius: 0 3px 3px 0;
 }
 
-#container > .buttons {
-   display: flex;
+#container>.buttons {
+    display: flex;
 }
 
-#next{
-   right: 0;
+#next {
+    right: 0;
 }
 
 
 .arrow-right {
     float: left;
-	width: 0; 
-	height: 0; 
-	border-top: 30px solid transparent;
-	border-bottom: 30px solid transparent;	
-	border-left: 30px solid #fff;
-	position:relative;
-	top:20%;
-	right:40%;
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid #fff;
+    position: relative;
+    top: 20%;
+    right: 40%;
 }
 
 .arrow-left {
-	width: 0; 
-	height: 0; 
-	border-top: 30px solid transparent;
-	border-bottom: 30px solid transparent;	
-	border-right:30px solid #fff; 
-	position:relative;
-	top:20%;
-	left:30%;
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-right: 30px solid #fff;
+    position: relative;
+    top: 20%;
+    left: 30%;
 }
 
 
@@ -316,14 +325,14 @@ main span {
     z-index: 1;
     list-style: none;
     align-items: center;
-    
+
     width: 100%;
     margin-top: 5%;
-    
+
 }
 
 
-.exemple > p {
+.exemple>p {
     font-size: 2.4rem;
 }
 
@@ -375,11 +384,15 @@ main span {
 
 .proba {
     margin-left: 2%;
-} 
+}
 
 
 @media screen and (max-width: 1535px) {
-    
+
+    .learn-more {
+        position: relative;
+
+    }
 
     .topics h2 {
         margin-top: 2%;
@@ -396,7 +409,7 @@ main span {
         height: 150%;
     }
 
-    #slider img{
+    #slider img {
         width: 100%;
     }
 
@@ -411,25 +424,25 @@ main span {
 
     .arrow-right {
         float: left;
-        width: 0; 
-        height: 0; 
+        width: 0;
+        height: 0;
         border-top: 20px solid transparent;
-        border-bottom: 20px solid transparent;	
+        border-bottom: 20px solid transparent;
         border-left: 20px solid #fff;
-        position:relative;
-        top:20%;
-        right:40%;
+        position: relative;
+        top: 20%;
+        right: 40%;
     }
-    
+
     .arrow-left {
-        width: 0; 
-        height: 0; 
+        width: 0;
+        height: 0;
         border-top: 20px solid transparent;
-        border-bottom: 20px solid transparent;	
-        border-right:20px solid #fff; 
-        position:relative;
-        top:20%;
-        left:30%;
+        border-bottom: 20px solid transparent;
+        border-right: 20px solid #fff;
+        position: relative;
+        top: 20%;
+        left: 30%;
     }
 
 }
@@ -438,10 +451,20 @@ main span {
 
 @media screen and (max-width: 1200px) {
 
-    
+
+    .contact {
+        padding: 6px;
+        font-size: 1rem;
+    }
+
+    .learn-more {
+        padding: 10px;
+        font-size: 1rem;
+    }
 
 
-    .exemple > p {
+
+    .exemple>p {
         margin-top: 10%;
     }
 
@@ -458,8 +481,12 @@ main span {
 
 @media screen and (max-width: 1079px) {
 
+    .learn-more {
+        font-size: 1.9rem;
+    }
 
-    .descriere > h1 {
+
+    .descriere>h1 {
         font-size: 2.5rem;
     }
 
@@ -468,14 +495,14 @@ main span {
         font-size: 0.8rem;
     }
 
-     .topics > h2 {
+    .topics>h2 {
         font-size: 1.5rem;
         width: 1000px;
     }
 
     .background {
         height: auto;
-        
+
     }
 
     #container {
@@ -489,25 +516,25 @@ main span {
 
     .arrow-right {
         float: left;
-        width: 0; 
-        height: 0; 
+        width: 0;
+        height: 0;
         border-top: 20px solid transparent;
-        border-bottom: 20px solid transparent;	
+        border-bottom: 20px solid transparent;
         border-left: 20px solid #fff;
-        position:relative;
-        top:20%;
-        right:40%;
+        position: relative;
+        top: 20%;
+        right: 40%;
     }
-    
+
     .arrow-left {
-        width: 0; 
-        height: 0; 
+        width: 0;
+        height: 0;
         border-top: 20px solid transparent;
-        border-bottom: 20px solid transparent;	
-        border-right:20px solid #fff; 
-        position:relative;
-        top:20%;
-        left:30%;
+        border-bottom: 20px solid transparent;
+        border-right: 20px solid #fff;
+        position: relative;
+        top: 20%;
+        left: 30%;
     }
 
 }
@@ -520,100 +547,105 @@ main span {
         width: 60%;
     }
 
-    .descriere button{
+    .descriere button {
         font-size: 0.8rem;
     }
 
 
-   .descriere h5 {
-    font-size: 1.2rem;
-   }
+    .descriere h5 {
+        font-size: 1.2rem;
+    }
 
 
-   .poza-v1 {
-    margin-left: 4%;
-   }
+    .poza-v1 {
+        margin-left: 4%;
+    }
 
-   .topics h2 {
-    font-size: 1.2rem;
-   }
+    .topics h2 {
+        font-size: 1.2rem;
+    }
 
-   .background {
-    height: auto;
-   }
+    .background {
+        height: auto;
+    }
 
-   #container {
+    #container {
         height: 7.5%;
-   }
+    }
 
-   .slide-copy {
-    font-size: 0.7rem;
-   }
+    .slide-copy {
+        font-size: 0.7rem;
+    }
 
-   #next,
-   #prev {
-    margin-top: -10%;
-   }
-   
-   .arrow-right {
-    float: left;
-    width: 0; 
-    height: 0; 
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;	
-    border-left: 15px solid #fff;
-    position:relative;
-    top:20%;
-    right:40%;
-}
+    #next,
+    #prev {
+        margin-top: -10%;
+    }
 
-.arrow-left {
-    width: 0; 
-    height: 0; 
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;	
-    border-right:15px solid #fff; 
-    position:relative;
-    top:20%;
-    left:30%;
-}
-   
+    .arrow-right {
+        float: left;
+        width: 0;
+        height: 0;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-left: 15px solid #fff;
+        position: relative;
+        top: 20%;
+        right: 40%;
+    }
 
-   .servicii {
-    margin-top: 15%;
-   }
+    .arrow-left {
+        width: 0;
+        height: 0;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-right: 15px solid #fff;
+        position: relative;
+        top: 20%;
+        left: 30%;
+    }
 
 
-   .iconite {
-    width: 5%;
-    padding-right: 1.5%;
-   }
+    .servicii {
+        margin-top: 15%;
+    }
 
-   .servicii p {
-    width: 100%;
-    font-size: 1.8rem;
-   }
-   
-   .servicii h1 {
-    font-size: 1.2em;
-   }
 
-   .servicii h3 {
-    font-size: 1rem;
-    width: 90%;
-   }
+    .iconite {
+        width: 5%;
+        padding-right: 1.5%;
+    }
 
-   .mai-multe {
-    font-size: 0.8rem;
-    padding: 10px;
-    border-radius: 10px;
-   }
+    .servicii p {
+        width: 100%;
+        font-size: 1.8rem;
+    }
+
+    .servicii h1 {
+        font-size: 1.2em;
+    }
+
+    .servicii h3 {
+        font-size: 1rem;
+        width: 90%;
+    }
+
+    .mai-multe {
+        font-size: 0.8rem;
+        padding: 10px;
+        border-radius: 10px;
+    }
 
 }
 
 
 @media screen and (max-width: 768px) {
-    
+
+
+    .sub {
+        margin-top: 40px;
+    }
+
 
     .poze-v2 {
         margin-top: 1%;
@@ -623,8 +655,8 @@ main span {
     .topics h2 {
         font-size: 1rem;
     }
-    
-    
+
+
     .listaServicii p {
         font-size: 1rem;
     }
@@ -640,50 +672,50 @@ main span {
 
 
     .servicii p {
-        font-size: 1.29rem;
+        font-size: 2rem;
         width: 90%;
-        
-       }
+
+    }
 
 
-       #container {
+    #container {
         height: 7.1%;
-       }
+    }
 
-       .slide-copy {
+    .slide-copy {
         font-size: 0.5rem;
         width: 100%;
-       }
+    }
 
-       #next,
-       #prev {
+    #next,
+    #prev {
         display: flex;
         align-items: center;
         margin-top: -15%;
-       }
-
-
-       .arrow-right {
-        float: left;
-        width: 0; 
-        height: 0; 
-        border-top: 12px solid transparent;
-        border-bottom: 12px solid transparent;	
-        border-left: 12px solid #fff;
-        position:relative;
-        top:20%;
-        right:40%;
     }
-    
-    .arrow-left {
-        width: 0; 
-        height: 0; 
+
+
+    .arrow-right {
+        float: left;
+        width: 0;
+        height: 0;
         border-top: 12px solid transparent;
-        border-bottom: 12px solid transparent;	
-        border-right:12px solid #fff; 
-        position:relative;
-        top:20%;
-        left:30%;
+        border-bottom: 12px solid transparent;
+        border-left: 12px solid #fff;
+        position: relative;
+        top: 20%;
+        right: 40%;
+    }
+
+    .arrow-left {
+        width: 0;
+        height: 0;
+        border-top: 12px solid transparent;
+        border-bottom: 12px solid transparent;
+        border-right: 12px solid #fff;
+        position: relative;
+        top: 20%;
+        left: 30%;
     }
 }
 
@@ -691,152 +723,321 @@ main span {
 
 
 @media screen and (max-width: 608px) {
+    .sub {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        width: 60%;
+        justify-content: space-around;
+        margin: 30px auto;
+    }
+
+    .descriere h5 {
+        font-size: 0.7rem;
+    }
+
+    .imaginiTitlu {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .descriere button {
+        padding: 1px;
+        font-size: 0.6rem;
+    }
+
+    .topics h2 {
+        font-size: 0.9rem;
+    }
+
+    .mid {
+        margin-top: 2%;
+    }
+
+    .topics h2 {
+        font-size: 0.8rem;
+    }
+
+    #container {
+        height: 5.1%;
+    }
+
+    .slide-copy {
+        font-size: 0.41rem;
+    }
 
 
+    #next,
+    #prev {
+        display: flex;
+        align-items: center;
+        margin-top: -20%;
+    }
 
-.descriere h5 {
-    font-size: 1rem;
-}
+    .arrow-right {
+        float: left;
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid #fff;
+        position: relative;
+        top: 20%;
+        right: 40%;
+    }
 
-.topics h2 {
-    font-size: 0.9rem;
-}
-
-.imaginiTitlu {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-
-}
-
-.sub {
-    width: 100%;
-    margin-top: 20%;
-}
-
-
-.topics h2 {
-    font-size: 0.8rem;
-}
-
-#container {
-    height: 5.1%;
-   }
-
-.slide-copy {
-    font-size: 0.41rem;
-}
+    .arrow-left {
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-right: 10px solid #fff;
+        position: relative;
+        top: 20%;
+        left: 30%;
+    }
 
 
-#next,
-#prev {
-display: flex;
-align-items: center;
-margin-top: -20%;
-}
-
-.arrow-right {
-    float: left;
-    width: 0; 
-    height: 0; 
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;	
-    border-left: 10px solid #fff;
-    position:relative;
-    top:20%;
-    right:40%;
-}
-
-.arrow-left {
-    width: 0; 
-    height: 0; 
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;	
-    border-right:10px solid #fff; 
-    position:relative;
-    top:20%;
-    left:30%;
-}
+    .arrow-left,
+    .arrow-right {
+        font-size: 0.3rem;
+    }
 
 
-.arrow-left,
-.arrow-right {
-    font-size: 0.3rem;
-}
+    .pozaServicii {
+        width: 350px;
+        height: 150px;
+        display: flex;
+        margin: 0 auto;
+        background: grey;
+        margin-top: 10%;
+    }
+
+    .backgroundServicii {
+        display: none;
+    }
 
 
-
-.pozaServicii {
-    width: 250px;
-    height: 150px;
-    display: flex;
-    margin: 0 auto;
-    background: grey;
-    margin-top: 10%;
-}
-
-.backgroundServicii {
-    display: none;
-}
+    .listaServicii {
+        margin-top: 35%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        align-items: flex-start;
+    }
 
 
-.listaServicii {
-    margin-top: 35%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    align-items: flex-start;
-} 
+    .servicii p {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 1.6rem;
+    }
+
+    .listaServicii {
+        margin-left: 0;
+    }
+
+    .exemple h1 {
+        margin-left: 5%;
+    }
+
+    .exemple h3 {
+        margin: 0 auto;
+        font-size: 0.8rem;
+    }
+
+    .ico {
+        margin-left: 4%;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .ico>img {
+        margin-top: 6%;
+    }
 
 
-.servicii p {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    font-size: 1.6rem;
-}
+    .exemple {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 6%;
+    }
 
-.listaServicii {
-    margin-left: 0;
-}
-
-.exemple h1 {
-    margin-left: 5%;
-}
-
-.exemple h3 {
-    margin: 0 auto;
-}
-
-.ico  {
-    margin-left: 4%;
-    display: flex;
-    align-items: flex-start;
-}
-
-.ico > img {
-    margin-top: 6%;
-}
-
-
-.exemple  {
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 6%;
-}
- 
-.proba{
-    margin: 0 auto;
-}
+    .proba {
+        margin: 0 auto;
+    }
 
 }
 
 
 @media screen and (max-width: 458px) {
+
+    .descriere button {
+        padding: 2px;
+        font-size: 0.54rem;
+    }
+
+    .sub {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        width: 61%;
+        justify-content: space-around;
+        margin: 60px auto;
+    }
+
+    .descriere h5 {
+        font-size: 0.7rem;
+    }
+
+    .topics h2 {
+        font-size: 0.7rem;
+    }
+
+    .exemple h3 {
+        font-size: 0.7rem;
+    }
+
+}
+
+
+@media screen and (max-width: 423px) {
+
+    .intro {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 400px;
+    }
+
+
+    .descriere h5 {
+        font-size: 0.9rem;
+        width: 100%;
+        justify-content: center;
+        margin: auto;
+        margin-top: 30%;
+        text-align: center;
+
+    }
+
+    .descriere {
+        margin: 0px auto;
+        width: 81%;
+        margin-top: 100px;
+
+
+    }
+
+    .descriere button {
+        padding: 4px;
+        font-size: 0.54rem;
+    }
+
+
+    .sub {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        width: 90%;
+        justify-content: space-around;
+        margin: 20px auto;
+    }
+
+    .imaginiIntro {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 auto;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        margin: 80px auto;
+        height: 9%;
+    }
+
+
+    .poza-v1 {
+       display: none;
+        position: relative;
+        width: 100%;
+        margin-top: 10%;
+        
+    }
+
+    .poze-v2 {
+        position: relative;
+        width: 50%;
+        height: 350px;
+        margin: 0 auto;
+    }
+
+    .topics h2 {
+        font-size: 0.5rem;
+    }
+
+    .background {
+        height: 210px;
+    }
+
+
+    #container {
+        height: 80px;
+        width: 80%;
+    }
+
+    .slide-copy {
+        font-size: 0.30rem;
+    }
+
+    .arrow-right {
+        float: left;
+        width: 0;
+        height: 0;
+        border-top: 6px solid transparent;
+        border-bottom: 6px solid transparent;
+        border-left: 6px solid #fff;
+        position: relative;
+        top: 20%;
+        right: 40%;
+    }
+
+    .arrow-left {
+        width: 0;
+        height: 0;
+        border-top: 6px solid transparent;
+        border-bottom: 6px solid transparent;
+        border-right: 6px solid #fff;
+        position: relative;
+        top: 20%;
+        left: 40%;
+    }
     
-    
-    
+
+    .pozaServicii {
+        position: relative;
+        width: 70%;
+        height: 175px;
+        margin-top: 70px;
+
+    }
+
+
+    .listaServicii {
+        margin-top: -40px ;
+    }
+
+
+    .proba {
+        margin-bottom: 10%;
+    } 
+
 
 }
