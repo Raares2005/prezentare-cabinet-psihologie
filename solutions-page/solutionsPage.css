@@ -2,15 +2,15 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     column-gap: 5px;
-    grid-template-rows: repeat(12, 60px);
+    grid-template-rows: repeat(14, auto);
     row-gap: 5px;
-    max-width: 80vw;
+    width: 85vw;
     margin: 0 auto;
 }
 
 #question {
-    grid-area: 2 / 1 / 2 / 6;
-    font-size: 2.6rem;
+    grid-area: 1 / 1 / 2 / 7;
+    font-size: 2.3rem;
 }
 
 #question > span {
@@ -18,30 +18,28 @@
 }
 
 #questionAnsware {
-    grid-area: 5 / 1 / 7 / 6;
-    margin-left: 5px;
+    grid-area: 2 / 1 / 3 / 7;
     font-size: 1.3rem;
 }
 
 #imgSection1 {
-    grid-area: 1 / 7 / 6 / 12;
+    grid-area: 1 / 7 / 4 / 13;
     width: 80%;
     height: auto;
     justify-self: center;
 }
 
-
-
 #step1 {
-    grid-area: 9 / 1 / 11 / 4;
+    grid-area: 7 / 1 / 9 / 5;
+    /* font-weight: bold; */
 }
 
 #step2 {
-    grid-area: 9 / 4 / 11 / 8;
+    grid-area: 7 / 5 / 9 / 9;
 }
 
 #step3 {
-    grid-area: 9 / 8 / 11 / 12;
+    grid-area: 7 / 9 / 9 / 13;
 }
 
 .imgSolutionIcons {
@@ -49,11 +47,8 @@
     height: 40px;
 }
 
-
 .stepsTitle {
     display: flex;
-    height: 50px;
-    margin-bottom: 20px;
 }
 
 .stepsTitle > h2 {
@@ -62,9 +57,13 @@
     
 }
 
+.stepsTxt {
+
+}
+
 #solutionsBtnLink {
-    grid-area: 12 / 1 / 12 / 4;
-    width: 100%;
+    grid-area: 11 / 1 / 12 / 8;
+    width: 200px;
 }
 
 #solutionsBtn {
@@ -81,4 +80,72 @@
 
 #solutionsBtn:hover {
     background-color: #55eba0;
+}
+
+@media screen and (max-width: 999px) {
+    #mainContent {
+        width: 90vw;
+    }
+
+    #question {
+        align-self: center;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    #questionAnsware {
+        grid-area: 2 / 1 / 3 / 12;
+        margin-left: 5px;
+        font-size: 1rem;
+    }
+
+    #imgSection1 {
+        grid-area: 1 / 7 / 1 / 13;
+    }
+    
+    .stepsTxt {
+        font-size: 1rem;
+    }
+
+    #step1 {
+        grid-area: 7 / 1 / 9 / 12;
+        /* font-weight: bold; */
+    }
+    
+    #step2 {
+        grid-area: 10 / 1 / 11 / 12;
+    }
+    
+    #step3 {
+        grid-area: 12 / 1 / 13 / 12;
+    }
+    
+    #solutionsBtnLink {
+        grid-area: 14 / 1 / 14 / 8;
+    }
+}
+
+@media  screen and (max-width: 653px) {
+
+    #question {
+        grid-area: 1 / 1 / 1 / 12;
+    }
+
+    #questionAnsware {
+        grid-area: 3 / 1 / 4 / 12;
+        margin-left: 5px;
+        font-size: 1rem;
+    }
+
+    #imgSection1 {
+        grid-area: 2 / 1 / 3 / 12;
+        width: 80%;
+        height: 250px;
+        justify-self: center;
+    }
+
+    #solutionsBtnLink {
+        grid-area: 14 / 1 / 14 / 13;
+        justify-self: center;
+    }
 }
