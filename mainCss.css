@@ -169,8 +169,9 @@ a:visited {
         align-items: center;
         flex-direction: column;
         background-color: var(--turcoazcolor);
-        margin-top: 8%;
+        position: relative;
         height: 200px;
+        
     }
     
     .logoFooter {
@@ -460,3 +461,5 @@ a:visited {
         font-size: 0.9rem;
     }
 }
+
+
