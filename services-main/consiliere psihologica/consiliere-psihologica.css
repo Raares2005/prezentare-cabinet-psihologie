@@ -20,78 +20,7 @@ a {
 }
 
 
-/* NAVBAR */
 
-li.nav-item {
-
-    list-style: none;
-    margin: 20px 20px;
-    margin-right: 23px;
-    font-size: 14px;
-    color: var(--verdecolor);
-    font-weight: bold;
-}
-
-button.nav-item {
-    background-color: var(--turcoazcolor);
-    margin-left: 20px;
-    margin-bottom: 10px;
-    padding: 20px 40px;
-    border-radius: 20px;
-    border: solid var(--turcoazcolor);
-    font-size: 14px;
-}
-
-
-.container-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    z-index: 2;
-    position: relative;
-}
-
-.logo {
-    display: flex;
-    flex-direction: row;
-    margin: 10px;
-}
-
-.titluri {
-    align-self: center;
-}
-
-.logo-icon {
-    width: 10%;
-    display: flex;
-    flex-direction: row;
-    margin: 10px;
-}
-
-.telefon {
-    align-self: center;
-    margin-left: 10px;
-    color: #164505;
-    font-size: 16px;
-}
-
-
-.telefon-icon {
-    margin-left: 100px;
-    width: 2%;
-}
-
-.iteme {
-    display: flex;
-    flex-direction: row;
-    margin-right: 150px;
-}
-
-.navbar-nav {
-    display: flex;
-    flex-direction: row;
-}
 
 /* CONTENT */
 
@@ -101,20 +30,21 @@ button.nav-item {
 .text{
     width: 70%;
     margin-bottom: 10%;
+    margin: 0 50px;
 } 
 
 .pozaServicii {
-    width: 60%;
+    width: 50%;
     position: relative;
     z-index: 2;
     margin-left: 20%;
-    margin-bottom: 65%
+    margin-bottom: 25%
 
 }
 
 .backgroundServicii {
     width: 20%;
-    margin-top: 28%;
+    margin-top: 23%;
     margin-left: 6%;
     margin-bottom: 10%;
     background-color: #fff;
@@ -134,16 +64,14 @@ button.nav-item {
         margin-bottom: 10%;
         font-size: 1.3em;
         margin-top: 20%;
+        width: 90%;
     }
 
 #certificates .servicii p {
-    padding-left: 1%;
+    padding-left: 2%;
     margin-top: 1%;
-}
-
-#certificates .servicii-1 p {
-    padding-left: 1%;
-    margin-top: 1%;
+    margin-left: 4%;
+    text-align: left;
 }
 
 
@@ -152,9 +80,10 @@ button.nav-item {
     list-style: none;
     color:  black;
     font-size: 1.2rem;
-    margin-right: 10%;
+    margin: 0 auto;
     margin-top: 1%;
-    text-align: justify;
+    text-align: left;
+    width: 100%;
 }
 
 #certificates ul li::before {
@@ -162,10 +91,6 @@ button.nav-item {
     content: "Ｏ";
     color: #4CCE8E;
 }
-
-/* FOOTER */
-
-
 
 @media screen and (max-width: 1220px) {
 
@@ -176,7 +101,7 @@ button.nav-item {
     
     .backgroundServicii {
         width: 24%;
-        margin-top: 35%;
+        margin-top: 30%;
         margin-left: 6%;
         margin-bottom: 10%;
         background-color: #fff;
@@ -211,12 +136,25 @@ button.nav-item {
         margin-right: 10%;
         margin-top: 1%;
         text-align: justify;
+
     }
     
     }
     
     
     @media screen and (max-width: 1139px) {
+
+        .text {
+            width: 85%;
+        }
+
+        .pozaServicii {
+            width: 60%;
+        }
+
+        .backgroundServicii {
+            margin-top: 25%;
+        }
     
     #certificates h2 {
         text-align: center;
@@ -238,15 +176,15 @@ button.nav-item {
         list-style: none;
         color:  rgb(14, 14, 14);
         font-size: 1.1rem;
-        margin-right: 10%;
         margin-top: 1%;
-        text-align: justify;
+        text-justify: auto;
+        
     }
     
     }
     
     
-    @media screen and (max-width: 975px) {
+    @media screen and (max-width: 999px) {
 
         #certificates {
             display: flex;
@@ -255,36 +193,42 @@ button.nav-item {
         }
 
         .backgroundServicii {
-            width: 26%;
-            margin-top: 48%;
-            margin-left: 6%;
-            margin-bottom: 10%;
-            background-color: #fff;
-            position: absolute;
-            z-index: 1;
+            display: none;
         }
 
+        .servicii-imagine {
+            width: 40%;
+            margin-top: 20%;
+            margin: 5% auto;
+        }
 
         .pozaServicii {
             margin-bottom: 0px;
             margin-top: 15%;
+            margin: 0 auto;
+            width: 100%;
         }
+        
     
     .text {
         margin-bottom: 0px;
+        margin: 0 50px;
+        
     }
     
     #certificates h2 {
-        text-align: center;
+        text-justify: auto;
         margin: 0 auto;
         margin-bottom: 10%;
-        font-size: 1.2em;
-        margin-top: 20%;
+        font-size: 1.3em;
+        margin-top: 50px;
+       
     }
     
     #certificates .servicii p {
         padding-left: 1%;
         margin-top: 1.2%;
+        margin-right: 0;
         font-size: 1em;
     }
     
@@ -294,7 +238,8 @@ button.nav-item {
         list-style: none;
         color:  rgb(14, 14, 14);
         font-size: 1.3em;
-        margin-right: 10%;
+        margin: 0 auto;
+        width: 100%;
         margin-top: 1%;
         text-align: justify;
     }
@@ -311,15 +256,16 @@ button.nav-item {
             text-align: center;
             margin: 0 auto;
             margin-bottom: 10%;
-            font-size: 0.9em;
-            margin-top: 20%;
+            font-size: 1.2em;
+            margin-top: 12%;
         }
         
         #certificates .servicii p {
             padding-left: 1%;
             margin-top: 1%;
-            font-size: 0.9em;
+            font-size: 1em;
             width: 100%;
+            text-align: left;
         }
         
         
@@ -327,16 +273,14 @@ button.nav-item {
             align-self: flex-end;
             list-style: none;
             color:  rgb(14, 14, 14);
-            font-size: 0.9em;
-            margin-right: 10%;
+            font-size: 1em;
             margin-top: 1%;
-            text-align: justify;
-            width: 100%;
+            text-align: left;
         }
     }
     
     
-    @media screen and (max-width: 500px ) {
+    /* @media screen and (max-width: 500px ) {
     
         
         #certificates {
@@ -349,11 +293,11 @@ button.nav-item {
         .servicii-imagine {
             display: flex;
             margin-bottom: 0;
-            margin: 20px auto;
+            margin: 10% auto;
         }
     
         .pozaServicii {
-            width: 65%;
+            width: 100%;
             justify-content: center;
             position: relative;
         }
@@ -373,16 +317,13 @@ button.nav-item {
             margin: 0 auto;
         }
     
-    
-    
         #certificates ul li {
             align-self: flex-end;
             list-style: none;
             color:  rgb(14, 14, 14);
-            font-size: 0.6em;
-            margin-right: 10%;
+            font-size: 0.9em;
             margin-top: 1%;
-            text-align: justify;
+            text-align: left;
             width: 100%;
         }
     
@@ -390,10 +331,17 @@ button.nav-item {
             text-align: center;
             margin: 0 auto;
             margin-bottom: 10%;
-            font-size: 0.58em;
-            margin-top: 25%;
-
+            font-size: 0.8em;
+            margin-top: 25%
         }
-    
-    }
 
+        #certificates .servicii p {
+            padding-left: 1%;
+            margin-top: 1%;
+            font-size: 1em;
+            width: 100%;
+            text-align: left;
+        }
+
+    }
+ */
