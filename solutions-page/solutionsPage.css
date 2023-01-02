@@ -6,6 +6,7 @@
     row-gap: 5px;
     width: 85vw;
     margin: 0 auto;
+    margin-top: 40px;
 }
 
 #question {
@@ -31,15 +32,17 @@
 
 #step1 {
     grid-area: 7 / 1 / 9 / 5;
-    /* font-weight: bold; */
+    font-weight: bold;
 }
 
 #step2 {
     grid-area: 7 / 5 / 9 / 9;
+    font-weight: bold;
 }
 
 #step3 {
     grid-area: 7 / 9 / 9 / 13;
+    font-weight: bold;
 }
 
 .imgSolutionIcons {
@@ -84,7 +87,7 @@
 
 @media screen and (max-width: 999px) {
     #mainContent {
-        width: 90vw;
+        width: 85vw;
     }
 
     #question {
@@ -94,7 +97,7 @@
     }
 
     #questionAnsware {
-        grid-area: 2 / 1 / 3 / 12;
+        grid-area: 2 / 1 / 3 / 13;
         margin-left: 5px;
         font-size: 1rem;
     }
@@ -108,16 +111,16 @@
     }
 
     #step1 {
-        grid-area: 7 / 1 / 9 / 12;
+        grid-area: 7 / 1 / 9 / 13;
         /* font-weight: bold; */
     }
     
     #step2 {
-        grid-area: 10 / 1 / 11 / 12;
+        grid-area: 10 / 1 / 11 / 13;
     }
     
     #step3 {
-        grid-area: 12 / 1 / 13 / 12;
+        grid-area: 12 / 1 / 13 / 13;
     }
     
     #solutionsBtnLink {
@@ -128,17 +131,17 @@
 @media  screen and (max-width: 653px) {
 
     #question {
-        grid-area: 1 / 1 / 1 / 12;
+        grid-area: 1 / 1 / 1 / 13;
     }
 
     #questionAnsware {
-        grid-area: 3 / 1 / 4 / 12;
+        grid-area: 3 / 1 / 4 / 13;
         margin-left: 5px;
         font-size: 1rem;
     }
 
     #imgSection1 {
-        grid-area: 2 / 1 / 3 / 12;
+        grid-area: 2 / 1 / 3 / 13;
         width: 80%;
         height: 250px;
         justify-self: center;
