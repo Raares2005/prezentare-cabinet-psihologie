@@ -95,11 +95,16 @@ button.nav-item {
 
 /* CONTENT */
 
+
+#certificates {
+    width: 100%;
+}
+
 .servicii-imagine {
     width: 50%;
 }
 .text{
-    width: 70%;
+    width: 50%;
     margin-bottom: 10%;
 } 
 
@@ -112,8 +117,8 @@ button.nav-item {
 }
 
 .backgroundServicii {
-    width: 14%;
-    margin-top: 24%;
+    width: 24%;
+    margin-top: 25%;
     margin-left: 6%;
     margin-bottom: 10%;
     background-color: #fff;
@@ -124,7 +129,7 @@ button.nav-item {
 #certificates {
    display: flex;
    justify-content: flex-end;
-   align-items: flex-end;
+   align-items: center;
 }
 
 #certificates h2 {
@@ -144,7 +149,7 @@ button.nav-item {
 #certificates ul li {
     align-self: flex-end;
     list-style: none;
-    color:  black;
+    color:  rgb(14, 14, 14);
     font-size: 1.2rem;
     margin-right: 10%;
     margin-top: 1%;
@@ -154,7 +159,7 @@ button.nav-item {
 #certificates ul li::before {
     padding: 5px;
     content: "Ｏ";
-    font-size: 1.2rem;
+    
     color: #4CCE8E;
 }
 
@@ -192,3 +197,208 @@ footer {
     color: #fff;
     font-size: 19px;
 }
+
+
+@media screen and (max-width: 1220px) {
+
+.servicii-imagine {
+    width: 60%;
+    margin-bottom: 5%;
+}
+
+.backgroundServicii {
+    width: 24%;
+    margin-top: 30%;
+    margin-left: 6%;
+    margin-bottom: 10%;
+    background-color: #fff;
+    position: absolute;
+    z-index: 1;
+}
+
+.text {
+    width: 50%;
+}
+
+#certificates h2 {
+    align-self: flex-start;
+    margin-bottom: 10%;
+    margin-left: 22%;
+    font-size: 1.2rem;
+    margin-top: 12%;
+}
+
+#certificates .servicii p {
+    padding-left: 1%;
+    margin-top: 1%;
+    font-size: 1.2rem;
+}
+
+
+#certificates ul li {
+    align-self: flex-end;
+    list-style: none;
+    color:  rgb(14, 14, 14);
+    font-size: 1.1rem;
+    margin-right: 10%;
+    margin-top: 1%;
+    text-align: justify;
+}
+
+}
+
+
+@media screen and (max-width: 1139px) {
+
+#certificates h2 {
+    align-self: flex-start;
+    margin-bottom: 10%;
+    margin-left: 22%;
+    font-size: 1.2rem;
+    margin-top: 20%;
+}
+
+#certificates .servicii p {
+    padding-left: 1%;
+    margin-top: 1%;
+    font-size: 1rem;
+}
+
+
+#certificates ul li {
+    align-self: flex-end;
+    list-style: none;
+    color:  rgb(14, 14, 14);
+    font-size: 1.1rem;
+    margin-right: 10%;
+    margin-top: 1%;
+    text-align: justify;
+}
+
+}
+
+
+@media screen and (max-width: 975px) {
+
+.text {
+    margin-bottom: 0px;
+}
+
+#certificates h2 {
+    align-self: flex-start;
+    margin-bottom: 10%;
+   
+    font-size: 1rem;
+    margin-top: 20%;
+}
+
+#certificates .servicii p {
+    padding-left: 1%;
+    margin-top: 1%;
+    font-size: 1rem;
+}
+
+
+#certificates ul li {
+    align-self: flex-end;
+    list-style: none;
+    color:  rgb(14, 14, 14);
+    font-size: 1rem;
+    margin-right: 10%;
+    margin-top: 1%;
+    text-align: justify;
+}
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    
+
+    #certificates h2 {
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 10%;
+        font-size: 0.9em;
+        margin-top: 20%;
+    }
+    
+    #certificates .servicii p {
+        padding-left: 1%;
+        margin-top: 1%;
+        font-size: 1em;
+    }
+    
+    
+    #certificates ul li {
+        align-self: flex-end;
+        list-style: none;
+        color:  rgb(14, 14, 14);
+        font-size: 0.7em;
+        margin-right: 10%;
+        margin-top: 1%;
+        text-align: justify;
+    }
+}
+
+
+@media screen and (max-width: 500px ) {
+
+    
+    #certificates {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .servicii-imagine {
+        display: flex;
+        margin-bottom: 0;
+        margin: 20px auto;
+    }
+
+    .pozaServicii {
+        width: 65%;
+        justify-content: center;
+        position: relative;
+    }
+
+    .backgroundServicii {
+        width: 30%;
+        margin-top: 42%;
+        margin-left: 8%;
+        margin-bottom: 10%;
+        background-color: #fff;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .text {
+        margin-top: 1%;
+        margin: 0 auto;
+    }
+
+
+
+    #certificates ul li {
+        align-self: flex-end;
+        list-style: none;
+        color:  rgb(14, 14, 14);
+        font-size: 0.6em;
+        margin-right: 10%;
+        margin-top: 1%;
+        text-align: justify;
+        width: 100%;
+    }
+
+    #certificates h2 {
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 10%;
+        font-size: 0.7em;
+        margin-top: 20%;
+    }
+
+}
+
