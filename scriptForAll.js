@@ -6,21 +6,25 @@ const btnServiciiBurger = document.getElementById("btnBurgerDropdownContainer");
 if (btn && backdrop) {
   const bLogo = document.getElementById("containerLogoBurger");
   const bContainer = document.getElementById("burgerListContainer");
+  const bContainerUl = document.getElementById("containerBurgerStuff");
   btn.addEventListener("click", function () {
     if (!bLogo.classList.contains("open")) {
       bLogo.classList.add("open");
       backdrop.style.display = "block";
-      bContainer.classList.add("bContainerOpen");
+      bContainer.style.width = "300px";
+      bContainerUl.style.display = "flex";
     } else {
       bLogo.classList.remove("open");
       backdrop.style.display = "none";
-      bContainer.classList.remove("bContainerOpen");
+      bContainer.style.width = "0px";
+      bContainerUl.style.display = "none";
     }
   });
   backdrop.addEventListener("click", function () {
     bLogo.classList.remove("open");
     backdrop.style.display = "none";
-    bContainer.classList.remove("bContainerOpen");
+    bContainer.style.width = "0px";
+    bContainerUl.style.display = "none";
   });
 }
 

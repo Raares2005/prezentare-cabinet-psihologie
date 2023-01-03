@@ -58,7 +58,7 @@ li.nav-item {
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    z-index: 10;
+    z-index: 101;
     position: relative;
     width: 100%;
 }
@@ -237,8 +237,8 @@ a:visited {
     #backdrop {
         display: none;
         position: absolute;
-        width: 1000vw;
-        height: 1000vh;
+        width: 100vw;
+        height: 100%;
         z-index: 52;
         background: rgba(0, 0, 0, 0.4);
         overflow: hidden;
@@ -249,6 +249,7 @@ a:visited {
         
     }
 
+    
     #containerLogoBurger {
         display: flex;
         position: relative;
@@ -270,7 +271,7 @@ a:visited {
         border-radius: 10px;
         transition: all .5s ease-in-out ;
     }
-
+    
     #burgerLine::before, #burgerLine::after {
         content: '';
         position: absolute;
@@ -280,54 +281,54 @@ a:visited {
         background: var(--turcoazcolor);
         transition: all .5s ease-in-out ;
     }
-
+    
     #burgerLine::before {
         transform: translateY(-10px);
     }
-
+    
     #burgerLine::after {
         transform: translateY(10px);
     }
-
+    
     #containerLogoBurger.open {
         border: none;
     }
-
+    
     #containerLogoBurger.open #burgerLine {
         background: transparent;
     }
-
+    
     #containerLogoBurger.open #burgerLine::before {
         transform: rotate(-45deg);
     }
     #containerLogoBurger.open #burgerLine::after {
         transform: rotate(45deg);
     }
-
-    #burgerListContainer {
-        display: flex;
+    #containerBurgerStuff {
+        padding-top: 100px;
+        display: none;
+        width: 100%;
+        height: 100%;
         flex-direction: column;
         justify-content: space-between;
+    }
+    
+    #burgerListContainer {
+        display: flex;
         position: absolute;
         top: 0;
-        padding-top: 100px;
-        right: -400px;
-        width: 300px;
+        right: 0;
+        width: 0;
         height: 100vh;
         background-color: white;
         z-index: 100;
         transition: all .5s ease-in-out ;
     }
-
-
-    #burgerListContainer.bContainerOpen {
-        right: 0;
-    }
-
+    
     #burgerListContainer > ul {
         transition: all 0.5s ease-in;
     }
-
+    
     li.burgerItem {
         list-style: none;
         margin: 20px 30px;
