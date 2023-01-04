@@ -164,12 +164,12 @@ a:visited {
 
     footer {
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-around;
         align-items: center;
         flex-direction: column;
         background-color: var(--turcoazcolor);
         margin-top: 8%;
-        height: 200px;
+        height: 250px;
     }
     
     .logoFooter {
@@ -202,6 +202,38 @@ a:visited {
         font-size: 10px;
         margin-bottom: 10px;
     }    
+
+    #logoFooter {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #imgLogoCabinet {
+        width: 80px;
+        height: auto;
+    }
+
+    #imgLogoCOPSI {
+        width: 100px;
+        height: 80px;
+    }
+    
+    .titluriFooter > h1 {
+        text-align: center;
+    }
+
+    .titluriFooter > h4 {
+        text-align: center;
+    }
+
+    .textFooter {
+        text-align: center;
+    }
+
 
 @media screen and (max-width: 999px) {
     .container-nav {
@@ -545,6 +577,18 @@ a:visited {
         font-size: 0.7rem;
         text-align: center;
     }
+    footer {
+        hei
+    }
+
+    .titluriFooter > h1 {
+        font-size: 1em;
+    }
+
+    .titluriFooter > h4 {
+        font-size: 0.8em;
+    }
+
 
 }
 
