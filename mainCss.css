@@ -87,7 +87,7 @@ li.nav-item {
     align-items: center;
     flex-direction: column;
     margin-top: 10px;
-    width: 300px;
+    width: 272px;
     
 }
 
@@ -243,7 +243,7 @@ a:visited {
     }
 
     .logo {
-        width: 400px;
+        width: 313px;
     }
 
     .logo-icon {
@@ -335,7 +335,8 @@ a:visited {
         transform: rotate(45deg);
     }
     #containerBurgerStuff {
-        padding-top: 100px;
+        padding-top: 50px;
+        padding-bottom: 10px;
         display: none;
         width: 100%;
         height: 100%;
@@ -506,6 +507,10 @@ a:visited {
         font-size: .77em;
     }
 
+    .logo {
+        width: 234px;
+    }
+
     #containerLogoBurger {
         margin-right: 15px;
         width: 30px;
@@ -563,11 +568,11 @@ a:visited {
     }
 
     #logoIconBurger {
-        width: 12.5%;
+        width: 15%;
     }
 
     #burgerLogoText {
-        width: 87.5%;
+        width: 85%;
     }
 
     #burgerLogoText > h1 {
@@ -596,6 +601,10 @@ a:visited {
 @media screen and (max-width: 290px) {
     .titluri {
         width: 128px;
+    }
+
+    .logo {
+        width: 158px;
     }
 
     .logo > img {
