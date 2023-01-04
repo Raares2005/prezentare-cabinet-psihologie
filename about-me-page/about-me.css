@@ -116,6 +116,13 @@
 
 @media screen and (max-width: 999px) {
 
+
+    #certificatesImg {
+        margin: 10px auto;
+        grid-area: 17 / 1 / 18 / 13;
+    }
+
+
     #mainContentAboutMe {
         grid-template-rows: repeat(26, auto);
     }
