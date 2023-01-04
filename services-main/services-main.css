@@ -156,7 +156,10 @@ button.nav-item {
     margin: 0 auto;
     top: 10px;
     width: 100%;
-    margin-left: 2.4%;
+    
+    color: rgb(14, 14, 14);
+    background-color: #fff;
+    padding: 0;
 }
 
 .secondRow > .img-wrapper > li > h1 {
@@ -172,6 +175,7 @@ button.nav-item {
     margin-top: 50%;
     transition: 500ms ease-in-out;
     z-index: 2;
+    background: none;
 }
 
 .secondRow > .img-wrapper:hover > li > h1 {
@@ -201,11 +205,13 @@ button.nav-item {
     z-index: 1;
     background: linear-gradient(180deg, rgba(76,206,142,1) -9%, rgba(0,0,0,0.3253676470588235) 100%);
     overflow: hidden;
+    
 }
 
 .img-wrapper > .content.slide-down {
     z-index: 1;
     background: linear-gradient(0deg, rgba(76,206,142,1) -9%, rgba(0,0,0,0.3253676470588235) 100%);
+    width: 100%;
 }
 
 
@@ -235,7 +241,7 @@ button.nav-item {
     width: 90%;
     margin-right: 10%;
     margin-left: 2%;
-    margin-top: 10%;
+    margin-top: 1%;
 }
 
 
@@ -297,13 +303,17 @@ button.nav-item {
 
 #pozeServicii {
     width: 100%;
-    height: 20%;
+    height:  350px;
 }
  
 
 
 
 @media screen and (max-width: 1595px) {
+
+    #pozeServicii {
+        height: 240pxq;
+    }
 
     .img-wrapper > .content.content.slide-up > a > p {
         font-size: 0.8em;
