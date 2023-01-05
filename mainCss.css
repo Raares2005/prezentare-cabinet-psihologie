@@ -87,7 +87,7 @@ li.nav-item {
     align-items: center;
     flex-direction: column;
     margin-top: 10px;
-    width: 300px;
+    width: 272px;
     
 }
 
@@ -165,12 +165,12 @@ a:visited {
 
     footer {
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-around;
         align-items: center;
         flex-direction: column;
         background-color: var(--turcoazcolor);
         margin-top: 8%;
-        height: 200px;
+        height: 250px;
     }
     
     .logoFooter {
@@ -204,6 +204,38 @@ a:visited {
         margin-bottom: 10px;
     }    
 
+    #logoFooter {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #imgLogoCabinet {
+        width: 80px;
+        height: auto;
+    }
+
+    #imgLogoCOPSI {
+        width: 100px;
+        height: 80px;
+    }
+    
+    .titluriFooter > h1 {
+        text-align: center;
+    }
+
+    .titluriFooter > h4 {
+        text-align: center;
+    }
+
+    .textFooter {
+        text-align: center;
+    }
+
+
 @media screen and (max-width: 999px) {
     .container-nav {
         display: flex;
@@ -211,7 +243,7 @@ a:visited {
     }
 
     .logo {
-        width: 400px;
+        width: 313px;
     }
 
     .logo-icon {
@@ -303,7 +335,8 @@ a:visited {
         transform: rotate(45deg);
     }
     #containerBurgerStuff {
-        padding-top: 100px;
+        padding-top: 50px;
+        padding-bottom: 10px;
         display: none;
         width: 100%;
         height: 100%;
@@ -330,7 +363,7 @@ a:visited {
     li.burgerItem {
         list-style: none;
         margin: 20px 30px;
-        font-size: 18px;
+        font-size: 1rem;
         color: #164505;
         font-weight: bold;
         transition: 0.5s ease-in-out;
@@ -457,6 +490,7 @@ a:visited {
     }
     #burgerLogoText > h4 {
         font-size: 0.9rem;
+        text-align: center;
     }
 }
 
@@ -471,6 +505,10 @@ a:visited {
 
     .titluri > h4 {
         font-size: .77em;
+    }
+
+    .logo {
+        width: 234px;
     }
 
     #containerLogoBurger {
@@ -501,11 +539,72 @@ a:visited {
     #burgerLine::after {
         transform: translateY(5px);
     }
+
+    li.burgerItem {
+        font-size: 0.8rem;
+    }
+
+    li.burgerItem > #serviciiLinksBurger {
+        font-size: 0.6rem;
+    }
+
+    button.burgerItem { 
+        font-size: 0.8rem;
+        padding: 0 10px;
+        border-radius: 15px;
+        border: solid #4CCE8E;
+    }
+
+    #burgerBtn-Phone > #phoneNumber {
+        width: 50%;
+    }
+
+    #burgerBtn-Phone > #phoneNumber > a {
+        font-size: 0.8rem;
+    }
+
+    #burgerBtn-Phone > #phoneNumber > img {
+        width: 10px;
+    }
+
+    #logoIconBurger {
+        width: 15%;
+    }
+
+    #burgerLogoText {
+        width: 85%;
+    }
+
+    #burgerLogoText > h1 {
+        font-size: 0.9rem;
+    }
+
+    #burgerLogoText > h4 {
+        font-size: 0.7rem;
+        text-align: center;
+    }
+    footer {
+        hei
+    }
+
+    .titluriFooter > h1 {
+        font-size: 1em;
+    }
+
+    .titluriFooter > h4 {
+        font-size: 0.8em;
+    }
+
+
 }
 
 @media screen and (max-width: 290px) {
     .titluri {
         width: 128px;
+    }
+
+    .logo {
+        width: 158px;
     }
 
     .logo > img {

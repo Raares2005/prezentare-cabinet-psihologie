@@ -9,10 +9,17 @@ if (btn && backdrop) {
   const bContainer = document.getElementById("burgerListContainer");
   const bContainerUl = document.getElementById("containerBurgerStuff");
   btn.addEventListener("click", function () {
-    if (!bLogo.classList.contains("open")) {
+    let widthB = body.offsetWidth;
+    if (!(bLogo.classList.contains("open")) && widthB > 500) {
       bLogo.classList.add("open");
       backdrop.style.display = "block";
       bContainer.style.width = "300px";
+      bContainerUl.style.display = "flex";
+      body.style.overflow = "hidden";
+    }else if (!(bLogo.classList.contains("open")) && widthB <= 500) {
+      bLogo.classList.add("open");
+      backdrop.style.display = "block";
+      bContainer.style.width = "200px";
       bContainerUl.style.display = "flex";
       body.style.overflow = "hidden";
     } else {
