@@ -9,24 +9,21 @@
     <link rel="stylesheet" href="../mainCss.css">
     <title>About Me</title>
 </head>
-<body>
+<body id="body">
     <nav>
         <div class="container-nav">
+          <a href="../index.html">
             <div class="logo">
-                <a href="../homepage-page/index.html">
                     <img src="../img-main/logo.svg" class="logo-icon">
                     <div class="titluri">
                         <h1>Cabinet de psihologie</h1>
                         <h4 style="color: #ABB4B4;">Isabela Ionica Croitoru</h4>
-                    </div>
-                    <img src="../img-main/telefon-icon.svg" class="telefon-icon" alt="">
-                    <div class="telefon">
-                        <p class="telefon"><b>+40769685562</b></p>
-                    </div>
-                </a>
+                    </div>       
             </div>
+          </a>
             <div class="iteme">
                 <ul class="navbar-nav ">
+                  
                     <li class="nav-item">
                         <a id="btnServicii" href="../services-main/services-main.html">Servicii</a>
                         <div id="dropdown" class="dropdown">
@@ -35,59 +32,61 @@
                             <a href="../services-main/dezvoltare-personala/dezvoltare-personala.html">Dezvoltare Personala</a>
                             <a href="../services-main/cons-de-cuplu/consiliere-cuplu.html">Consiliere psihologica cuplu/familie</a>
                             <a href="../services-main/consiliere-online/consiliere-online.html">Consiliere psihologica online</a>
-                            <a href="../services-main/orientare-vocationala/orientare-vocationala.html">Orientare scolara/vocationala</a>
+                            <a href="../services-main/orientare-vocationala/">Orientare scolara/vocationala</a>
                         </div>
                     </li>
+                    
                     <li class="nav-item"><a href="../solutions-page/solutionsPage.html">Solutii</a></li>
-                    <li class="nav-item"><a href="about-me.html">Despre mine</a></li>
+                    <li class="nav-item"><a href="../about-me-page/about-me.html">Despre mine</a></li>
                     <li class="nav-item"><a href="../articles-page/articles.html">Articole</a></li>
+                    <li class="nav-item button">
+                      <a href="../contact-page/contact.html"><b>Contact</b></a>
+                    </li>
                 </ul>
-                <button class="nav-item"><a href="../contact-page/contact.html"><b>Contact</b></a></button>
             </div>
             <div id="containerLogoBurger">
                 <span id="burgerLine"> </span>
             </div>
-        </div>
-    
+          </div>
         <div id="burgerListContainer">
             <div id="containerBurgerStuff">
-                <div id="burgerLinks">
-                    <ul class="burgerNav">
-                        <li class="burgerItem">
-                            <div id="serviciiHeaderBurger">
-                                <a href="../services-main/services-main.html">Servicii</a>
-                                <div id="btnBurgerDropdownContainer" class=""><span id="btnBurgerDropdown"></span></div>
-                            </div>
-                            <div id="serviciiLinksBurger">
-                                <a href="../services-main/consiliere psihologica/consiliere-psihologica.html">Consiliere Psihologica</a>
-                                <a href="../services-main/evaluare-psihologica/evaluare-psihologica.html">Evaluare Psihologica</a>
-                                <a href="../services-main/dezvoltare-personala/dezvoltare-personala.html">Dezvoltare Personala</a>
-                                <a href="../services-main/cons-de-cuplu/consiliere-cuplu.html">Consiliere psihologica cuplu/familie</a>
-                                <a href="../services-main/consiliere-online/consiliere-online.html">Consiliere psihologica online</a>
-                                <a href="../services-main/orientare-vocationala/orientare-vocationala.html">Orientare scolara/vocationala</a>
-                            </div>
-                        </li> 
-                        <li class="burgerItem"><a href="../solutions-page/solutionsPage.html">Solutii</a> </li>
-                        <li class="burgerItem"> <a href="about-me.html">Despre mine</a></li>
-                        <li class="burgerItem"><a href="../articles-page/articles.html">Articole</a></li>
-                    </ul>
-                    <div id="burgerBtn-Phone">
-                        <a id="burgerContactBtn" href="../contact-page/contact.html"><button class="burgerItem"><b>Contact</b></button></a>
-                        <div id="phoneNumber">
-                            <img src="../img-main/telefon-icon.svg" alt="phone icon">
-                            <a href="#">+40769685562</a>
-                        </div>
+              <div id="burgerLinks">
+                <ul class="burgerNav" id="burgerNav">
+                  <li class="burgerItem">
+                    <div id="serviciiHeaderBurger">
+                      <a href="../services-main/services-main.html">Servicii</a>
+                      <div id="btnBurgerDropdownContainer" class=""><span id="btnBurgerDropdown"></span></div>
+                    </div>
+                    <div id="serviciiLinksBurger">
+                      <a href="../services-main/consiliere psihologica/consiliere-psihologica.html">Consiliere Psihologica</a>
+                      <a href="../services-main/evaluare-psihologica/evaluare-psihologica.html">Evaluare Psihologica</a>
+                      <a href="../services-main/dezvoltare-personala/dezvoltare-personala.html">Dezvoltare Personala</a>
+                      <a href="../services-main/cons-de-cuplu/consiliere-cuplu.html">Consiliere psihologica cuplu/familie</a>
+                      <a href="../services-main/consiliere-online/consiliere-online.html">Consiliere psihologica online</a>
+                      <a href="../services-main/orientare-vocationala/">Orientare scolara/vocationala</a>
+                    </div>
+                  </li> 
+                    <li class="burgerItem"><a href="../solutions-page/solutionsPage.html">Solutii</a> </li>
+                    <li class="burgerItem"> <a href="../about-me-page/about-me.html">Despre mine</a></li>
+                    <li class="burgerItem"><a href="../articles-page/articles.html">Articole</a></li>
+                </ul>
+                <div id="burgerBtn-Phone">
+                    <a id="burgerContactBtn" href="../contact-page/contact.html"><button class="burgerItem"><b>Contact</b></button></a>
+                    <div id="phoneNumber">
+                        <img src="../img-main/telefon-icon.svg" alt="phone icon">
+                        <a href="#">+40769685562</a>
                     </div>
                 </div>
-                <div id="burgerLogo">
-                    <a href="../homepage-page/index.html">
-                        <img src="../img-main/logo.svg" id="logoIconBurger">
-                        <div id="burgerLogoText">
-                            <h1>Cabinet de psihologie</h1>
-                            <h4 style="color: #ABB4B4;">Isabela Ionica Croitoru</h4>
-                        </div>
-                    </a>
-                </div>
+            </div>
+            <div id="burgerLogo">
+                <a href="index.html">
+                    <img src="../img-main/logo.svg" id="logoIconBurger">
+                    <div id="burgerLogoText">
+                        <h1>Cabinet de psihologie</h1>
+                        <h4 style="color: #ABB4B4;">Isabela Ionica Croitoru</h4>
+                    </div>
+                </a>
+            </div>
             </div>
         </div>
         <div id="backdrop"></div>
@@ -103,7 +102,7 @@
             </p> 
             <div class="about">
                 <a href="../services-main/services-main.html"><button class="buttons" id="buttonOffer">Afla despre servicii</button></a>
-                <a href="../contact-page/"><button class="buttons" id="buttonContact">Contact</button></a>
+                <a href="../contact-page/contact.html"><button class="buttons" id="buttonContact">Contact</button></a>
         </div>
             
         </section>
@@ -128,7 +127,10 @@
         </section>
     </div>
     <footer>
-        <img src="../../img-main/footer logo.svg" class="logo-footer">
+        <div id="logoFooter">
+            <img id="imgLogoCabinet" src="../img-main/footer logo.png" width="100px" height="100px" class="logo-footer">
+            <img id="imgLogoCOPSI" src="../homepage-page/img/logoCOPSI.jpeg" width="100px" height="80px">
+        </div>
         <div class="logoFooter">
             <div class="titluriFooter">
                 <h1> Cabinet de psihologie</h1>
@@ -137,8 +139,7 @@
         </div>
         </div>
         <div class="textFooter">
-            <p class="telefonFooter"><b> © 2022 Cabinet individual de psihologie Croitoru Isabela Ionica | Toate
-                    drepturile sunt rezervate </b></p>
+            <b> © 2023 Cabinet individual de psihologie Croitoru Isabela Ionica | Toate drepturile sunt rezervate </b>
         </div>
         </div>
     </footer>
