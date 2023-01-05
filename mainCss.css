@@ -219,8 +219,8 @@ a:visited {
     }
 
     #imgLogoCOPSI {
-        width: 142px;
-        height: auto;
+        width: 100px;
+        height: 80px;
     }
     
     .titluriFooter > h1 {
@@ -583,7 +583,9 @@ a:visited {
         font-size: 0.7rem;
         text-align: center;
     }
-    
+    footer {
+        hei
+    }
 
     .titluriFooter > h1 {
         font-size: 1em;
