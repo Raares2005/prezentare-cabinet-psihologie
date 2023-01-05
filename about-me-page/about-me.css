@@ -68,6 +68,9 @@
     cursor: pointer;
 }
 
+.buttons#buttonContact:hover {
+    text-decoration: underline #4CCE8E 2px;
+}
 
 #aboutPhoto {
     grid-area: 1 / 9 / 5 / 12;
