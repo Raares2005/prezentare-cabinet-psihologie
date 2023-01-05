@@ -42,11 +42,11 @@ a {
 }
 
 .img-wrapper {
-    width: 40%;
     position: relative;
     overflow: hidden;
     z-index: 1;
     width: 100%;
+    height: 240px;
 }
 
 .img-wrapper.first {
@@ -79,40 +79,60 @@ a {
     width: 100%;
 }
 
+.firstRow > .img-wrapper > li  > a > h1 {
+    display: inline-block;
+    text-align: center;
+}
 
-.firstRow > .img-wrapper > li > h1 {
+.linkH1 {
     display: flex;
+    align-items: center;
     position: absolute;
-    margin: 0 auto;
+    width: 100%;
+    height: 45px;
+}
+
+
+.linkH1.a{
+    bottom: 15px;
+    background-color: #4CCE8E;
+    /* text-align: center; */
+    transition: all 500ms ease-in;
+}
+
+.linkH1.b{
     top: 10px;
-    width: 100%;
-    
-    color: rgb(14, 14, 14);
-    background-color: #fff;
-    padding: 0;
+    background-color: #4CCE8E;
+    /* text-align: center; */
+    transition: all 500ms ease-in;
 }
 
-.secondRow > .img-wrapper > li > h1 {
-    display: flex;
-    position: absolute;
+.firstRow > .img-wrapper > li  > a > h1 {
     margin: 0 auto;
-    bottom: 10px;
-    width: 100%;
-    margin-left: 2.4%;
+    color: rgb(14, 14, 14);
+    font-size: 1.2em;
 }
 
-.firstRow > .img-wrapper:hover > li > h1 {
-    margin-top: 50%;
-    transition: 500ms ease-in-out;
+
+
+/* .firstRow > .img-wrapper:hover > li  > a {
+    height: 100%;
+} */
+
+.firstRow > .img-wrapper.first:hover > li  > .linkH1.a , .firstRow > .img-wrapper.second:hover > li  > .linkH1.a , .firstRow > .img-wrapper.third:hover > li  > .linkH1.a  {
+    margin-bottom: 170px;
     z-index: 2;
-    background: none;
+    /* background: none; */
 }
 
-.secondRow > .img-wrapper:hover > li > h1 {
-    margin-bottom: 45%;
-    transition: 500ms ease-in-out;
+.firstRow > .img-wrapper.forth:hover > li  > .linkH1.b , .firstRow > .img-wrapper.fifth:hover > li  > .linkH1.b , .firstRow > .img-wrapper.sixth:hover > li  > .linkH1.b {
+    margin-top: 170px;
     z-index: 2;
+    /* background: none; */
+    
 }
+
+
 
 .img-wrapper > .content {
     position: absolute;
@@ -133,14 +153,14 @@ a {
 
 .img-wrapper > .content.slide-up {
     z-index: 1;
-    background: linear-gradient(180deg, rgba(76,206,142,1) -9%, rgba(0,0,0,0.3253676470588235) 100%);
+    background: linear-gradient(0deg, rgba(76,206,142,1) -9%, rgba(0,0,0,0.3253676470588235) 100%);
     overflow: hidden;
     
 }
 
 .img-wrapper > .content.slide-down {
     z-index: 1;
-    background: linear-gradient(0deg, rgba(76,206,142,1) -9%, rgba(0,0,0,0.3253676470588235) 100%);
+    background: linear-gradient(180deg, rgba(76,206,142,1) -9%, rgba(0,0,0,0.3253676470588235) 100%);
     width: 100%;
 }
 
@@ -149,7 +169,7 @@ a {
 
 .img-wrapper > .content.slide-up > a > p {
     margin-left: 2%;
-
+    
 }
 
 .img-wrapper > .content.slide-down > a >  p {
@@ -164,7 +184,7 @@ a {
     display: flex;
     align-items: flex-end;
     width: 93%;
-
+    
 }
 
 .img-wrapper > .content.content.slide-down > a >  p {
@@ -174,6 +194,29 @@ a {
     margin-top: 1%;
 }
 
+.slide-up {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: center;
+}
+
+.slide-down {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+}
+
+.slide-down > p, .slide-up > p{
+    font-size: 0.8em;
+    width: 95%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* color: white; */
+}
 
 /* ROWS */
 
@@ -206,13 +249,13 @@ a {
 }
 
 .img-wrapper  .content.slide-up {
-    transform: translateY(-100%);
+    transform: translateY(120%);
 }
 
 
 
 .img-wrapper  .content.slide-down {
-    transform: translateY(120%);
+    transform: translateY(-120%);
 }
 
 
@@ -257,10 +300,6 @@ a {
        font-size: 1.3rem; 
     }
 
-    .secondRow > .img-wrapper > li > h1 {
-        font-size: 1.2rem; 
-     }
-
     .firstRow > .img-wrapper:hover > li > h1 {
         margin-top: 50%;
         transition: 500ms ease-in-out;
@@ -277,6 +316,11 @@ a {
 }
 
 @media screen and (max-width: 999px) {
+
+    .img-wrapper > li {
+        height: 240px;
+    }
+
     .img-wrapper.first {
         grid-area: 1 / 1 / 5 / 7;
     }
@@ -332,6 +376,10 @@ a {
     
     .img-wrapper.sixth {
         grid-area: 11 / 1 / 13 / 13;
+    }
+
+    .slide-down > p{
+        font-size: 0.7em;
     }
 }
 
