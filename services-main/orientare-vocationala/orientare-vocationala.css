@@ -34,7 +34,7 @@ a {
 } 
 
 .pozaServicii {
-    width: 50%;
+    width: 70%;
     position: relative;
     z-index: 2;
     margin-left: 20%;
@@ -43,8 +43,8 @@ a {
 }
 
 .backgroundServicii {
-    width: 20%;
-    margin-top: 23%;
+    width: 18%;
+    margin-top: 18%;
     margin-left: 6%;
     margin-bottom: 10%;
     background-color: #fff;
@@ -56,6 +56,7 @@ a {
    display: flex;
    justify-content: flex-end;
    align-items: center;
+   margin-top: 5%;
 }
 
 #certificates h2 {
@@ -101,7 +102,7 @@ a {
     
     .backgroundServicii {
         width: 24%;
-        margin-top: 30%;
+        margin-top: 25%;
         margin-left: 6%;
         margin-bottom: 10%;
         background-color: #fff;
@@ -153,7 +154,8 @@ a {
         }
 
         .backgroundServicii {
-            margin-top: 25%;
+            margin-top: 17%;
+            margin-left: 5%;
         }
     
     #certificates h2 {
