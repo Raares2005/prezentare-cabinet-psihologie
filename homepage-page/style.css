@@ -392,7 +392,7 @@ main span {
 
 
     .poza-v1 {
-        margin-top: 12%;
+        margin-top: 8.5%;
     }
 
     .poze-v2 {
@@ -475,6 +475,9 @@ main span {
     }
 
 
+    .mid {
+        margin-top: 28%;
+    }
 
     .exemple>p {
         margin-top: 10%;
@@ -492,6 +495,8 @@ main span {
 }
 
 @media screen and (max-width: 1079px) {
+
+
 
     .learn-more {
         font-size: 1.9rem;
@@ -559,6 +564,10 @@ main span {
         width: 60%;
     }
 
+    .descriere h5 {
+        width: 85%;
+    }
+
     .descriere button {
         font-size: 0.8rem;
     }
@@ -578,7 +587,7 @@ main span {
     }
 
     .background {
-        height: auto;
+        height: 400px;
     }
 
     #container {
@@ -654,23 +663,48 @@ main span {
 @media screen and (max-width: 768px) {
 
 
+    .descriere {
+        width: 100%;
+        margin-right: 10%;
+    }
+
+    .descriere h5 {
+        width: 100%;
+    }
+
 
     .sub {
+        margin-left: 10%;
+        width: 100%;
         margin-top: 40px;
     }
 
 
     .poza-v1 {
-        margin-top: 20%;
+        width: 20%;
+        margin-top: 25%;
+        
     }
 
     .poze-v2 {
-        margin-top: 10%;
+        margin-left: 15%;
+        width: 25%;
+        margin-top: 15%;
+    }
+
+    .info {
+        margin: 0 auto;
+        display: flex;
+        margin-right: 22%;
     }
 
 
     .topics h2 {
         font-size: 1rem;
+    }
+
+    .mid {
+        margin-top: 35%;
     }
 
 
@@ -694,9 +728,12 @@ main span {
 
     }
 
+    .background {
+        height: 300px;
+    }
 
     #container {
-        height: 7.1%;
+        height: 6.1%;
     }
 
     .slide-copy {
@@ -740,13 +777,15 @@ main span {
 
 
 @media screen and (max-width: 608px) {
+
     .sub {
         display: flex;
         flex-direction: row;
         align-items: flex-end;
-        width: 60%;
+        width: 100%;
         justify-content: space-around;
         margin: 30px auto;
+        margin-left: 10%;
     }
 
     .descriere h5 {
@@ -770,7 +809,11 @@ main span {
     }
 
     .mid {
-        margin-top: 2%;
+        margin-top: 8%;
+    }
+
+    .background {
+        height: 220px;
     }
 
     .topics h2 {
@@ -782,7 +825,7 @@ main span {
     }
 
     .slide-copy {
-        font-size: 0.41rem;
+        font-size: 0.38rem;
     }
 
 
@@ -893,7 +936,25 @@ main span {
     .intro {
         display: flex;
         flex-direction: column-reverse;
-        height: 400px;
+        
+    }
+
+    .poza-v1 {
+        width: 35%;
+        margin-top: 1%;
+        margin-right: 20%;
+        margin-bottom: 2%;
+    }
+
+    .poze-v2 {
+        margin-left: 25%;
+        width: 38%;
+        
+        margin-bottom: 40%;
+    }
+
+    .info {
+        position: relative;
     }
 
 
@@ -910,7 +971,7 @@ main span {
     .descriere {
         margin: 0px auto;
         width: 81%;
-        margin-top: 100px;
+        margin-top: 30%;
 
 
     }
@@ -947,34 +1008,29 @@ main span {
     }
 
 
-    .poza-v1 {
-       display: none;
-        
-    }
+    
 
-    .poze-v2 {
-        position: relative;
-        width: 40%;
-        height: 520%;
-        margin: 20% auto;
+    .topics {
+        width: 100%;
     }
 
     .topics h2 {
-        font-size: 0.5rem;
+        width: 100%;
+        font-size: 62%;
     }
 
     .background {
-        height: 210px;
+        height: 220px;
     }
 
 
     #container {
-        height: 80px;
-        width: 80%;
+        height: 4%;
+        width: 70%;
     }
 
     .slide-copy {
-        font-size: 0.30rem;
+        font-size: 0.42rem;
     }
 
     .arrow-right {
@@ -997,9 +1053,10 @@ main span {
     }
     
 
+
     .pozaServicii {
         position: relative;
-        width: 35%;
+        width: 30%;
         height: 200px;
         margin-top: 70px;
 
@@ -1019,3 +1076,27 @@ main span {
 }
 
 
+@media screen and (max-width: 378px) {
+
+    .pozaServicii {
+        position: relative;
+        width: 35%;
+        height: 200px;
+        margin-top: 70px;
+
+    }
+
+    .topics h2 {
+        font-size: 0.52rem;
+    }
+
+    #container {
+        height: 4.5%;
+        width: 80%;
+    }
+
+    .slide-copy {
+        font-size: 0.40rem;
+    }
+
+}
