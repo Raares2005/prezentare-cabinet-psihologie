@@ -55,7 +55,6 @@ a {
 #certificates {
    display: flex;
    justify-content: flex-end;
-   align-items: center;
 }
 
 #certificates h2 {
@@ -63,7 +62,7 @@ a {
         margin: 0 auto;
         margin-bottom: 10%;
         font-size: 1.3em;
-        margin-top: 10%;
+        margin-top: 15%;
         width: 90%;
     }
 
@@ -250,7 +249,11 @@ a {
     
     @media screen and (max-width: 768px) {
     
-        
+        #certificates {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+         }
         
     
         #certificates h2 {

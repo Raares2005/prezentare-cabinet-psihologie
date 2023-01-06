@@ -26,6 +26,7 @@ a {
 
 .servicii-imagine {
     width: 50%;
+    top: 1px;
 }
 .text{
     width: 70%;
@@ -38,13 +39,13 @@ a {
     position: relative;
     z-index: 2;
     margin-left: 20%;
-    margin-bottom: 25%
-
+    margin-bottom: 30%;
+    margin-top: 12%;
 }
 
 .backgroundServicii {
     width: 20%;
-    margin-top: 23%;
+    margin-top: 25%;
     margin-left: 6%;
     margin-bottom: 10%;
     background-color: #fff;
@@ -55,7 +56,7 @@ a {
 #certificates {
    display: flex;
    justify-content: flex-end;
-   align-items: center;
+   
 }
 
 #certificates h2 {
@@ -63,7 +64,7 @@ a {
         margin: 0 auto;
         margin-bottom: 10%;
         font-size: 1.3em;
-        margin-top: 20%;
+        margin-top: 10%;
         width: 90%;
     }
 
@@ -101,7 +102,7 @@ a {
     
     .backgroundServicii {
         width: 24%;
-        margin-top: 30%;
+        margin-top: 35%;
         margin-left: 6%;
         margin-bottom: 10%;
         background-color: #fff;
@@ -153,7 +154,8 @@ a {
         }
 
         .backgroundServicii {
-            margin-top: 25%;
+            margin-left: 5%;
+            margin-top: 30%;
         }
     
     #certificates h2 {
@@ -250,7 +252,11 @@ a {
     @media screen and (max-width: 768px) {
     
         
-        
+        #certificates {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+         }
     
         #certificates h2 {
             text-align: center;
