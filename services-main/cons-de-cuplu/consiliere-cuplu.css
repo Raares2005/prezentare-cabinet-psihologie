@@ -39,12 +39,12 @@ a {
     z-index: 2;
     margin-left: 20%;
     margin-bottom: 25%;
-    margin-top: 5%;
+    margin-top: 27%;
 }
 
 .backgroundServicii {
     width: 20%;
-    margin-top: 23%;
+    margin-top: 33%;
     margin-left: 6%;
     margin-bottom: 10%;
     background-color: #fff;
@@ -55,7 +55,6 @@ a {
 #certificates {
    display: flex;
    justify-content: flex-end;
-   align-items: center;
 }
 
 #certificates h2 {
@@ -101,7 +100,7 @@ a {
     
     .backgroundServicii {
         width: 24%;
-        margin-top: 30%;
+        margin-top: 42%;
         margin-left: 6%;
         margin-bottom: 10%;
         background-color: #fff;
@@ -153,7 +152,8 @@ a {
         }
 
         .backgroundServicii {
-            margin-top: 25%;
+            margin-top: 35%;
+            margin-left: 4%;
         }
     
     #certificates h2 {
@@ -249,7 +249,11 @@ a {
     
     @media screen and (max-width: 768px) {
     
-        
+        #certificates {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+         }
         
     
         #certificates h2 {
