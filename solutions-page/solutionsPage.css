@@ -10,6 +10,7 @@
 }
 
 #question {
+    margin-top: 50px;
     grid-area: 1 / 1 / 2 / 7;
     font-size: 2.3rem;
 }
@@ -90,6 +91,7 @@
         align-self: center;
         text-align: center;
         font-size: 1.5rem;
+        margin-top: 0;
     }
 
     #questionAnsware {
