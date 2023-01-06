@@ -53,6 +53,7 @@ button:hover {
 
 
 main span {
+    font-weight: bold;
     color: var(--turcoazcolor);
 }
 
@@ -134,7 +135,7 @@ main span {
 }
 
 .topics span {
-    color: var(--verdecolor);
+    color: var(--turcoazcolor);
 }
 
 /* CAROUSEL */
