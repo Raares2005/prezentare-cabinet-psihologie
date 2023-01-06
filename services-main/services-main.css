@@ -38,6 +38,8 @@ a {
     overflow: hidden;
     z-index: 1;
     width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
     height: 240px;
 }
 
@@ -136,14 +138,14 @@ a {
 
 .img-wrapper > .content.slide-up {
     z-index: 1;
-    background: linear-gradient(0deg, rgba(76,206,142,1) -9%, rgba(0,0,0,0.3253676470588235) 100%);
+    background: linear-gradient(0deg, rgba(76,206,142,1) 35%, rgba(0,0,0,0.3253676470588235) 100%);
     overflow: hidden;
 
 }
 
 .img-wrapper > .content.slide-down {
     z-index: 1;
-    background: linear-gradient(180deg, rgba(76,206,142,1) -9%, rgba(0,0,0,0.3253676470588235) 100%);
+    background: linear-gradient(180deg, rgba(76,206,142,1) 35%, rgba(0,0,0,0.3253676470588235) 100%);
     width: 100%;
 }
 
@@ -245,7 +247,7 @@ a {
 @media screen and (max-width: 1595px) {
 
     .linkH1.a{
-        bottom: 3%;
+        bottom: 10px;
         background-color: #4CCE8E;
         /* text-align: center; */
         transition: all 500ms ease-in;
@@ -266,43 +268,45 @@ a {
     }
 
     .firstRow > .img-wrapper:hover > li > h1 {
-        margin-top: 50%;
+        /* margin-top: 50%; */
         transition: 500ms ease-in-out;
         z-index: 2;
         font-size: 1.2rem;
     }
     
-    .secondRow > .img-wrapper:hover > li > h1 {
-        margin-bottom: 45%;
-        transition: 500ms ease-in-out;
-        z-index: 2;
-        font-size: 1.2rem;
-    }
 }
 
 
 @media screen and (max-width: 1120px ) {
     #pozeServicii {
-        height: 220px;
+        height: 240px;
     }
 
     .img-wrapper  .content.slide-up {
         width: 100%;
-        height: 92%;
+        height: 100%;
     }
-    
-    
     
     .img-wrapper  .content.slide-down {
         height: 92%;
     }
     
-   
 }
 
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 1300px) {
 
+
+    .img-wrapper {
+        max-width: 500px;
+    }
+
+    .linkH1.a{
+        bottom: 0px;
+        background-color: #4CCE8E;
+        /* text-align: center; */
+        transition: all 500ms ease-in;
+    }
 
     .linkH1.b{
         top: 0px;
@@ -313,14 +317,11 @@ a {
 
     .img-wrapper  .content.slide-up {
         width: 100%;
-        height: 92%;
+        height: 100%;
     }
     
-    
-    
     .img-wrapper  .content.slide-down {
-        height: 92%;
-        
+        height: 100%;
     }
 
 
@@ -352,7 +353,11 @@ a {
         grid-area: 9 / 7 / 13 / 13;
     }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
+
+    .img-wrapper {
+        max-width: 400px;
+    }
 
     .firstRow > .img-wrapper.first:hover > li  > .linkH1.a , .firstRow > .img-wrapper.second:hover > li  > .linkH1.a , .firstRow > .img-wrapper.third:hover > li  > .linkH1.a  {
         
@@ -370,6 +375,7 @@ a {
 
     #servicii {
         width: 75%;
+
         margin: 0 auto;
         margin-top: 40px;
     }
@@ -420,20 +426,20 @@ a {
 
 @media screen and (max-width: 1150px) {
     .img-wrapper > .content.content.slide-up > a > p {
-        font-size: 0.74em;
+        font-size: 0.9em;
     }
     
     .img-wrapper > .content.content.slide-down > a >  p {
-        font-size: 0.73em;
+        font-size: 0.9em;
     }
     .firstRow > .img-wrapper:hover > li > h1 {
-        margin-top: 50%;
+        /* margin-top: 50%; */
         transition: 500ms ease-in-out;
         z-index: 2;
     }
     
     .secondRow > .img-wrapper:hover > li > h1 {
-        margin-bottom: 45%;
+        /* margin-bottom: 45%; */
         transition: 500ms ease-in-out;
         z-index: 2;
         font-size: 1rem;

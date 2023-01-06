@@ -6,6 +6,7 @@
 
 .mainContentContact {
     display: grid;
+    position: relative;
     grid-template-columns: repeat(12, 1fr);
     column-gap: 5px;
     grid-template-rows: repeat(14, 40px);
@@ -22,11 +23,13 @@
 }
 
 .contactTxtTitle {
-    grid-area: 1 / 2 / 2 / 3;
+    grid-area: 3 / 2 / 3 / 3;
 }
 
 .contactTxtUnderline {
-    grid-area: 2 / 2 / 2 / 3;
+    position: absolute;
+    bottom: 0;
+    grid-area: 3 / 2 / 3 / 3;
     width: 92px;
     height: 3px;
     outline: none;
@@ -37,13 +40,6 @@
 .icon {
     height: 30px;
     width: auto;
-}
-
-#cabinetName {
-    grid-area: 3 / 2 / 3 / 5;
-    place-self: start;
-    margin: 0;
-    font-size: 1rem;
 }
 
 #locationIcon {
@@ -87,7 +83,7 @@
 /* Map */
 
 #location-on-map {
-    grid-area: 2 / 8 / 11 / 13;
+    grid-area: 3 / 8 / 12 / 13;
     width: 100%;
     height: auto;
 }
@@ -139,10 +135,22 @@ footer {
         grid-template-columns: repeat(6, 1fr);
     }
 
+
+
     .txtContact {
         color:  var(--txtColor);
         font-size: 0.9rem;
         font-weight: 600;
+    }
+
+    .contactTxtTitle {
+        grid-area: 3 / 2 / 3 / 13;
+        text-align: center;
+    }
+    
+    .contactTxtUnderline {
+        grid-area: 3 / 2 / 3 / 13;
+        justify-self: center;
     }
 
     #locationIcon {
@@ -151,7 +159,7 @@ footer {
     }
     
     #locationAddress {
-        grid-area: 5 / 2 / 5 / 7;
+        grid-area: 5 / 2 / 5 / 13;
         text-align: center;
         justify-self: center;
         margin: 0;
@@ -163,7 +171,7 @@ footer {
     }
     
     #phoneNumber {
-        grid-area: 7 / 2 / 7 / 7;
+        grid-area: 7 / 2 / 7 / 13;
         text-align: center;
         justify-self: center;
         margin: 0;
@@ -175,7 +183,7 @@ footer {
     }
     
     #facebookLink {
-        grid-area: 9 / 2 / 10 / 7;
+        grid-area: 9 / 2 / 10 / 13;
         text-align: center;
         justify-self: center;
     }
@@ -186,7 +194,7 @@ footer {
     }
     
     #mailAddress {
-        grid-area: 11 / 2 / 11 / 7;
+        grid-area: 11 / 2 / 11 / 13;
         text-align: center;
         justify-self: center;
     }
