@@ -1097,6 +1097,12 @@ main span {
 
 @media screen and (max-width: 378px) {
 
+
+    .info {
+        margin-bottom: 0px;
+    }
+
+
     .pozaServicii {
         position: relative;
         width: 35%;
@@ -1114,8 +1120,27 @@ main span {
         width: 80%;
     }
 
+    .mid {
+        margin-top: 12%;
+    }
+
+
     .slide-copy {
         font-size: 0.40rem;
+    }
+
+    .poza-v1 {
+        position: relative;
+        width: 35%;
+        margin-top: 0%;
+        margin-right: 20%;
+        margin-bottom: 2%;
+    }
+
+    .descriere {
+        margin: 0px auto;
+        width: 81%;
+        
     }
 
 }
