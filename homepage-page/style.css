@@ -424,7 +424,7 @@ main span {
     }
 
     #slider {
-        height: 150%;
+        height: 140%;
     }
 
     #slider img {
@@ -481,6 +481,10 @@ main span {
     }
 
 
+    #slider {
+        height: 130%;
+    }
+
     .mid {
         margin-top: 28%;
     }
@@ -497,6 +501,10 @@ main span {
     .backgroundServicii {
         margin-top: 35%;
     }
+
+    
+
+
 
 }
 
@@ -529,7 +537,7 @@ main span {
     }
 
     #container {
-        height: 8.5%;
+        height: 200px;
     }
 
     .slide-copy {
@@ -752,7 +760,7 @@ main span {
     #prev {
         display: flex;
         align-items: center;
-        margin-top: -15%;
+        margin-top: -20%;
     }
 
 
@@ -800,6 +808,7 @@ main span {
     }
 
     .imaginiTitlu {
+        margin-top: 10%;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -828,7 +837,7 @@ main span {
     }
 
     #container {
-        height: 5.1%;
+        height: 90px;
     }
 
     .slide-copy {
@@ -1030,6 +1039,9 @@ main span {
         height: 220px;
     }
 
+    #slider {
+        height: 120px;
+    }
 
     #container {
         height: 90px;
