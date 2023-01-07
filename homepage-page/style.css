@@ -1100,6 +1100,18 @@ main span {
 
     .info {
         margin-bottom: 0px;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .poza-v1 {
+        margin-left: 20%;
+    }
+
+
+    .poze-v2 {
+        margin-left: 45%;
+        
     }
 
 
