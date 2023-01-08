@@ -5,6 +5,8 @@
     --hoverColor: #4CCE8E;
 }
 
+
+
 * {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Open Sans', sans-serif;
@@ -12,7 +14,12 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    color: #000;
 }
+
+button {
+    color: #000;
+  }
 
 body {
     display: flex;
