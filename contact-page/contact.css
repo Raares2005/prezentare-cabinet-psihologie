@@ -4,6 +4,7 @@
 
 
 
+
 .mainContentContact {
     display: grid;
     position: relative;
@@ -16,8 +17,8 @@
     border: var(--txtColor);
 }
 
-.txtContact {
-    color:  var(--txtColor);
+.txtContact  {
+    color: var(--txtColor);
     font-size: 1.2rem;
     font-weight: 600;
 }
