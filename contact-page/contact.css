@@ -9,7 +9,7 @@
     position: relative;
     grid-template-columns: repeat(12, 1fr);
     column-gap: 5px;
-    grid-template-rows: repeat(14, 40px);
+    grid-template-rows: repeat(18, 40px);
     row-gap: 5px;
     width: 85%;
     margin: 0 auto;
@@ -20,6 +20,20 @@
     color:  var(--txtColor);
     font-size: 1.2rem;
     font-weight: 600;
+}
+
+.txtProgram {
+    font-size: 1.2rem;
+    grid-area: 13 / 2 / 13 / 7;
+}
+
+.txtProgram > p {
+    margin-bottom: 2%;
+}
+
+.txtProgram span {
+    color: var(--txtColor);
+    font-weight: bold;
 }
 
 .contactTxtTitle {
@@ -55,11 +69,13 @@
 #phoneIcon {
     grid-area: 7 / 1 / 7 / 1;
     justify-self: center;
+    
 }
 
 #phoneNumber {
     grid-area: 7 / 2 / 7 / 6;
     margin: 0;
+    
 }
 
 #facebookIcon {
@@ -80,6 +96,11 @@
     grid-area: 11 / 2 / 11 / 6;
 }
 
+#ProgramIcon {
+    grid-area: 13 / 2 / 13 / 1;
+    justify-self: center;
+}
+
 /* Map */
 
 #location-on-map {
@@ -94,28 +115,40 @@
 }
 
 
-footer {
-    margin-top: 10%;
-}
-
 @media screen and  (max-width: 1200px){
     .mainContentContact {
         width: 95%;
     }
 }
 
+
+@media screen and (max-width: 914px) {
+    #phoneIcon {
+        grid-area: 8 / 1 / 8 / 1;
+        justify-self: center;
+        
+    }
+    
+    #phoneNumber {
+        grid-area: 7 / 2 / 7 / 6;
+        margin: 0;
+        margin-top: 15%;
+    }
+}
+
+
 @media screen and (max-width: 850px) {
     .mainContentContact {
-        grid-template-rows: repeat(17, 40px);
+        grid-template-rows: repeat(21,45px);
     }
 
     #location-on-map {
-        grid-area: 12 / 1 / 18 / 13;
+        grid-area: 18 / 1 / 41 / 13;
         width: 100%;
         height: auto;
+       
     }
 
-    
 
     #locationAddress {
         grid-area: 5 / 2 / 5 / 13;
@@ -128,14 +161,25 @@ footer {
         margin: 0;
         font-size: 1rem;
     }
+
+    #phoneIcon {
+        grid-area: 7 / 1 / 7 / 1;
+        justify-self: center;
+        
+    }
+    
+    #phoneNumber {
+        grid-area: 7 / 2 / 7 / 6;
+        margin: 0;
+        
+    }
+
 }
 
-@media  (max-width: 450px) {
+@media screen and (max-width: 450px) {
     .mainContentContact {
         grid-template-columns: repeat(6, 1fr);
     }
-
-
 
     .txtContact {
         color:  var(--txtColor);
@@ -152,7 +196,7 @@ footer {
         grid-area: 3 / 2 / 3 / 13;
         justify-self: center;
     }
-
+    
     #locationIcon {
         grid-area: 5 / 1 / 5 / 2;
         justify-self: center;
@@ -198,4 +242,9 @@ footer {
         text-align: center;
         justify-self: center;
     }
+    .txtProgram > p{
+        text-align: center;
+        justify-self: center;
+    }
+    
 }

@@ -80,6 +80,7 @@
 #aboutPhoto #imgPhoto {
     max-width: 320px;
     height: auto;
+    margin-top: 5%;
 }
 
 #certificatesImg {

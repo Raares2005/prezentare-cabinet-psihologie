@@ -242,6 +242,8 @@ a:visited {
     }
 
 
+
+
 @media screen and (max-width: 999px) {
     .container-nav {
         display: flex;
@@ -498,7 +500,17 @@ a:visited {
         font-size: 0.9rem;
         text-align: center;
     }
+
+    footer {
+        margin-top: 19%;
+    }
 }
+
+@media screen and (max-width: 850px) {
+    
+}
+
+
 
 @media screen and (max-width: 500px) {
     .titluri {
