@@ -146,15 +146,6 @@ li.nav-item {
     color: #ffffff;
 }
 
-a:visited {
-    color: black;
-}
-
-
-
-
-
-
 /* Burger */
 
 #containerBurger, #containerLogoBurger, #burgerListContainer {
