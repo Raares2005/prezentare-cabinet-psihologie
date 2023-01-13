@@ -454,7 +454,7 @@ li.nav-item {
     }
 
     #phoneNumber {
-        display: flex;
+        display: none;
         justify-content: space-between;
         width: 45%;
     }
