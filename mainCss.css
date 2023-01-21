@@ -453,15 +453,15 @@ li.nav-item {
         font-size: 1rem;
     }
 
-    #phoneNumber {
+    .txtContact p {
         display: none;
         justify-content: space-between;
         width: 45%;
     }
 
+
     #phoneNumber > img {
-        width: 20px;
-        height: auto;
+       display: none;
     }
 
     #phoneNumber > a {
