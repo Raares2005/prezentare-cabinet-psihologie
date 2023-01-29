@@ -138,7 +138,9 @@
         <a class="txtContact" id="mailAddress" href="mailto:"
             target="_blank">contact@psiholog-constanta-isabela-croitoru.ro</a>
         <div id="location-on-map"><iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11444.949522905536!2d28.6480344!3d44.1815757!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x34c974751562c770!2sCabinet%20de%20Psihologie%20Isabela%20Croitoru!5e0!3m2!1sen!2sro!4v1674330077933!5m2!1sen!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11444.949522905536!2d28.6480344!3d44.1815757!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x34c974751562c770!2sCabinet%20de%20Psihologie%20Isabela%20Croitoru!5e0!3m2!1sen!2sro!4v1674330077933!5m2!1sen!2sro"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe></div>
         <img src="../contact-page/img-contact/schedule.svg" alt="" class="icon" id="ProgramIcon">
         <div class="txtProgram">
             <p><b>Luni</b> <span>17:00-20:00</span> </p>
@@ -168,10 +170,19 @@
         </div>
         </div>
     </footer>
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
-        defer></script>
-    <script src="../scriptForAll.js"></script>
+
+    <script>
+        function initMap() {} 
+        (() => {
+            initMap = function () {
+                var map = new google.maps.Map(document.getElementById('map'), { });
+            }
+        })
+    </script>
+
+    <script 
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDL0_KOPGld5fbLCmfjXaRVJNRZVGVSldg&libraries=localContext&v=beta&callback=initMap">
+    </script>
 </body>
 
 </html>
