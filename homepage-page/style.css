@@ -573,6 +573,10 @@ main span {
 
 
 @media screen and (max-width: 999px) {
+    
+    .exemple {
+        margin-left: 45%;
+    }
 
     .descriere {
         width: 60%;
@@ -647,7 +651,7 @@ main span {
 
 
     .iconite {
-        width: 5%;
+        width: 10%;
         padding-right: 1.5%;
     }
 
@@ -676,6 +680,7 @@ main span {
 
 @media screen and (max-width: 768px) {
 
+    
 
     .descriere {
         width: 100%;
@@ -935,7 +940,7 @@ main span {
 
 
     .exemple {
-        width: 90%;
+        width: 80%;
         margin: 0 auto;
         margin-top: 6%;
     }
