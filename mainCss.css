@@ -336,7 +336,7 @@ li.nav-item {
         transform: rotate(45deg);
     }
     #containerBurgerStuff {
-        padding-top: 50px;
+        padding-top: 100px;
         padding-bottom: 10px;
         display: none;
         width: 100%;
