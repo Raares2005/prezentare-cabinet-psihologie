@@ -109,6 +109,7 @@ main span {
 
 .mid {
     margin-top: 25%;
+    
 }
 
 .background {
@@ -420,12 +421,10 @@ main span {
 
     #container {
         width: 50%;
-        height: 10%;
+        
     }
 
-    #slider {
-        height: 140%;
-    }
+  
 
     #slider img {
         width: 100%;
